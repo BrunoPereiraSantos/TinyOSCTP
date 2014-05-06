@@ -1,0 +1,215 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: MultihopOscilloscopeAppC</title>
+  </head>
+  <body>
+    <h2>Component: MultihopOscilloscopeAppC
+    </h2>
+    <b>configuration MultihopOscilloscopeAppC</b>
+    <p>
+ MultihopOscilloscope demo application using the collection layer. 
+ See README.txt file in this directory and TEP 119: Collection.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        David Gay
+ 
+      </dd>
+      <dd>
+        Kyle Jamieson
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/MultihopOscilloscopeC.html" title="MultihopOscilloscopeC" alt="" coords="679,5,849,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="117,356,200,414">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="679,36 511,46 316,63 225,74 147,88 90,103 71,111 61,119 47,146 42,175 45,205 55,235 87,294 123,343 119,347 82,297 50,238 40,206 37,174 42,144 57,115 69,106 88,97 146,82 224,69 315,58 511,41 679,30">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="675,29,683,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="127,352,135,360">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="48,202,75,219">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC" alt="" coords="71,118,180,177">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="679,36 451,52 339,64 258,80 220,95 184,114 181,109 217,90 257,74 338,59 450,46 678,30">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="675,29,683,37">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="167,114,175,122">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="274,77,358,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.micaz.DemoSensorC.html" title="DemoSensorC\n(Sensor)" alt="" coords="204,117,329,178">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="679,38 513,55 435,66 380,80 348,94 320,111 317,107 346,89 378,74 434,61 512,50 678,33">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="675,32,683,40">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="303,113,311,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="391,77,482,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="353,118,436,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="679,40 594,54 508,79 447,113 444,108 506,75 593,49 678,34">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="675,33,683,41">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="429,114,437,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="510,77,536,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.ActiveMessageC.html" title="ActiveMessageC" alt="" coords="460,118,599,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="679,42 602,57 571,67 551,79 542,91 536,106 531,104 538,89 548,75 569,62 601,52 678,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="675,36,683,44">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="527,114,535,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="549,77,617,94">
+
+      <area shape="rect" href="../chtml/tos.lib.serial.SerialActiveMessageC.html" title="SerialActiveMessageC" alt="" coords="623,118,799,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="680,54 649,66 632,78 628,94 637,108 632,110 623,94 627,76 647,61 678,49">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="675,48,683,56">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="641,114,649,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="629,77,697,94">
+
+      <area shape="rect" href="../chtml/tos.lib.net.ctp.CollectionC.html" title="CollectionC" alt="" coords="823,118,929,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="740,54 728,74 727,83 730,91 745,105 762,109 783,111 810,116 809,121 783,116 761,114 742,109 726,95 721,84 723,73 735,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="733,49,741,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="819,118,827,126">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="727,77,771,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="773,52 782,73 795,91 814,110 810,114 791,95 778,75 768,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="767,49,775,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="819,116,827,124">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="792,77,861,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="844,51 860,62 873,76 883,104 877,106 868,78 856,66 841,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="839,49,847,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="876,114,884,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="874,77,934,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="850,40 906,55 928,64 942,75 947,93 938,110 934,108 942,93 938,79 925,69 904,60 849,45">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="845,38,853,46">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="923,114,931,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="942,77,986,94">
+
+      <area shape="rect" href="../chtml/tos.lib.net.ctp.CollectionSenderC.html" title="CollectionSenderC" alt="" coords="953,118,1105,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="850,37 933,53 969,63 994,75 1017,105 1013,108 990,79 967,68 932,58 849,42">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="845,36,853,44">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1016,114,1024,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1004,77,1031,94">
+
+      <area shape="rect" href="../chtml/tos.lib.serial.SerialAMSenderC.html" title="SerialAMSenderC" alt="" coords="1129,118,1279,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="850,37 941,51 1037,74 1132,111 1130,115 1035,80 940,56 849,42">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="845,36,853,44">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="1139,114,1147,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="1072,77,1121,94">
+
+      <area shape="rect" href="../chtml/tos.system.PoolC.html" title="PoolC\n(UARTMessagePoolP)" alt="" coords="1303,117,1481,178">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="850,36 980,52 1126,74 1206,92 1290,114 1289,120 1205,97 1125,80 979,57 849,41">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="845,34,853,42">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="1299,117,1307,125">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="1186,77,1283,94">
+
+      <area shape="rect" href="../chtml/tos.system.QueueC.html" title="QueueC\n(UARTQueueP)" alt="" coords="1505,122,1631,173">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="850,32 1050,48 1288,74 1392,89 1494,114 1495,114 1495,120 1493,120 1391,95 1288,80 1049,53 849,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="845,30,853,38">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="1504,118,1512,126">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="1390,77,1508,94">
+
+      <area shape="rect" href="../chtml/tos.lib.net.UARTDebugSenderP.html" title="UARTDebugSenderP" alt="" coords="479,242,641,290">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="824,175 812,181 728,213 649,241 647,236 726,208 810,176 822,171">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="819,169,827,177">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="631,238,639,246">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="754,202,849,219">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="479,293 214,372 213,366 478,288">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="475,286,483,294">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="196,369,204,377">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="397,314,424,331">
+
+      <area shape="rect" href="../chtml/tos.lib.serial.SerialAMSenderC.html" title="SerialAMSenderC\n(DebugSerialSender)" alt="" coords="287,354,452,416">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="523,293 432,350 429,345 520,288">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="517,286,525,294">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="415,350,423,358">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="481,314,530,331">
+
+      <area shape="rect" href="../chtml/tos.system.PoolC.html" title="PoolC\n(DebugMessagePool)" alt="" coords="476,354,644,416">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="563,290 563,341 557,341 557,290">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="556,286,564,294">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="556,350,564,358">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;message_t&gt;" alt="" coords="560,314,657,331">
+
+      <area shape="rect" href="../chtml/tos.system.QueueC.html" title="QueueC\n(DebugSendQueue)" alt="" coords="668,360,815,410">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="619,288 663,312 708,348 705,352 660,317 616,293">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="613,286,621,294">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="712,356,720,364">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;message_t *&gt;" alt="" coords="677,314,795,331">
+
+    </map>
+    <img src="MultihopOscilloscopeAppC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

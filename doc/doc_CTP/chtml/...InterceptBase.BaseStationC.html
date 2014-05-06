@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: ...InterceptBase.BaseStationC</title>
+  </head>
+  <body>
+    <h2>Component: ...InterceptBase.BaseStationC
+    </h2>
+    <b>configuration BaseStationC</b>
+    <p>
+ The TinyOS 2.x base station that forwards packets between the UART
+ and radio.It replaces the GenericBase of TinyOS 1.0 and the
+ TOSBase of TinyOS 1.1.
+
+ <p>On the serial link, BaseStation sends and receives simple active
+ messages (not particular radio packets): on the radio link, it
+ sends radio active messages, whose format depends on the network
+ stack being used. BaseStation will copy its compiled-in group ID to
+ messages moving from the serial link to the radio, and will filter
+ out incoming radio messages that do not contain that group ID.</p>
+
+ <p>BaseStation includes queues in both directions, with a guarantee
+ that once a message enters a queue, it will eventually leave on the
+ other interface. The queues allow the BaseStation to handle load
+ spikes.</p>
+
+ <p>BaseStation acknowledges a message arriving over the serial link
+ only if that message was successfully enqueued for delivery to the
+ radio link.</p>
+
+ <p>The LEDS are programmed to toggle as follows:</p>
+ <ul>
+ <li><b>RED Toggle:</b>: Message bridged from serial to radio</li>
+ <li><b>GREEN Toggle:</b> Message bridged from radio to serial</li>
+ <li><b>YELLOW/BLUE Toggle:</b> Dropped message due to queue overflow in either direction</li>
+ </ul>
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Phil Buonadonna
+ 
+      </dd>
+      <dd>
+        Gilman Tolle
+ 
+      </dd>
+      <dd>
+        David Gay
+ 
+      </dd>
+      <dd>
+        Philip Levis
+ 
+      </dd>
+      <dd>
+        Dimas Abreu Dutra
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+        January 29 2008
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Intercept.html">Intercept</a> as <b>RadioIntercept</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Intercept.html">Intercept</a> as <b>SerialIntercept</b>[am_id_t]</div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/...InterceptBase.BaseStationP.html" title="BaseStationP" alt="" coords="559,117,663,165">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="543,52 548,73 558,92 569,106 565,109 554,94 544,74 537,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="536,49,544,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="572,113,580,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="555,77,656,94">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,229,88,288">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="559,145 282,159 147,173 99,181 74,191 64,202 57,217 52,215 59,199 70,187 98,176 146,167 282,154 559,140">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="555,138,563,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="47,225,55,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="77,189,104,206">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.ActiveMessageC.html" title="ActiveMessageC" alt="" coords="321,229,460,288">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="559,145 441,149 298,157 172,171 129,180 107,191 105,200 113,209 133,219 161,227 233,240 308,249 308,254 232,245 160,232 131,224 110,214 100,202 103,187 128,175 171,165 297,152 440,143 559,140">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="555,138,563,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="317,249,325,257">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="110,189,207,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="559,146 367,163 279,176 249,183 234,191 228,202 227,210 232,218 241,226 271,237 309,245 307,250 269,242 239,230 228,222 222,212 223,200 230,187 248,178 278,171 367,158 558,141">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="555,140,563,148">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="317,246,325,254">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="240,189,337,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="559,146 503,151 444,159 392,173 373,181 361,191 356,203 359,217 353,217 351,202 357,187 370,177 390,168 443,154 503,146 558,141">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="555,140,563,148">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="359,225,367,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="363,189,399,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="559,153 483,169 450,180 428,191 407,219 403,215 425,187 448,175 482,164 558,148">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="555,146,563,154">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="396,225,404,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="434,189,492,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="563,167 515,191 455,225 452,220 512,187 560,163">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="557,161,565,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="437,225,445,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="521,189,589,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="606,166 598,187 583,207 564,218 538,228 474,245 473,240 537,223 562,213 580,203 593,185 602,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="600,161,608,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="456,241,464,249">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="593,189,695,206">
+
+      <area shape="rect" href="../chtml/tos.lib.serial.SerialActiveMessageC.html" title="SerialActiveMessageC" alt="" coords="885,229,1061,288">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="654,163 745,203 809,222 873,238 871,244 807,228 743,207 652,167">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="649,161,657,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="881,240,889,248">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="743,189,811,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="663,148 735,163 813,187 844,203 885,221 883,226 842,207 811,191 734,168 662,153">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="659,146,667,154">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="893,225,901,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="842,189,944,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="663,140 818,152 894,166 924,175 946,187 957,200 965,216 960,218 953,203 942,191 922,180 892,171 817,157 662,145">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="659,138,667,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="964,225,972,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="953,189,1050,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="663,140 891,155 999,168 1036,177 1056,187 1062,196 1062,206 1053,222 1048,220 1057,204 1057,198 1053,191 1034,182 998,173 891,160 662,145">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="659,138,667,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1036,225,1044,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1058,189,1094,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="663,140 916,153 1037,166 1079,175 1102,187 1110,203 1106,217 1093,228 1076,237 1073,232 1090,223 1101,214 1104,203 1098,191 1077,180 1036,171 915,158 663,145">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="659,138,667,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="1057,234,1065,242">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="1104,189,1162,206">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="1213,229,1296,288">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="663,140 779,142 926,150 1067,164 1125,174 1169,187 1195,201 1218,218 1214,222 1192,205 1167,191 1124,179 1067,169 926,155 779,148 663,145">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="659,138,667,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="1223,225,1231,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="1191,189,1217,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="678,54 658,94 647,109 643,106 654,92 674,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="672,49,680,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="632,113,640,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[am_id_t]" alt="" coords="663,77,764,94">
+
+    </map>
+    <img src="...InterceptBase.BaseStationC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

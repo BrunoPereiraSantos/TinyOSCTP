@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.platforms.mica.AlarmCounterMilliP</title>
+  </head>
+  <body>
+    <h2>Component: tos.platforms.mica.AlarmCounterMilliP
+    </h2>
+    <b>configuration AlarmCounterMilliP</b>
+    <p>
+ Configure hardware timer 0 for use as the mica family's millisecond
+ timer.  This component does not follow the TEP102 HAL guidelines as
+ there is only one compare register for timer 0, which is used to
+ implement HilTimerMilliC. Hence it isn't useful to expose an
+ AlarmMilliC or CounterMillIC component.
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        David Gay &lt;dgay@intel-research.net&gt;
+ 
+      </dd>
+      <dd>
+        Martin Turon &lt;mturon@xbow.com&gt;
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Alarm.html">Alarm</a>&lt;TMilli, uint32_t&gt; as <b>AlarmMilli32</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Counter.html">Counter</a>&lt;TMilli, uint32_t&gt; as <b>CounterMilli32</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Init.html">Init</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.chips.atm1281.timer.Atm128AlarmAsyncC.html" title="Atm128AlarmAsyncC" alt="" coords="161,117,337,176">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMilli, uint32_t&gt;" alt="" coords="77,52 85,73 98,91 122,110 149,123 147,127 119,114 94,95 80,75 72,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMilli, uint32_t&gt;" alt="" coords="71,49,79,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMilli, uint32_t&gt;" alt="" coords="157,126,165,134">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMilli, uint32_t&gt;" alt="" coords="95,77,244,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="252,53 252,104 247,104 247,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="245,49,253,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="245,113,253,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="249,77,268,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMilli, uint32_t&gt;" alt="" coords="349,54 291,110 287,106 345,50">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMilli, uint32_t&gt;" alt="" coords="343,48,351,56">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMilli, uint32_t&gt;" alt="" coords="276,113,284,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMilli, uint32_t&gt;" alt="" coords="319,77,458,94">
+
+    </map>
+    <img src="tos.platforms.mica.AlarmCounterMilliP.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

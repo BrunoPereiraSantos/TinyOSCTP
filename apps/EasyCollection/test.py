@@ -18,13 +18,16 @@ t.addChannel("TreeRouting", sys.stdout)
 t.addChannel("RoutingTimer", sys.stdout)
 t.addChannel("RoutingTimer", sys.stdout)
 t.addChannel("LITest", sys.stdout)
-
+t.addChannel("BRUNO_RE", sys.stdout)
+t.addChannel("EasyCollection", sys.stdout)
 
 t.addChannel("TreeRoutingCtl", outFile)
 t.addChannel("TreeRouting", outFile)
 t.addChannel("RoutingTimer", outFile)
 t.addChannel("RoutingTimer", outFile)
 t.addChannel("LITest", outFile)
+t.addChannel("BRUNO_RE", outFile)
+t.addChannel("EasyCollection", outFile)
 
 
 noise = open("../../tos/lib/tossim/noise/meyer-heavy.txt", "r")
@@ -39,15 +42,15 @@ for i in range(1, 10):
   print "Creating noise model for ",i;
   t.getNode(i).createNoiseModel()
 
-t.getNode(1).bootAtTime(100001);
-t.getNode(2).bootAtTime(800008);
-t.getNode(3).bootAtTime(1800009);
-t.getNode(4).bootAtTime(1900009);
-t.getNode(5).bootAtTime(2000009);
-t.getNode(6).bootAtTime(2100009);
-t.getNode(7).bootAtTime(2200009);
-t.getNode(8).bootAtTime(2205009);
-t.getNode(9).bootAtTime(2210009);
+t.getNode(1).bootAtTime(1001);
+t.getNode(2).bootAtTime(6008);
+t.getNode(3).bootAtTime(4009);
+t.getNode(4).bootAtTime(1050);
+t.getNode(5).bootAtTime(3050);
+t.getNode(6).bootAtTime(5050);
+t.getNode(7).bootAtTime(7050);
+t.getNode(8).bootAtTime(3550);
+t.getNode(9).bootAtTime(4450);
 
 
 

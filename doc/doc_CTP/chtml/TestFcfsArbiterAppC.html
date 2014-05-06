@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: TestFcfsArbiterAppC</title>
+  </head>
+  <body>
+    <h2>Component: TestFcfsArbiterAppC
+    </h2>
+    <b>configuration TestFcfsArbiterAppC</b>
+    <p>
+ Please refer to TEP 108 for more information about the components
+ this application is used to test.<br><br>
+
+ This application is used to test the functionality of the
+ FcfsArbiter component developed using the Resource
+ interface.  Three Resource users are created and all three request
+ control of the resource before any one of them is granted it.
+ Once the first user is granted control of the resource, a timer
+ is set to allow this user to have control of it for a specific
+ amount of time.  Once this timer expires, the resource is released
+ and then immediately requested again.  Upon releasing the resource
+ control will be granted to the next user that has
+ requested it in FCFS order.  Initial requests are made
+ by the three resource users in the following order<br>
+ <li> Resource 0
+ <li> Resource 2
+ <li> Resource 1
+ <br>
+ It is expected then that using a first-come-first-serve policy, control of the
+ resource will be granted in the order of 0,2,1 and the Leds
+ corresponding to each resource will flash whenever this occurs.<br>
+ <li> Led 0 -> Resource 0
+ <li> Led 1 -> Resource 1
+ <li> Led 2 -> Resource 2
+ <br>
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues &lt;klues@tkn.tu-berlin.de&gt;
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+         $Revision: 1.1 $
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+        $Date: 2007/07/10 19:55:30 $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/TestFcfsArbiterC.html" title="TestFcfsArbiterC" alt="" coords="239,5,369,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,119,88,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="239,37 139,53 95,65 67,79 58,92 53,106 48,104 54,89 64,75 93,60 137,47 238,32">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="235,31,243,39">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="44,115,52,123">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="69,77,96,94">
+
+      <area shape="rect" href="../chtml/tos.system.FcfsArbiterC.html" title="FcfsArbiterC\n(Arbiter)" alt="" coords="127,117,241,179">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="239,40 160,55 127,66 107,79 103,88 104,95 118,113 114,116 99,98 98,87 103,76 125,61 158,50 238,35">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="235,33,243,41">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="123,119,131,127">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="104,77,154,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="240,44 210,57 187,79 182,91 180,104 175,104 177,89 183,76 208,53 238,39">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="235,37,243,45">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="173,113,181,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="184,77,234,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="282,55 226,110 222,106 278,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="276,49,284,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="211,113,219,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="252,77,302,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer0)" alt="" coords="271,117,380,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="312,53 317,77 321,104 316,104 312,78 307,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="305,49,313,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="317,113,325,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="314,77,398,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer1)" alt="" coords="404,117,513,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="367,51 406,75 433,105 429,108 402,79 364,56">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="361,49,369,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="436,113,444,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="415,77,499,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer2)" alt="" coords="537,117,647,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="370,35 437,49 507,75 552,106 549,110 504,80 436,54 369,40">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="365,33,373,41">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="557,113,565,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="525,77,609,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="671,119,753,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="370,33 505,51 569,62 616,75 644,90 670,107 666,112 641,94 614,80 568,67 504,56 369,39">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="365,32,373,40">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="675,115,683,123">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="638,77,664,94">
+
+    </map>
+    <img src="TestFcfsArbiterAppC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

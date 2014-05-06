@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.chips.atm128.i2c.HplAtm128I2CBus</title>
+  </head>
+  <body>
+    <h2>Interface: tos.chips.atm128.i2c.HplAtm128I2CBus</h2>
+    <b>interface HplAtm128I2CBus</b><p>
+ This driver implements direct I2C register access and a blocking master
+ controller for the ATmega128 via a Hardware Platform Layer (HPL) to its  
+ two-wire-interface (TWI) hardware subsystem.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Martin Turon &lt;mturon@xbow.com&gt;
+ 
+      </dd>
+      <dd>
+        Philip Levis
+
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+         $Id: HplAtm128I2CBus.nc,v 1.4 2006/12/12 18:23:03 vlahan Exp $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command void <a href="#enable">enable</a>(bool on)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableAck">enableAck</a>(bool enable)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#enableInterrupt">enableInterrupt</a>(bool enable)
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#hasAcks">hasAcks</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#hasStart">hasStart</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#hasStop">hasStop</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#hasWriteCollided">hasWriteCollided</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#init">init</a>(bool hasExternalPulldown)
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isEnabled">isEnabled</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isInterruptEnabled">isInterruptEnabled</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isInterruptPending">isInterruptPending</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isRealInterruptPending">isRealInterruptPending</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#off">off</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#read">read</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#readCurrent">readCurrent</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#sendCommand">sendCommand</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setInterruptPending">setInterruptPending</a>(bool on)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setStart">setStart</a>(bool on)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#setStop">setStop</a>(bool on)
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#status">status</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#write">write</a>(uint8_t data)
+      </span></div><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event void <a href="#commandComplete">commandComplete</a>()
+      </span></div><p><div id=heading>Commands - Details</div>
+    <a name="enable"></a>
+    <h4>enable
+    </h4>
+    <span id=funcnameshort>command void <b>enable</b>(bool on)
+    </span><hr>
+    <a name="enableAck"></a>
+    <h4>enableAck
+    </h4>
+    <span id=funcnameshort>command void <b>enableAck</b>(bool enable)
+    </span><hr>
+    <a name="enableInterrupt"></a>
+    <h4>enableInterrupt
+    </h4>
+    <span id=funcnameshort>command void <b>enableInterrupt</b>(bool enable)
+    </span><hr>
+    <a name="hasAcks"></a>
+    <h4>hasAcks
+    </h4>
+    <span id=funcnameshort>command bool <b>hasAcks</b>()
+    </span><hr>
+    <a name="hasStart"></a>
+    <h4>hasStart
+    </h4>
+    <span id=funcnameshort>command bool <b>hasStart</b>()
+    </span><hr>
+    <a name="hasStop"></a>
+    <h4>hasStop
+    </h4>
+    <span id=funcnameshort>command bool <b>hasStop</b>()
+    </span><hr>
+    <a name="hasWriteCollided"></a>
+    <h4>hasWriteCollided
+    </h4>
+    <span id=funcnameshort>command bool <b>hasWriteCollided</b>()
+    </span><hr>
+    <a name="init"></a>
+    <h4>init
+    </h4>
+    <span id=funcnameshort>command void <b>init</b>(bool hasExternalPulldown)
+    </span><hr>
+    <a name="isEnabled"></a>
+    <h4>isEnabled
+    </h4>
+    <span id=funcnameshort>command bool <b>isEnabled</b>()
+    </span><hr>
+    <a name="isInterruptEnabled"></a>
+    <h4>isInterruptEnabled
+    </h4>
+    <span id=funcnameshort>command bool <b>isInterruptEnabled</b>()
+    </span><hr>
+    <a name="isInterruptPending"></a>
+    <h4>isInterruptPending
+    </h4>
+    <span id=funcnameshort>command bool <b>isInterruptPending</b>()
+    </span><hr>
+    <a name="isRealInterruptPending"></a>
+    <h4>isRealInterruptPending
+    </h4>
+    <span id=funcnameshort>command bool <b>isRealInterruptPending</b>()
+    </span><hr>
+    <a name="off"></a>
+    <h4>off
+    </h4>
+    <span id=funcnameshort>command void <b>off</b>()
+    </span><hr>
+    <a name="read"></a>
+    <h4>read
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>read</b>()
+    </span><hr>
+    <a name="readCurrent"></a>
+    <h4>readCurrent
+    </h4>
+    <span id=funcnameshort>command void <b>readCurrent</b>()
+    </span><hr>
+    <a name="sendCommand"></a>
+    <h4>sendCommand
+    </h4>
+    <span id=funcnameshort>command void <b>sendCommand</b>()
+    </span><hr>
+    <a name="setInterruptPending"></a>
+    <h4>setInterruptPending
+    </h4>
+    <span id=funcnameshort>command void <b>setInterruptPending</b>(bool on)
+    </span><hr>
+    <a name="setStart"></a>
+    <h4>setStart
+    </h4>
+    <span id=funcnameshort>command void <b>setStart</b>(bool on)
+    </span><hr>
+    <a name="setStop"></a>
+    <h4>setStop
+    </h4>
+    <span id=funcnameshort>command void <b>setStop</b>(bool on)
+    </span><hr>
+    <a name="status"></a>
+    <h4>status
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>status</b>()
+    </span><hr>
+    <a name="write"></a>
+    <h4>write
+    </h4>
+    <span id=funcnameshort>command void <b>write</b>(uint8_t data)
+    </span><p><div id=heading>Events - Details</div>
+    <a name="commandComplete"></a>
+    <h4>commandComplete
+    </h4>
+    <span id=funcnameshort>event void <b>commandComplete</b>()
+    </span>
+  </body>
+</html>

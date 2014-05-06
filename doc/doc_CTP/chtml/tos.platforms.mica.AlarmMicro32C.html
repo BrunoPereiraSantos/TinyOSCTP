@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.platforms.mica.AlarmMicro32C</title>
+  </head>
+  <body>
+    <h2>Component: tos.platforms.mica.AlarmMicro32C
+    </h2>
+    <b>generic configuration AlarmMicro32C()</b>
+    <p>
+ 32-bit microsecond Alarm component as per TEP102 HAL guidelines. The
+ mica family microsecond Alarm is built on hardware timer 3, and actually
+ runs at CPU frequency / 8. You can use the MeasureClockC.cyclesPerJiffy() 
+ command to figure out the exact frequency, or the 
+ MeasureClockC.calibrateMicro() command to convert a number of microseconds
+ to the near-microsecond units used by this component.
+ <p>
+ Upto three of these alarms can be created (one per hardware compare
+ register). Note that creating one of these Alarms consumes a 16-bit
+ microsecond Alarm (see AlarmMicro16C).
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        David Gay &lt;dgay@intel-research.net&gt;
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Alarm.html">Alarm</a>&lt;TMicro, uint32_t&gt;</div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.lib.timer.TransformAlarmC.html" title="TransformAlarmC\n(Transform32)" alt="" coords="89,118,228,168">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMicro, uint32_t&gt;" alt="" coords="161,54 161,104 156,104 156,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMicro, uint32_t&gt;" alt="" coords="155,50,163,58">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMicro, uint32_t&gt;" alt="" coords="155,114,163,122">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TMicro, uint32_t&gt;" alt="" coords="159,77,303,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.mica.AlarmThree16C.html" title="AlarmThree16C\n(Alarm16)" alt="" coords="5,232,141,294">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TThree, uint16_t&gt;" alt="" coords="99,170 77,194 71,220 65,218 72,191 95,167">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TThree, uint16_t&gt;" alt="" coords="93,164,101,172">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TThree, uint16_t&gt;" alt="" coords="64,228,72,236">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TThree, uint16_t&gt;" alt="" coords="78,192,220,209">
+
+      <area shape="rect" href="../chtml/tos.platforms.mica.CounterMicro32C.html" title="CounterMicro32C" alt="" coords="172,234,319,292">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMicro, uint32_t&gt;" alt="" coords="195,167 218,191 233,220 228,223 214,194 191,170">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMicro, uint32_t&gt;" alt="" coords="189,164,197,172">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMicro, uint32_t&gt;" alt="" coords="232,230,240,238">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;TMicro, uint32_t&gt;" alt="" coords="222,192,376,209">
+
+    </map>
+    <img src="tos.platforms.mica.AlarmMicro32C.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

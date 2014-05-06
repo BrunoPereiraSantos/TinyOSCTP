@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: SharedResourceDemoC</title>
+  </head>
+  <body>
+    <h2>Component: SharedResourceDemoC
+    </h2>
+    <b>module SharedResourceDemoC</b>
+    <p>
+
+ This application is used to test the use of Shared Resources.  
+ Three Resource users are created and all three request
+ control of the resource before any one of them is granted it.
+ Once the first user is granted control of the resource, it performs
+ some operation on it.  Once this operation has completed, a timer
+ is set to allow this user to have control of it for a specific
+ amount of time.  Once this timer expires, the resource is released
+ and then immediately requested again.  Upon releasing the resource
+ control will be granted to the next user that has requested it in 
+ round robin order.  Initial requests are made by the three resource 
+ users in the following order.<br>
+ <li> Resource 0
+ <li> Resource 2
+ <li> Resource 1
+ <br>
+ It is expected then that using a round robin policy, control of the
+ resource will be granted in the order of 0,1,2 and the Leds
+ corresponding to each resource will flash whenever this occurs.<br>
+ <li> Led 0 -> Resource 0
+ <li> Led 1 -> Resource 1
+ <li> Led 2 -> Resource 2
+ <br>
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues (klueska@cs.wustl.edu)
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+        $Revision: 1.1 $
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+        $Date: 2007/07/13 23:43:17 $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Boot.html">Boot</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Leds.html">Leds</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Resource.html">Resource</a> as <b>Resource0</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Resource.html">Resource</a> as <b>Resource1</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Resource.html">Resource</a> as <b>Resource2</b></div><div id=funcsig>interface <a href="../ihtml/ResourceOperations.html">ResourceOperations</a> as <b>ResourceOperations0</b></div><div id=funcsig>interface <a href="../ihtml/ResourceOperations.html">ResourceOperations</a> as <b>ResourceOperations1</b></div><div id=funcsig>interface <a href="../ihtml/ResourceOperations.html">ResourceOperations</a> as <b>ResourceOperations2</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Timer.html">Timer</a>&lt;TMilli&gt; as <b>Timer0</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Timer.html">Timer</a>&lt;TMilli&gt; as <b>Timer1</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Timer.html">Timer</a>&lt;TMilli&gt; as <b>Timer2</b></div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.lib.ftsp.TimeSyncC</title>
+  </head>
+  <body>
+    <h2>Component: tos.lib.ftsp.TimeSyncC
+    </h2>
+    <b>configuration TimeSyncC</b>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.lib.ftsp.GlobalTime.html">GlobalTime</a>&lt;TMilli&gt;</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Init.html">Init</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.StdControl.html">StdControl</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.ftsp.TimeSyncInfo.html">TimeSyncInfo</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.ftsp.TimeSyncMode.html">TimeSyncMode</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.ftsp.TimeSyncNotify.html">TimeSyncNotify</a></div><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Boot.html">Boot</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.lib.ftsp.TimeSyncP.html" title="TimeSyncP" alt="" coords="496,117,589,165">
+
+      <area shape="poly" href="../ihtml/tos.lib.ftsp.GlobalTime.html" title="GlobalTime&lt;TMilli&gt;" alt="" coords="230,50 251,73 276,91 314,104 367,115 483,132 482,137 366,121 312,109 273,96 247,77 226,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.GlobalTime.html" title="GlobalTime&lt;TMilli&gt;" alt="" coords="224,48,232,56">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.GlobalTime.html" title="GlobalTime&lt;TMilli&gt;" alt="" coords="492,132,500,140">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.GlobalTime.html" title="GlobalTime&lt;TMilli&gt;" alt="" coords="276,77,394,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="496,147 264,164 151,177 112,185 89,192 72,207 60,227 55,224 68,204 87,187 110,179 151,172 264,159 496,141">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="492,140,500,148">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="47,233,55,241">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="99,189,126,206">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.TimeSyncMessageC.html" title="TimeSyncMessageC" alt="" coords="293,231,456,289">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="496,145 280,161 178,174 143,182 125,191 122,197 125,204 148,220 186,233 280,249 280,255 185,238 146,225 121,207 117,197 121,188 141,177 177,169 280,155 496,140">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="492,139,500,147">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="289,249,297,257">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="127,189,323,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="496,148 398,162 355,175 329,191 325,204 331,219 325,221 320,204 325,188 353,170 397,157 496,143">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="492,141,500,149">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="332,227,340,235">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="331,189,399,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;" alt="" coords="497,156 461,171 427,191 399,221 395,217 424,187 458,166 495,151">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;" alt="" coords="492,149,500,157">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;" alt="" coords="387,227,395,235">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;" alt="" coords="425,189,634,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="590,152 613,162 631,175 641,190 635,207 609,225 568,239 470,256 469,251 567,234 607,221 631,204 635,190 627,178 610,167 588,157">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="585,151,593,159">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="452,251,460,259">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="637,189,681,206">
+
+      <area shape="rect" href="../chtml/tos.platforms.mica.HilTimerMilliC.html" title="HilTimerMilliC" alt="" coords="671,231,801,289">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="590,147 640,161 688,187 715,217 711,220 685,191 637,166 589,152">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="585,145,593,153">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="717,227,725,235">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="698,189,809,206">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(TimerC)" alt="" coords="825,229,935,291">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="590,143 713,160 773,172 816,187 835,200 851,217 847,221 832,205 813,192 772,177 713,165 589,148">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="585,141,593,149">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="855,225,863,233">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="831,189,915,206">
+
+      <area shape="rect" href="../chtml/tos.system.NoLedsC.html" title="NoLedsC" alt="" coords="959,236,1041,284">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="590,141 767,156 858,169 922,187 950,203 972,225 969,229 946,208 920,192 857,174 766,161 589,147">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="585,140,593,148">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="976,232,984,240">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="943,189,969,206">
+
+      <area shape="poly" href="../ihtml/tos.lib.ftsp.TimeSyncInfo.html" title="TimeSyncInfo" alt="" coords="378,51 399,72 424,91 485,122 483,126 421,96 396,76 374,55">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncInfo.html" title="TimeSyncInfo" alt="" coords="372,49,380,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncInfo.html" title="TimeSyncInfo" alt="" coords="492,124,500,132">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncInfo.html" title="TimeSyncInfo" alt="" coords="422,77,499,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="494,51 525,104 520,107 490,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="488,48,496,56">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="525,113,533,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="512,77,531,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.ftsp.TimeSyncMode.html" title="TimeSyncMode" alt="" coords="596,55 565,107 560,104 591,52">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncMode.html" title="TimeSyncMode" alt="" coords="589,49,597,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncMode.html" title="TimeSyncMode" alt="" coords="552,113,560,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncMode.html" title="TimeSyncMode" alt="" coords="578,77,665,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.ftsp.TimeSyncNotify.html" title="TimeSyncNotify" alt="" coords="740,53 672,96 604,125 602,120 669,91 737,48">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncNotify.html" title="TimeSyncNotify" alt="" coords="735,47,743,55">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncNotify.html" title="TimeSyncNotify" alt="" coords="585,123,593,131">
+
+      <area shape="rect" href="../ihtml/tos.lib.ftsp.TimeSyncNotify.html" title="TimeSyncNotify" alt="" coords="699,77,790,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="883,52 842,75 796,96 746,111 695,123 603,139 602,133 694,118 744,106 794,91 840,70 880,47">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="877,45,885,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="585,133,593,141">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="831,77,891,94">
+
+    </map>
+    <img src="tos.lib.ftsp.TimeSyncC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

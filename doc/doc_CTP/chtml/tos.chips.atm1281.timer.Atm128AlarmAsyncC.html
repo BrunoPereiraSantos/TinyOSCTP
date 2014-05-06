@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.chips.atm1281.timer.Atm128AlarmAsyncC</title>
+  </head>
+  <body>
+    <h2>Component: tos.chips.atm1281.timer.Atm128AlarmAsyncC
+    </h2>
+    <b>generic configuration Atm128AlarmAsyncC(typedef precision, int divider)</b>
+    <p>
+ Build a 32-bit alarm and counter from the atmega1281's 8-bit timer 2
+ in asynchronous mode. Attempting to use the generic Atm128AlarmC
+ component and the generic timer components runs into problems
+ apparently related to letting timer 2 overflow.
+ 
+ So, instead, this version (inspired by the 1.x code and a remark from
+ Martin Turon) directly builds a 32-bit alarm and counter on top of timer 2
+ and never lets timer 2 overflow.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        David Gay
+ 
+      </dd>
+      <dd>
+        Janos Sallai &lt;janos.sallai@vanderbilt.edu&gt;
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Alarm.html">Alarm</a>&lt;precision, uint32_t&gt;</div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Counter.html">Counter</a>&lt;precision, uint32_t&gt;</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Init.html">Init</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.chips.atm1281.timer.Atm1281AlarmAsyncP.html" title="Atm1281AlarmAsyncP" alt="" coords="200,117,371,165">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;precision, uint32_t&gt;" alt="" coords="109,52 117,73 130,91 153,104 188,116 186,121 151,109 126,95 112,75 104,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;precision, uint32_t&gt;" alt="" coords="103,49,111,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;precision, uint32_t&gt;" alt="" coords="196,118,204,126">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;precision, uint32_t&gt;" alt="" coords="128,77,281,94">
+
+      <area shape="rect" href="../chtml/tos.chips.atm1281.timer.HplAtm1281Timer2AsyncC.html" title="HplAtm1281Timer2AsyncC" alt="" coords="179,229,392,288">
+
+      <area shape="poly" href="../ihtml/tos.chips.atm128.timer.HplAtm128Timer.html" title="HplAtm128Timer&lt;uint8_t&gt;" alt="" coords="200,148 97,163 54,175 27,191 25,198 30,205 60,220 109,232 166,242 165,248 107,238 58,225 26,209 20,199 23,187 52,170 96,157 200,142">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.timer.HplAtm128Timer.html" title="HplAtm128Timer&lt;uint8_t&gt;" alt="" coords="196,141,204,149">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.timer.HplAtm128Timer.html" title="HplAtm128Timer&lt;uint8_t&gt;" alt="" coords="175,242,183,250">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.timer.HplAtm128Timer.html" title="HplAtm128Timer&lt;uint8_t&gt;" alt="" coords="30,189,184,206">
+
+      <area shape="poly" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerCtrl8.html" title="HplAtm128TimerCtrl8" alt="" coords="234,167 212,190 209,205 216,219 211,221 204,206 207,188 230,163">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerCtrl8.html" title="HplAtm128TimerCtrl8" alt="" coords="228,161,236,169">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerCtrl8.html" title="HplAtm128TimerCtrl8" alt="" coords="220,225,228,233">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerCtrl8.html" title="HplAtm128TimerCtrl8" alt="" coords="209,189,335,206">
+
+      <area shape="poly" href="../ihtml/tos.chips.atm128.timer.HplAtm128Compare.html" title="HplAtm128Compare&lt;uint8_t&gt;" alt="" coords="322,163 336,183 339,194 337,206 330,220 326,217 332,204 333,194 331,185 318,167">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.timer.HplAtm128Compare.html" title="HplAtm128Compare&lt;uint8_t&gt;" alt="" coords="316,161,324,169">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.timer.HplAtm128Compare.html" title="HplAtm128Compare&lt;uint8_t&gt;" alt="" coords="316,225,324,233">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.timer.HplAtm128Compare.html" title="HplAtm128Compare&lt;uint8_t&gt;" alt="" coords="335,189,506,206">
+
+      <area shape="poly" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerAsync.html" title="HplAtm128TimerAsync" alt="" coords="371,146 455,161 490,172 513,187 516,198 513,207 496,220 471,231 406,246 405,241 469,226 493,216 509,203 511,197 509,191 488,177 454,166 370,152">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerAsync.html" title="HplAtm128TimerAsync" alt="" coords="367,145,375,153">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerAsync.html" title="HplAtm128TimerAsync" alt="" coords="388,242,396,250">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm1281.timer.HplAtm128TimerAsync.html" title="HplAtm128TimerAsync" alt="" coords="512,189,645,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="288,53 288,104 283,104 283,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="281,49,289,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="281,113,289,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Init.html" title="Init" alt="" coords="285,77,304,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;precision, uint32_t&gt;" alt="" coords="370,52 319,108 315,105 366,49">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;precision, uint32_t&gt;" alt="" coords="364,46,372,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;precision, uint32_t&gt;" alt="" coords="304,113,312,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Counter.html" title="Counter&lt;precision, uint32_t&gt;" alt="" coords="345,77,508,94">
+
+    </map>
+    <img src="tos.chips.atm1281.timer.Atm128AlarmAsyncC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

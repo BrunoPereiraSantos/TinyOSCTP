@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.chips.rf230.ActiveMessageConfig</title>
+  </head>
+  <body>
+    <h2>Interface: tos.chips.rf230.ActiveMessageConfig</h2>
+    <b>interface ActiveMessageConfig</b><p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command error_t <a href="#checkPacket">checkPacket</a>(message_t *msg)
+      </span><menu>
+ This command is called when the message first enters the radio stack
+ via the Send.send command.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="checkPacket"></a>
+    <h4>checkPacket
+    </h4>
+    <span id=funcnameshort>command error_t <b>checkPacket</b>(message_t *msg)
+    </span>
+    <p>
+    <menu>
+      
+ This command is called when the message first enters the radio stack
+ via the Send.send command. This should clear the packet if the user
+ forgot to do so (or return EINVAL to be strict).
+
+    </menu>
+  </body>
+</html>

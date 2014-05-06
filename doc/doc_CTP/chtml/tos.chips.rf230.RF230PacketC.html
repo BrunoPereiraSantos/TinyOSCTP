@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.chips.rf230.RF230PacketC</title>
+  </head>
+  <body>
+    <h2>Component: tos.chips.rf230.RF230PacketC
+    </h2>
+    <b>configuration RF230PacketC</b>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMPacket.html">AMPacket</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Packet.html">Packet</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketAcknowledgements.html">PacketAcknowledgements</a></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketLinkQuality</b></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketRSSI</b></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint16_t&gt; as <b>PacketSleepInterval</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketTimeStamp.html">PacketTimeStamp</a>&lt;TMilli, uint32_t&gt; as <b>PacketTimeStampMilli</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketTimeStamp.html">PacketTimeStamp</a>&lt;TRF230, uint32_t&gt; as <b>PacketTimeStampRadio</b></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketTimeSyncOffset</b></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketTransmitPower</b></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.chips.rf230.RF230PacketP.html" title="RF230PacketP" alt="" coords="665,117,780,165">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="89,48 127,71 172,90 212,100 266,109 397,122 652,137 652,142 396,127 265,114 211,105 170,96 125,76 87,53">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="84,46,92,54">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="661,136,669,144">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="171,77,291,94">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.IEEE154PacketC.html" title="IEEE154PacketC" alt="" coords="861,229,1005,288">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="781,161 836,187 885,219 883,223 833,191 779,166">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="776,160,784,168">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="891,225,899,233">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="854,189,939,206">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.LocalTimeMicroC.html" title="LocalTimeMicroC" alt="" coords="479,229,628,288">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRF230&gt;" alt="" coords="666,157 631,171 599,191 575,219 571,215 596,187 629,166 664,152">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRF230&gt;" alt="" coords="661,150,669,158">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRF230&gt;" alt="" coords="563,225,571,233">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRF230&gt;" alt="" coords="597,189,717,206">
+
+      <area shape="rect" href="../chtml/tos.system.LocalTimeMilliC.html" title="LocalTimeMilliC" alt="" coords="652,229,793,288">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="725,165 725,216 720,216 720,165">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="719,161,727,169">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="719,225,727,233">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TMilli&gt;" alt="" coords="722,189,833,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="224,43 244,51 301,74 361,90 437,106 515,119 652,133 652,138 515,124 436,112 359,96 299,79 242,55 222,47">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="219,41,227,49">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="661,133,669,141">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="359,77,395,94">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="371,49 404,72 442,91 495,108 551,121 652,134 652,140 550,126 494,113 440,95 402,77 368,54">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="365,48,373,56">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="661,134,669,142">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="441,77,561,94">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint16_t&gt;" alt="" coords="550,51 569,72 592,91 622,107 653,120 651,125 620,112 589,95 566,76 546,55">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint16_t&gt;" alt="" coords="544,49,552,57">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint16_t&gt;" alt="" coords="661,122,669,130">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint16_t&gt;" alt="" coords="590,77,717,94">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="725,53 725,104 720,104 720,53">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="719,49,727,57">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="719,113,727,121">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="723,77,843,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="906,54 849,95 794,121 792,116 847,91 902,50">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="900,48,908,56">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="776,120,784,128">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="871,77,1083,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1134,55 1115,77 1090,95 794,136 793,130 1088,91 1111,73 1130,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1128,49,1136,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="776,130,784,138">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1110,77,1255,94">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1327,54 1297,77 1261,95 1228,104 1186,110 1089,115 916,120 794,134 793,129 916,114 1089,110 1186,104 1227,99 1259,91 1294,73 1324,50">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1321,48,1329,56">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="776,129,784,137">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1292,77,1412,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="972,166 952,217 947,215 967,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="965,161,973,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="941,225,949,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="958,189,1016,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="1507,54 1466,77 1418,96 1370,105 1309,111 1168,116 1026,116 916,120 794,134 793,129 916,114 1026,111 1168,110 1309,106 1369,100 1417,90 1464,72 1504,49">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="1501,48,1509,56">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="776,129,784,137">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="1461,77,1664,94">
+
+    </map>
+    <img src="tos.chips.rf230.RF230PacketC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

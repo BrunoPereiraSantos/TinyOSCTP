@@ -240,7 +240,7 @@ implementation {
     if (err == SUCCESS) {
       setState(RADIO_ON);
       if (!call SendQueue.empty()) {
-	dbg("FHangBug", "%s posted sendTask.\n", __FUNCTION__);
+	dbg("FHangBug", "%s posted sendTask.\n", __FUNCTION__); 
         post sendTask();
       }
     }

@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.lib.net.ctp.CollectionC</title>
+  </head>
+  <body>
+    <h2>Component: tos.lib.net.ctp.CollectionC
+    </h2>
+    <b>configuration CollectionC</b>
+    <p>
+ A data collection service that uses a tree routing protocol
+ to deliver data to collection roots, following TEP 119.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Rodrigo Fonseca
+ 
+      </dd>
+      <dd>
+        Omprakash Gnawali
+ 
+      </dd>
+      <dd>
+        Kyle Jamieson
+ 
+      </dd>
+      <dd>
+        Philip Levis
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.CollectionPacket.html">CollectionPacket</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.ctp.CtpCongestion.html">CtpCongestion</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.ctp.CtpInfo.html">CtpInfo</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.ctp.CtpPacket.html">CtpPacket</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Intercept.html">Intercept</a>[collection_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Packet.html">Packet</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a>[collection_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.RootControl.html">RootControl</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Send.html">Send</a>[uint8_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>Snoop</b>[collection_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.StdControl.html">StdControl</a></div><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.CollectionDebug.html">CollectionDebug</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.CollectionId.html">CollectionId</a>[uint8_t]</div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.lib.net.ctp.CtpP.html" title="CtpP" alt="" coords="705,117,788,176">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="89,48 126,71 169,90 213,102 273,111 419,126 692,142 692,148 419,132 272,117 212,107 167,96 124,76 87,53">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="84,46,92,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="701,141,709,149">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.RootControl.html" title="RootControl" alt="" coords="167,77,236,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.CollectionId.html" title="CollectionId[uint8_t]" alt="" coords="707,171 692,185 680,201 672,227 667,226 675,198 688,181 704,167">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionId.html" title="CollectionId[uint8_t]" alt="" coords="701,165,709,173">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionId.html" title="CollectionId[uint8_t]" alt="" coords="665,236,673,244">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionId.html" title="CollectionId[uint8_t]" alt="" coords="676,199,793,216">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="777,174 796,198 810,226 806,229 791,201 773,177">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="771,172,779,180">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="809,236,817,244">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionDebug.html" title="CollectionDebug" alt="" coords="798,199,893,216">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.CollectionPacket.html" title="CollectionPacket" alt="" coords="227,51 244,73 267,91 301,104 348,115 465,131 589,139 692,144 692,149 589,145 464,136 347,120 299,109 264,95 240,77 223,55">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionPacket.html" title="CollectionPacket" alt="" coords="221,49,229,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionPacket.html" title="CollectionPacket" alt="" coords="701,142,709,150">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.CollectionPacket.html" title="CollectionPacket" alt="" coords="265,77,359,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[collection_id_t]" alt="" coords="360,52 369,74 386,91 408,103 440,113 523,128 613,137 692,142 692,148 613,142 522,133 439,118 406,108 382,95 365,76 355,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[collection_id_t]" alt="" coords="353,49,361,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[collection_id_t]" alt="" coords="701,141,709,149">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Intercept.html" title="Intercept[collection_id_t]" alt="" coords="383,77,523,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="514,50 531,71 554,91 587,109 623,122 693,138 691,144 621,128 584,114 550,95 527,75 510,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="508,48,516,56">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="701,138,709,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="551,77,587,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="596,53 598,73 607,91 625,108 646,121 693,137 691,142 644,126 622,113 603,95 593,75 591,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="589,49,597,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="701,138,709,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="605,77,741,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Send.html" title="Send[uint8_t]" alt="" coords="749,53 749,104 744,104 744,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send[uint8_t]" alt="" coords="743,49,751,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send[uint8_t]" alt="" coords="743,113,751,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send[uint8_t]" alt="" coords="747,77,822,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.ctp.CtpInfo.html" title="CtpInfo" alt="" coords="845,54 837,75 825,95 800,118 797,114 821,91 832,72 840,52">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpInfo.html" title="CtpInfo" alt="" coords="839,49,847,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpInfo.html" title="CtpInfo" alt="" coords="784,120,792,128">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpInfo.html" title="CtpInfo" alt="" coords="831,77,873,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="936,52 880,95 841,115 802,131 800,127 839,111 877,91 933,48">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="931,46,939,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="784,129,792,137">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[collection_id_t]" alt="" coords="903,77,1039,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.ctp.CtpCongestion.html" title="CtpCongestion" alt="" coords="1081,55 1066,76 1045,95 1000,113 936,127 802,144 801,138 935,121 999,108 1043,91 1062,73 1076,51">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpCongestion.html" title="CtpCongestion" alt="" coords="1075,49,1083,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpCongestion.html" title="CtpCongestion" alt="" coords="784,138,792,146">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpCongestion.html" title="CtpCongestion" alt="" coords="1063,77,1146,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.ctp.CtpPacket.html" title="CtpPacket" alt="" coords="1208,54 1183,76 1152,95 1084,114 988,129 802,145 801,140 988,124 1082,109 1150,91 1180,72 1205,50">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpPacket.html" title="CtpPacket" alt="" coords="1203,48,1211,56">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpPacket.html" title="CtpPacket" alt="" coords="784,140,792,148">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.ctp.CtpPacket.html" title="CtpPacket" alt="" coords="1179,77,1235,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="1324,51 1286,75 1241,96 1154,114 1033,128 802,145 801,140 1032,123 1153,109 1239,90 1284,71 1321,47">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="1319,45,1327,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="784,140,792,148">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="1279,77,1339,94">
+
+    </map>
+    <img src="tos.lib.net.ctp.CollectionC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

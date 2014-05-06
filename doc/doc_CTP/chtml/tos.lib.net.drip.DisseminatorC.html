@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.lib.net.drip.DisseminatorC</title>
+  </head>
+  <body>
+    <h2>Component: tos.lib.net.drip.DisseminatorC
+    </h2>
+    <b>generic configuration DisseminatorC(typedef t, uint16_t key)</b>
+    <p>
+ The DisseminatorC component holds and synchronizes a single value
+ of a chosen type, and identifies that value by a chosen 16-bit key.
+ Different nodes should use the same key for the same value.
+
+ See TEP118 - Dissemination for details.
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Parameters:</b>
+      <dd>
+        <code>t</code> -  the type of the object that will be disseminated
+ 
+      </dd>
+      <dd>
+        <code>key</code> -  the 16-bit identifier of the disseminated object
+
+ 
+      </dd>
+      <dt><b>Author:</b>
+      <dd>
+        Gilman Tolle &lt;gtolle@archrock.com&gt;
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+        $Revision: 1.1 $ $Date: 2007/09/14 00:22:18 $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.DisseminationUpdate.html">DisseminationUpdate</a>&lt;t&gt;</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.DisseminationValue.html">DisseminationValue</a>&lt;t&gt;</div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.lib.net.drip.DisseminatorP.html" title="DisseminatorP" alt="" coords="307,134,419,182">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.DisseminationUpdate.html" title="DisseminationUpdate&lt;t&gt;" alt="" coords="102,58 116,82 136,102 163,115 203,127 294,144 293,150 201,132 161,120 133,107 112,85 98,60">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.DisseminationUpdate.html" title="DisseminationUpdate&lt;t&gt;" alt="" coords="96,55,104,63">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.DisseminationUpdate.html" title="DisseminationUpdate&lt;t&gt;" alt="" coords="303,146,311,154">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.DisseminationUpdate.html" title="DisseminationUpdate&lt;t&gt;" alt="" coords="136,88,275,105">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="321,251,404,310">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="365,182 365,238 360,238 360,182">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="359,178,367,186">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="359,247,367,255">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="363,211,389,228">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.DisseminationValue.html" title="DisseminationValue&lt;t&gt;" alt="" coords="279,59 278,82 285,103 302,123 298,126 280,106 273,83 273,59">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.DisseminationValue.html" title="DisseminationValue&lt;t&gt;" alt="" coords="272,55,280,63">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.DisseminationValue.html" title="DisseminationValue&lt;t&gt;" alt="" coords="307,130,315,138">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.DisseminationValue.html" title="DisseminationValue&lt;t&gt;" alt="" coords="283,88,415,105">
+
+      <area shape="rect" href="../chtml/tos.lib.net.drip.DisseminationEngineP.html" title="DisseminationEngineP" alt="" coords="555,6,731,64">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="555,54 500,69 447,91 421,107 398,126 394,122 418,103 444,86 499,64 554,48">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="551,47,559,55">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="383,130,391,138">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="453,88,621,105">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="640,65 630,88 615,106 584,123 538,136 432,154 432,148 537,131 582,118 612,102 626,85 635,63">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="633,60,641,68">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="415,148,423,156">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="627,88,742,105">
+
+      <area shape="rect" href="../chtml/tos.lib.net.drip.DisseminationTimerP.html" title="DisseminationTimerP" alt="" coords="704,128,872,187">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="728,62 761,87 778,114 774,116 757,90 725,66">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="723,60,731,68">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="776,124,784,132">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="768,88,894,105">
+
+    </map>
+    <img src="tos.lib.net.drip.DisseminatorC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

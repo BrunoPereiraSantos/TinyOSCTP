@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.lib.net.6lowpan.UDPClient</title>
+  </head>
+  <body>
+    <h2>Interface: tos.lib.net.6lowpan.UDPClient</h2>
+    <b>interface UDPClient</b><p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command error_t <a href="#connect">connect</a>(ip6_addr_t *addr, uint16_t port)
+      </span><menu>
+ 'Connecting' a UDP socket fixes the remote address and port.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command error_t <a href="#listen">listen</a>(uint16_t port)
+      </span><menu>
+ 'Listening' to a socket binds the local port to a fixed number and allows
+ the socket to receive packets.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command error_t <a href="#send">send</a>(uint8_t *buf, uint16_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command error_t <a href="#sendTo">sendTo</a>(ip6_addr_t *addr, uint16_t port, uint8_t *buf, uint16_t len)
+      </span><menu>
+  Send a datagram to a remote host.
+      </menu>
+    </div><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event void <a href="#receive">receive</a>(ip6_addr_t *addr, uint16_t port, uint8_t *buf, uint16_t len)
+      </span><menu>
+  A datagram has been received.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>event void <a href="#sendDone">sendDone</a>(error_t result, void *buf)
+      </span><menu>
+  The previous send or sendTo command has completed.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="connect"></a>
+    <h4>connect
+    </h4>
+    <span id=funcnameshort>command error_t <b>connect</b>(ip6_addr_t *addr, uint16_t port)
+    </span>
+    <p>
+    <menu>
+      
+ 'Connecting' a UDP socket fixes the remote address and port.  Once fixed,
+ you can send datagrams with the 'send' command.  You can un-fix the socket
+ by passing NULL as the argument.
+
+    </menu>
+    <hr>
+    <a name="listen"></a>
+    <h4>listen
+    </h4>
+    <span id=funcnameshort>command error_t <b>listen</b>(uint16_t port)
+    </span>
+    <p>
+    <menu>
+      
+ 'Listening' to a socket binds the local port to a fixed number and allows
+ the socket to receive packets.  If you call send or sendto on an unbound
+ socket, a dynamic local port is assigned.  Pass 0 to unbind the port.
+
+    </menu>
+    <hr>
+    <a name="send"></a>
+    <h4>send
+    </h4>
+    <span id=funcnameshort>command error_t <b>send</b>(uint8_t *buf, uint16_t len)
+    </span><hr>
+    <a name="sendTo"></a>
+    <h4>sendTo
+    </h4>
+    <span id=funcnameshort>command error_t <b>sendTo</b>(ip6_addr_t *addr, uint16_t port, uint8_t *buf, uint16_t len)
+    </span>
+    <p>
+    <menu>
+      
+  Send a datagram to a remote host.  Call 'connect' on a socket before
+  calling 'send'.  If a local port has not yet been assigned, a dynamic
+  one will be assigned by these commands.  Both commands are asynchronous
+  and will generate the 'sendDone' event once the datagram has been sent.
+
+    </menu>
+    <p><div id=heading>Events - Details</div>
+    <a name="receive"></a>
+    <h4>receive
+    </h4>
+    <span id=funcnameshort>event void <b>receive</b>(ip6_addr_t *addr, uint16_t port, uint8_t *buf, uint16_t len)
+    </span>
+    <p>
+    <menu>
+      
+  A datagram has been received.  Datagrams are only received on sockets
+  that have had 'listen' called to assign a local port, or have used
+  the 'send' or 'sendTo' command.
+
+    </menu>
+    <hr>
+    <a name="sendDone"></a>
+    <h4>sendDone
+    </h4>
+    <span id=funcnameshort>event void <b>sendDone</b>(error_t result, void *buf)
+    </span>
+    <p>
+    <menu>
+      
+  The previous send or sendTo command has completed.
+
+    </menu>
+  </body>
+</html>

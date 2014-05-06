@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: TxThroughputC</title>
+  </head>
+  <body>
+    <h2>Component: TxThroughputC
+    </h2>
+    <b>configuration TxThroughputC</b>
+    <p>
+ This application is used more for characterization rather than a
+ test.  It measures the maximum radio throughput using the largest
+ message payload size, and does not use low power listening.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        David Moss
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/TxThroughputP.html" title="TxThroughputP" alt="" coords="423,5,545,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,117,88,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="423,36 308,50 243,63 180,80 139,96 101,115 99,111 137,91 178,74 242,58 307,45 422,30">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="419,29,427,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="84,116,92,124">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="188,77,215,94">
+
+      <area shape="rect" href="../chtml/tos.lib.serial.SerialActiveMessageC.html" title="SerialActiveMessageC" alt="" coords="112,117,288,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="423,36 306,50 254,62 220,79 212,91 206,105 202,103 207,89 217,75 252,57 305,44 422,30">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="419,29,427,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="197,113,205,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="223,77,291,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.ActiveMessageC.html" title="ActiveMessageC" alt="" coords="312,117,451,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="423,40 350,55 320,66 302,79 298,86 298,92 306,106 302,109 292,93 293,84 298,75 317,61 348,50 422,34">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="419,33,427,41">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="311,113,319,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="299,77,367,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="424,51 406,63 392,78 383,105 377,103 387,76 402,59 421,47">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="419,45,427,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="375,113,383,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="389,77,534,94">
+
+      <area shape="rect" href="../chtml/tos.lib.serial.SerialAMSenderC.html" title="SerialAMSenderC" alt="" coords="475,117,624,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="525,51 545,76 552,103 547,104 540,78 521,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="519,49,527,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="547,113,555,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="545,77,594,94">
+
+      <area shape="rect" href="../chtml/tos.system.AMSenderC.html" title="AMSenderC" alt="" coords="648,117,760,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="546,51 600,75 653,107 651,111 597,79 544,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="541,49,549,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="659,113,667,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="620,77,669,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC" alt="" coords="784,117,893,176">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="546,40 674,74 772,115 770,119 672,80 545,45">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="541,38,549,46">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="780,118,788,126">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="707,77,791,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="917,117,1000,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="546,32 663,48 798,74 851,91 906,115 904,119 849,96 797,80 662,53 545,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="541,30,549,38">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="913,118,921,126">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="840,77,866,94">
+
+    </map>
+    <img src="TxThroughputC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

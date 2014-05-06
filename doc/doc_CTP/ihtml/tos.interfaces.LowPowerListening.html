@@ -1,0 +1,320 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.interfaces.LowPowerListening</title>
+  </head>
+  <body>
+    <h2>Interface: tos.interfaces.LowPowerListening</h2>
+    <b>interface LowPowerListening</b><p>
+ Low Power Listening interface
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Jonathan Hui
+ 
+      </dd>
+      <dd>
+        David Moss
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#dutyCycleToSleepInterval">dutyCycleToSleepInterval</a>(uint16_t dutyCycle)
+      </span><menu>
+ Convert a duty cycle, in units of [percentage*100], to
+ the sleep interval of the mote in milliseconds
+ 
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getLocalDutyCycle">getLocalDutyCycle</a>()
+      </span><menu>
+ 
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getLocalSleepInterval">getLocalSleepInterval</a>()
+      </span><menu>
+ 
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getRxDutyCycle">getRxDutyCycle</a>(message_t *msg)
+      </span><menu>
+ 
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getRxSleepInterval">getRxSleepInterval</a>(message_t *msg)
+      </span><menu>
+ 
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#setLocalDutyCycle">setLocalDutyCycle</a>(uint16_t dutyCycle)
+      </span><menu>
+ Set this node's radio duty cycle rate, in units of [percentage*100].
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#setLocalSleepInterval">setLocalSleepInterval</a>(uint16_t sleepIntervalMs)
+      </span><menu>
+ Set this this node's radio sleep interval, in milliseconds.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#setRxDutyCycle">setRxDutyCycle</a>(message_t *msg, uint16_t dutyCycle)
+      </span><menu>
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx duty cycle rate.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#setRxSleepInterval">setRxSleepInterval</a>(message_t *msg, uint16_t sleepIntervalMs)
+      </span><menu>
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx sleep interval.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#sleepIntervalToDutyCycle">sleepIntervalToDutyCycle</a>(uint16_t sleepInterval)
+      </span><menu>
+ Convert a sleep interval, in units of [ms], to a duty cycle
+ in units of [percentage*100]
+ 
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="dutyCycleToSleepInterval"></a>
+    <h4>dutyCycleToSleepInterval
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>dutyCycleToSleepInterval</b>(uint16_t dutyCycle)
+    </span>
+    <p>
+    <menu>
+      
+ Convert a duty cycle, in units of [percentage*100], to
+ the sleep interval of the mote in milliseconds
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>dutyCycle</code> -  The duty cycle in units of [percentage*100]
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          The equivalent sleep interval, in units of [ms]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="getLocalDutyCycle"></a>
+    <h4>getLocalDutyCycle
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getLocalDutyCycle</b>()
+    </span>
+    <p>
+    <menu>
+      
+ 
+      <p>
+      <dl>
+        <dt><b>Returns:</b>
+        <dd>
+          this node's radio duty cycle rate, in units of [percentage*100]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="getLocalSleepInterval"></a>
+    <h4>getLocalSleepInterval
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getLocalSleepInterval</b>()
+    </span>
+    <p>
+    <menu>
+      
+ 
+      <p>
+      <dl>
+        <dt><b>Returns:</b>
+        <dd>
+          the local node's sleep interval, in [ms]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="getRxDutyCycle"></a>
+    <h4>getRxDutyCycle
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getRxDutyCycle</b>(message_t *msg)
+    </span>
+    <p>
+    <menu>
+      
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t* ONE msg'
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          the destination node's duty cycle configured in this message
+     in units of [percentage*100]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="getRxSleepInterval"></a>
+    <h4>getRxSleepInterval
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getRxSleepInterval</b>(message_t *msg)
+    </span>
+    <p>
+    <menu>
+      
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t* ONE msg'
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          the destination node's sleep interval configured in this message
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="setLocalDutyCycle"></a>
+    <h4>setLocalDutyCycle
+    </h4>
+    <span id=funcnameshort>command void <b>setLocalDutyCycle</b>(uint16_t dutyCycle)
+    </span>
+    <p>
+    <menu>
+      
+ Set this node's radio duty cycle rate, in units of [percentage*100].
+ For example, to get a 0.05% duty cycle,
+ <code>
+   call LowPowerListening.setDutyCycle(5);
+ </code>
+
+ For a 100% duty cycle (always on),
+ <code>
+   call LowPowerListening.setDutyCycle(10000);
+ </code>
+
+ This is the equivalent of setting the local sleep interval explicitly.
+ 
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>dutyCycle</code> -  The duty cycle percentage, in units of [percentage*100]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="setLocalSleepInterval"></a>
+    <h4>setLocalSleepInterval
+    </h4>
+    <span id=funcnameshort>command void <b>setLocalSleepInterval</b>(uint16_t sleepIntervalMs)
+    </span>
+    <p>
+    <menu>
+      
+ Set this this node's radio sleep interval, in milliseconds.
+ Once every interval, the node will sleep and perform an Rx check 
+ on the radio.  Setting the sleep interval to 0 will keep the radio
+ always on.
+
+ This is the equivalent of setting the local duty cycle rate.
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>sleepIntervalMs</code> -  the length of this node's Rx check interval, in [ms]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="setRxDutyCycle"></a>
+    <h4>setRxDutyCycle
+    </h4>
+    <span id=funcnameshort>command void <b>setRxDutyCycle</b>(message_t *msg, uint16_t dutyCycle)
+    </span>
+    <p>
+    <menu>
+      
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx duty cycle rate.
+ Duty cycle is in units of [percentage*100], i.e. 0.25% duty cycle = 25.
+ 
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t* ONE msg' Pointer to the message that will be sent
+ 
+        </dd>
+        <dd>
+          <code>dutyCycle</code> -  The duty cycle of the receiving mote, in units of 
+     [percentage*100]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="setRxSleepInterval"></a>
+    <h4>setRxSleepInterval
+    </h4>
+    <span id=funcnameshort>command void <b>setRxSleepInterval</b>(message_t *msg, uint16_t sleepIntervalMs)
+    </span>
+    <p>
+    <menu>
+      
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx sleep interval.
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          'message_t* ONE msg' Pointer to the message that will be sent
+ 
+        </dd>
+        <dd>
+          <code>sleepInterval</code> -  The receiving node's sleep interval, in [ms]
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="sleepIntervalToDutyCycle"></a>
+    <h4>sleepIntervalToDutyCycle
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>sleepIntervalToDutyCycle</b>(uint16_t sleepInterval)
+    </span>
+    <p>
+    <menu>
+      
+ Convert a sleep interval, in units of [ms], to a duty cycle
+ in units of [percentage*100]
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>sleepInterval</code> -  The sleep interval in units of [ms]
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          The duty cycle in units of [percentage*100]
+
+        </dd>
+      </dl>
+    </menu>
+  </body>
+</html>

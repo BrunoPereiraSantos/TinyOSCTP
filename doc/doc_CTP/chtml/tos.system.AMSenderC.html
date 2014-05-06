@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.system.AMSenderC</title>
+  </head>
+  <body>
+    <h2>Component: tos.system.AMSenderC
+    </h2>
+    <b>generic configuration AMSenderC(am_id_t AMId)</b>
+    <p>
+ The virtualized active message send abstraction. Each instantiation
+ of AMSenderC has its own queue of depth one. Therefore, it does not
+ have to contend with other AMSenderC instantiations for queue space.
+ The underlying implementation schedules the packets in these queues
+ using some form of fair-share queueing.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Philip Levis
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+          Jan 16 2006
+ 
+      </dd>
+      <dt><b>See:</b>
+      <dd>
+           TEP 116: Packet Protocols
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketAcknowledgements.html">PacketAcknowledgements</a> as <b>Acks</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMPacket.html">AMPacket</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMSend.html">AMSend</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Packet.html">Packet</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.system.AMQueueEntryP.html" title="AMQueueEntryP" alt="" coords="5,117,139,165">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="75,53 75,104 69,104 69,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="68,49,76,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="68,113,76,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="72,77,121,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.ActiveMessageC.html" title="ActiveMessageC" alt="" coords="195,229,333,288">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="105,163 165,203 195,220 192,225 163,207 103,167">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="100,161,108,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="201,225,209,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="163,189,221,206">
+
+      <area shape="rect" href="../chtml/tos.system.AMQueueP.html" title="AMQueueP" alt="" coords="9,229,119,288">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="71,165 68,189 67,216 61,216 63,189 65,165">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="64,161,72,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="60,225,68,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="65,189,92,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="218,162 245,216 240,218 214,165">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="212,160,220,168">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="245,225,253,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="233,189,269,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="308,166 285,218 280,216 303,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="301,161,309,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="273,225,281,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="292,189,350,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="408,163 358,207 332,225 329,220 354,203 405,159">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="403,157,411,165">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="315,225,323,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="376,189,521,206">
+
+    </map>
+    <img src="tos.system.AMSenderC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

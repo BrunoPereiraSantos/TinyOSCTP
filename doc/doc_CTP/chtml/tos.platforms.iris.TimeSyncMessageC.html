@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.platforms.iris.TimeSyncMessageC</title>
+  </head>
+  <body>
+    <h2>Component: tos.platforms.iris.TimeSyncMessageC
+    </h2>
+    <b>configuration TimeSyncMessageC</b>
+    <p>
+ The number of alarm ticks per one microsecond (0.9216)
+
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMPacket.html">AMPacket</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Packet.html">Packet</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a>[uint8_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>Snoop</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SplitControl.html">SplitControl</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.TimeSyncAMSend.html">TimeSyncAMSend</a>&lt;TMilli, uint32_t&gt; as <b>TimeSyncAMSendMilli</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.TimeSyncAMSend.html">TimeSyncAMSend</a>&lt;TRF230, uint32_t&gt; as <b>TimeSyncAMSendRadio</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.TimeSyncPacket.html">TimeSyncPacket</a>&lt;TMilli, uint32_t&gt; as <b>TimeSyncPacketMilli</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.TimeSyncPacket.html">TimeSyncPacket</a>&lt;TRF230, uint32_t&gt; as <b>TimeSyncPacketRadio</b></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.chips.rf230.RF230TimeSyncMessageC.html" title="RF230TimeSyncMessageC" alt="" coords="541,117,747,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="89,48 127,71 170,90 236,105 328,118 528,136 528,141 328,123 235,111 168,96 124,76 87,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="84,46,92,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="537,136,545,144">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="170,77,238,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="233,52 243,74 259,91 278,101 305,110 373,124 451,133 528,138 528,144 450,138 372,129 303,115 276,106 256,95 239,76 228,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="227,49,235,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="537,138,545,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TMilli, uint32_t&gt;" alt="" coords="257,77,453,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="438,48 459,71 487,91 530,112 528,117 484,95 456,75 434,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="432,46,440,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="537,116,545,124">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="485,77,521,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="523,52 530,73 541,91 558,107 554,111 537,95 525,75 517,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="516,49,524,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="563,113,571,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="538,77,635,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;[am_id_t]" alt="" coords="658,54 648,78 644,104 639,103 643,76 654,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;[am_id_t]" alt="" coords="652,49,660,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;[am_id_t]" alt="" coords="637,113,645,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TMilli, uint32_t&gt;[am_id_t]" alt="" coords="645,77,907,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TRF230, uint32_t&gt;[am_id_t]" alt="" coords="933,54 924,76 908,95 883,108 847,120 760,136 760,130 846,114 881,104 905,91 919,74 928,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TRF230, uint32_t&gt;[am_id_t]" alt="" coords="927,49,935,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TRF230, uint32_t&gt;[am_id_t]" alt="" coords="743,132,751,140">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncAMSend.html" title="TimeSyncAMSend&lt;TRF230, uint32_t&gt;[am_id_t]" alt="" coords="919,77,1190,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[uint8_t]" alt="" coords="1224,54 1214,76 1198,95 1174,104 1134,112 1021,126 760,144 760,138 1021,120 1133,107 1172,99 1194,91 1210,74 1219,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[uint8_t]" alt="" coords="1217,49,1225,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[uint8_t]" alt="" coords="743,138,751,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[uint8_t]" alt="" coords="1210,77,1302,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TRF230, uint32_t&gt;" alt="" coords="1366,55 1340,77 1309,95 1278,103 1227,111 1082,124 760,144 760,138 1082,119 1226,106 1277,98 1307,91 1337,73 1362,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TRF230, uint32_t&gt;" alt="" coords="1360,49,1368,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TRF230, uint32_t&gt;" alt="" coords="743,138,751,146">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.TimeSyncPacket.html" title="TimeSyncPacket&lt;TRF230, uint32_t&gt;" alt="" coords="1335,77,1540,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="1597,53 1575,77 1546,95 1501,107 1425,117 1212,132 969,142 760,148 760,142 969,136 1212,126 1425,111 1500,102 1544,91 1571,73 1593,50">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="1591,48,1599,56">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="743,141,751,149">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="1568,77,1626,94">
+
+    </map>
+    <img src="tos.platforms.iris.TimeSyncMessageC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

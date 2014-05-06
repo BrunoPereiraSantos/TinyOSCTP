@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.platforms.iris.chips.rf230.HplRF230</title>
+  </head>
+  <body>
+    <h2>Interface: tos.platforms.iris.chips.rf230.HplRF230</h2>
+    <b>interface HplRF230</b><p>
+ There should be standard interfaces/commands for these
+
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#crcByte">crcByte</a>(uint16_t crc, uint8_t data)
+      </span><menu>
+ Calculates the crc.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#spiSplitRead">spiSplitRead</a>()
+      </span><menu>
+ Finishes the split-phase SPI data transfer by waiting till 
+ the write command comletes and returning the received data.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#spiSplitReadWrite">spiSplitReadWrite</a>(uint8_t data)
+      </span><menu>
+ This command first reads the SPI register and then writes
+ there the new data, then returns
+
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#spiSplitWrite">spiSplitWrite</a>(uint8_t data)
+      </span><menu>
+ Starts a split-phase SPI data transfer with the given data.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#spiWrite">spiWrite</a>(uint8_t data)
+      </span><menu>
+ This is the standard SpiByte.write command but a little
+ faster as we shuold not need to adjust the power state there.
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="crcByte"></a>
+    <h4>crcByte
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>crcByte</b>(uint16_t crc, uint8_t data)
+    </span>
+    <p>
+    <menu>
+      
+ Calculates the crc. For some unknown reason the standard
+ tinyos crcByte command swiches endianness.
+
+    </menu>
+    <hr>
+    <a name="spiSplitRead"></a>
+    <h4>spiSplitRead
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>spiSplitRead</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Finishes the split-phase SPI data transfer by waiting till 
+ the write command comletes and returning the received data.
+
+    </menu>
+    <hr>
+    <a name="spiSplitReadWrite"></a>
+    <h4>spiSplitReadWrite
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>spiSplitReadWrite</b>(uint8_t data)
+    </span>
+    <p>
+    <menu>
+      
+ This command first reads the SPI register and then writes
+ there the new data, then returns
+
+    </menu>
+    <hr>
+    <a name="spiSplitWrite"></a>
+    <h4>spiSplitWrite
+    </h4>
+    <span id=funcnameshort>command void <b>spiSplitWrite</b>(uint8_t data)
+    </span>
+    <p>
+    <menu>
+      
+ Starts a split-phase SPI data transfer with the given data.
+ A spiSplitRead command must follow this command even if the
+ result is unimportant. The SpiByte interface should be 
+ extended with this protocol.
+
+    </menu>
+    <hr>
+    <a name="spiWrite"></a>
+    <h4>spiWrite
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>spiWrite</b>(uint8_t data)
+    </span>
+    <p>
+    <menu>
+      
+ This is the standard SpiByte.write command but a little
+ faster as we shuold not need to adjust the power state there.
+
+    </menu>
+  </body>
+</html>

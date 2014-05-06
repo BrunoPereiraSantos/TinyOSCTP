@@ -125,8 +125,13 @@ generic module CtpRoutingEngineP(uint8_t routingTableSize, uint32_t minInterval,
         interface CollectionDebug;
         interface CtpCongestion;
 
-	interface CompareBit;
+		interface CompareBit;
 
+		/*BRUNO*/
+		//Recebe uma sinalizacao do CtpForwardingEngineP 
+		//informando que interceptou uma mensagem
+		interface Intercept[collection_id_t id];
+		interface CtpPacket;
     }
 }
 
@@ -825,5 +830,20 @@ implementation {
     command am_addr_t CtpInfo.getNeighborAddr(uint8_t n) {
       return (n < routingTableActive)? routingTable[n].neighbor:AM_BROADCAST_ADDR;
     }
+    
+	/*********** ADIÇÔES DE BRUNO ***************/
+	
+    event bool Intercept.forward[collection_id_t id](message_t *msg, void *payload, uint8_t len){
+    	
+    	 dbg("BRUNO_RE", "%s: NODO %d INTERCEPTOU UMA MSG DE %hu PARA %hu.\n", __FUNCTION__, TOS_NODE_ID, call CtpPacket.getOrigin(msg), call AMPacket.destination(msg));
+    	 dbg("BRUNO_RE", "%s: CtpPacket: O=%hu seq=%hhu thl=%d type=%d etx=%d.\n",
+																		 		 __FUNCTION__, 
+																		 		 call CtpPacket.getOrigin(msg), 
+																		 		 call CtpPacket.getSequenceNumber(msg), 
+																		 		 call CtpPacket.getThl(msg), 		
+																		 		 call CtpPacket.getType(msg), 
+																		 		 call CtpPacket.getEtx(msg));
+    }
+	/***********FIM DAS ADIÇÔES DE BRUNO ***************/
     
 } 

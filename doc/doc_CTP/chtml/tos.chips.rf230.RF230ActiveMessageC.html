@@ -1,0 +1,413 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.chips.rf230.RF230ActiveMessageC</title>
+  </head>
+  <body>
+    <h2>Component: tos.chips.rf230.RF230ActiveMessageC
+    </h2>
+    <b>configuration RF230ActiveMessageC</b>
+    <p>
+ The number of alarm ticks per one microsecond (0.9216)
+
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMPacket.html">AMPacket</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMSend.html">AMSend</a>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.LowPowerListening.html">LowPowerListening</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Packet.html">Packet</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketAcknowledgements.html">PacketAcknowledgements</a></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketLinkQuality</b></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketRSSI</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketTimeStamp.html">PacketTimeStamp</a>&lt;TMilli, uint32_t&gt; as <b>PacketTimeStampMilli</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketTimeStamp.html">PacketTimeStamp</a>&lt;TRF230, uint32_t&gt; as <b>PacketTimeStampRadio</b></div><div id=funcsig>interface <a href="../ihtml/tos.chips.rf230.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketTransmitPower</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>Snoop</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SplitControl.html">SplitControl</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.chips.rf230.DummyLayerC.html" title="DummyLayerC\n(LowPowerListeningLayerC)" alt="" coords="1640,352,1859,414">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1616,278 1678,326 1698,342 1694,346 1674,330 1613,282">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1611,276,1619,284">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1703,348,1711,356">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1675,312,1743,329">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.MessageBufferLayerC.html" title="MessageBufferLayerC" alt="" coords="1660,478,1836,536">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1675,415 1654,439 1651,454 1658,468 1654,471 1646,455 1650,436 1671,412">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1669,410,1677,418">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1663,474,1671,482">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1651,437,1719,454">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1752,414 1751,464 1745,464 1747,414">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1745,410,1753,418">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1744,474,1752,482">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1748,437,1775,454">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1773,413 1780,433 1780,454 1774,467 1770,465 1775,453 1774,434 1768,414">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1767,410,1775,418">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1763,474,1771,482">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1777,437,1821,454">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.RF230PacketC.html" title="RF230PacketC" alt="" coords="839,1451,967,1510">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1018,1388 1007,1409 993,1429 975,1445 972,1441 989,1425 1003,1407 1014,1386">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1012,1383,1020,1391">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="957,1447,965,1455">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1001,1411,1121,1428">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1151,1388 1143,1409 1128,1429 1103,1443 1067,1455 981,1472 979,1467 1065,1450 1101,1438 1125,1425 1138,1407 1145,1386">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1144,1383,1152,1391">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="963,1468,971,1476">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1138,1411,1174,1428">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.ActiveMessageLayerC.html" title="ActiveMessageLayerC" alt="" coords="1980,118,2145,166">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="1939,53 1945,73 1958,92 1976,108 1973,112 1954,95 1941,76 1933,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="1932,50,1940,58">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="1983,114,1991,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="1956,77,2058,94">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.RF230ActiveMessageP.html" title="RF230ActiveMessageP" alt="" coords="1577,1339,1748,1387">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.ActiveMessageConfig.html" title="ActiveMessageConfig" alt="" coords="2075,165 2086,208 2092,259 2092,1246 2090,1259 2082,1271 2057,1292 2020,1309 1973,1324 1866,1345 1762,1358 1761,1352 1866,1340 1972,1319 2018,1304 2054,1287 2078,1268 2085,1257 2087,1245 2087,259 2081,209 2069,166">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.ActiveMessageConfig.html" title="ActiveMessageConfig" alt="" coords="2068,162,2076,170">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.ActiveMessageConfig.html" title="ActiveMessageConfig" alt="" coords="1744,1352,1752,1360">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.ActiveMessageConfig.html" title="ActiveMessageConfig" alt="" coords="2088,744,2210,761">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.IEEE154PacketC.html" title="IEEE154PacketC" alt="" coords="1961,1451,2105,1510">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="2146,158 2183,173 2217,194 2241,223 2248,240 2251,259 2251,1363 2247,1386 2238,1405 2225,1422 2207,1436 2165,1458 2119,1471 2118,1466 2163,1453 2204,1432 2221,1418 2234,1403 2242,1384 2245,1363 2245,259 2243,241 2237,225 2213,198 2181,178 2144,163">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="2141,156,2149,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="2101,1467,2109,1475">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="2247,805,2305,822">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.IEEE154NetworkLayerC.html" title="IEEE154NetworkLayerC" alt="" coords="1857,230,2052,288">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="2045,167 2009,207 1995,222 1991,219 2005,204 2041,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="2039,162,2047,170">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1980,226,1988,234">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="2023,189,2050,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1985,168 1959,191 1954,203 1952,217 1947,216 1949,202 1955,188 1981,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1979,162,1987,170">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1945,226,1953,234">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1957,189,2001,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2065,54 2065,104 2060,104 2060,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2059,50,2067,58">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2059,114,2067,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2062,77,2159,94">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1321,1388 1286,1411 1246,1429 1178,1450 1107,1465 980,1479 980,1474 1106,1460 1176,1445 1244,1425 1284,1406 1319,1383">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1316,1382,1324,1390">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="963,1474,971,1482">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="1283,1411,1403,1428">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.LowPowerListening.html" title="LowPowerListening" alt="" coords="1752,283 1752,339 1747,339 1747,283">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.LowPowerListening.html" title="LowPowerListening" alt="" coords="1745,279,1753,287">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.LowPowerListening.html" title="LowPowerListening" alt="" coords="1745,348,1753,356">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.LowPowerListening.html" title="LowPowerListening" alt="" coords="1749,312,1860,329">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2185,55 2176,76 2162,96 2140,113 2137,109 2158,92 2172,73 2180,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2179,50,2187,58">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2123,114,2131,122">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="2170,77,2267,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="117,1385 137,1407 162,1425 200,1434 266,1443 449,1458 825,1476 825,1482 449,1464 265,1449 199,1440 160,1429 134,1412 113,1389">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="111,1383,119,1391">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="835,1475,843,1483">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRF230, uint32_t&gt;" alt="" coords="162,1411,374,1428">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="344,1383 377,1406 414,1424 493,1442 603,1457 826,1474 825,1479 603,1462 492,1448 412,1430 374,1411 341,1388">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="339,1382,347,1390">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="835,1474,843,1482">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="413,1411,533,1428">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="528,1386 540,1407 556,1425 576,1435 603,1444 672,1459 751,1468 826,1474 825,1479 751,1473 672,1464 601,1449 573,1440 553,1429 535,1411 523,1388">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="521,1383,529,1391">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="835,1474,843,1482">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="554,1411,699,1428">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="700,1386 708,1407 722,1425 738,1436 764,1446 826,1463 825,1468 762,1451 736,1440 718,1429 703,1409 695,1388">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="693,1383,701,1391">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="835,1464,843,1472">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="719,1411,777,1428">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="814,1386 791,1405 787,1415 790,1426 806,1444 828,1458 825,1463 803,1448 786,1428 782,1415 786,1402 810,1382">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="808,1380,816,1388">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="835,1462,843,1470">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="788,1411,991,1428">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1581,1390 1498,1411 1408,1430 1292,1447 1175,1461 980,1478 980,1472 1175,1456 1291,1442 1408,1424 1497,1405 1579,1384">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1576,1383,1584,1391">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="963,1472,971,1480">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1490,1411,1526,1428">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="1739,1384 1949,1451 1947,1456 1738,1390">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="1735,1383,1743,1391">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="1957,1454,1965,1462">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.IEEE154Packet.html" title="IEEE154Packet" alt="" coords="1856,1411,1941,1428">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.RadioAlarmC.html" title="RadioAlarmC" alt="" coords="1603,1451,1723,1510">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioAlarm.html" title="RadioAlarm" alt="" coords="1665,1387 1665,1438 1660,1438 1660,1387">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioAlarm.html" title="RadioAlarm" alt="" coords="1659,1383,1667,1391">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioAlarm.html" title="RadioAlarm" alt="" coords="1659,1447,1667,1455">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioAlarm.html" title="RadioAlarm" alt="" coords="1663,1411,1730,1428">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1920,291 1863,331 1831,348 1828,343 1860,326 1917,286">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1915,284,1923,292">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1813,348,1821,356">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1885,312,1929,329">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.UniqueLayerC.html" title="UniqueLayerC" alt="" coords="1832,600,1957,659">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1952,289 1905,587 1900,587 1947,288">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1945,284,1953,292">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1896,596,1904,604">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1924,437,1951,454">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1888,601 1881,565 1869,522 1851,478 1825,439 1809,424 1813,420 1829,436 1856,476 1874,520 1886,563 1893,600">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1887,596,1895,604">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1796,410,1804,418">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Send.html" title="Send" alt="" coords="1875,499,1902,516">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.UniqueConfig.html" title="UniqueConfig" alt="" coords="1929,657 1961,700 1972,725 1976,752 1976,1246 1970,1264 1955,1280 1931,1295 1902,1309 1833,1331 1762,1348 1761,1343 1832,1326 1900,1304 1929,1291 1951,1276 1966,1261 1971,1245 1971,753 1967,727 1956,703 1925,661">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.UniqueConfig.html" title="UniqueConfig" alt="" coords="1923,655,1931,663">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.UniqueConfig.html" title="UniqueConfig" alt="" coords="1744,1344,1752,1352">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.UniqueConfig.html" title="UniqueConfig" alt="" coords="1973,989,2052,1006">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.TrafficMonitorLayerC.html" title="TrafficMonitorLayerC" alt="" coords="1660,723,1833,782">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1860,661 1795,716 1792,712 1857,657">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1855,655,1863,663">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1779,719,1787,727">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1827,683,1904,700">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1660,512 1530,522 1388,542 1325,557 1275,577 1241,601 1232,615 1229,630 1229,1363 1226,1386 1216,1403 1181,1429 1146,1444 1095,1457 980,1475 980,1470 1094,1452 1144,1439 1179,1425 1212,1400 1221,1385 1224,1363 1224,629 1227,613 1237,598 1272,572 1324,552 1387,537 1529,516 1660,507">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1656,506,1664,514">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="963,1470,971,1478">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="1226,989,1262,1006">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1766,535 1780,556 1798,574 1822,593 1818,597 1794,578 1776,559 1762,538">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1760,532,1768,540">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1828,598,1836,606">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1795,560,1872,577">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1751,536 1749,710 1744,710 1745,536">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1744,532,1752,540">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1743,719,1751,727">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1746,621,1806,638">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1722,538 1700,567 1684,601 1678,630 1684,658 1696,685 1712,711 1707,714 1691,688 1679,660 1673,630 1679,599 1695,564 1718,535">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1716,532,1724,540">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1715,719,1723,727">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1681,621,1741,638">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.TrafficMonitorConfig.html" title="TrafficMonitorConfig" alt="" coords="1660,762 1550,774 1432,796 1381,811 1339,830 1312,851 1305,863 1303,875 1303,1245 1309,1264 1328,1281 1356,1297 1392,1311 1478,1333 1564,1348 1564,1354 1477,1338 1391,1316 1354,1302 1324,1286 1305,1267 1297,1246 1297,875 1300,861 1308,848 1337,825 1379,806 1431,791 1549,769 1660,756">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.TrafficMonitorConfig.html" title="TrafficMonitorConfig" alt="" coords="1656,755,1664,763">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.TrafficMonitorConfig.html" title="TrafficMonitorConfig" alt="" coords="1573,1348,1581,1356">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.TrafficMonitorConfig.html" title="TrafficMonitorConfig" alt="" coords="1299,1051,1418,1068">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.RandomCollisionLayerC.html" title="RandomCollisionLayerC" alt="" coords="1561,846,1751,904">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1682,783 1660,807 1653,833 1648,832 1655,804 1678,780">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1676,778,1684,786">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1647,842,1655,850">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1657,805,1717,822">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1740,783 1720,823 1707,838 1703,835 1715,820 1735,780">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1733,778,1741,786">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1692,842,1700,850">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1724,805,1801,822">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.RF230LayerC.html" title="RF230LayerC" alt="" coords="1492,1216,1615,1275">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1787,780 1809,804 1836,864 1862,944 1884,1026 1897,1090 1905,1124 1905,1138 1896,1154 1629,1228 1627,1223 1893,1150 1899,1137 1900,1124 1892,1092 1879,1027 1857,946 1831,866 1804,807 1783,783">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1781,778,1789,786">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1611,1226,1619,1234">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioState.html" title="RadioState" alt="" coords="1878,989,1938,1006">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RandomCollisionConfig.html" title="RandomCollisionConfig" alt="" coords="1699,903 1718,927 1737,967 1749,1003 1756,1036 1758,1067 1758,1133 1760,1216 1764,1247 1764,1260 1760,1276 1740,1307 1714,1332 1710,1328 1736,1304 1755,1274 1759,1260 1759,1247 1755,1217 1753,1133 1753,1067 1750,1036 1744,1004 1732,969 1714,930 1695,906">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RandomCollisionConfig.html" title="RandomCollisionConfig" alt="" coords="1693,900,1701,908">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RandomCollisionConfig.html" title="RandomCollisionConfig" alt="" coords="1697,1335,1705,1343">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RandomCollisionConfig.html" title="RandomCollisionConfig" alt="" coords="1754,1113,1889,1130">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.SoftwareAckLayerC.html" title="SoftwareAckLayerC" alt="" coords="1483,968,1645,1027">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1589,906 1568,930 1561,956 1556,954 1563,927 1585,903">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1583,900,1591,908">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1555,964,1563,972">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1565,928,1625,945">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1649,906 1628,946 1614,961 1610,957 1623,943 1644,903">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1643,900,1651,908">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1599,964,1607,972">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1634,928,1711,945">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RF230Config.html" title="RF230Config" alt="" coords="1557,1274 1562,1295 1571,1313 1588,1329 1585,1333 1567,1317 1556,1297 1552,1276">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RF230Config.html" title="RF230Config" alt="" coords="1551,1271,1559,1279">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RF230Config.html" title="RF230Config" alt="" coords="1593,1335,1601,1343">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RF230Config.html" title="RF230Config" alt="" coords="1569,1299,1644,1316">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.SoftwareAckConfig.html" title="SoftwareAckConfig" alt="" coords="1499,1029 1448,1060 1402,1099 1386,1120 1375,1143 1373,1167 1380,1191 1395,1217 1414,1241 1460,1281 1513,1311 1566,1334 1564,1339 1510,1316 1457,1285 1410,1245 1390,1220 1375,1193 1368,1167 1370,1141 1381,1117 1398,1095 1445,1056 1496,1025">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.SoftwareAckConfig.html" title="SoftwareAckConfig" alt="" coords="1493,1023,1501,1031">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.SoftwareAckConfig.html" title="SoftwareAckConfig" alt="" coords="1573,1336,1581,1344">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.SoftwareAckConfig.html" title="SoftwareAckConfig" alt="" coords="1376,1176,1485,1193">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1531,1029 1506,1058 1486,1092 1479,1122 1487,1151 1499,1179 1516,1204 1511,1207 1494,1181 1481,1153 1474,1122 1482,1090 1501,1055 1527,1025">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1525,1023,1533,1031">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1519,1212,1527,1220">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioReceive.html" title="RadioReceive" alt="" coords="1483,1113,1560,1130">
+
+      <area shape="rect" href="../chtml/tos.chips.rf230.DummyLayerC.html" title="DummyLayerC\n(CsmaLayerC)" alt="" coords="1572,1091,1703,1152">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1584,1026 1614,1078 1610,1080 1579,1028">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1577,1023,1585,1031">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1615,1087,1623,1095">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1601,1051,1661,1068">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.DummyConfig.html" title="DummyConfig" alt="" coords="1657,1151 1667,1176 1672,1215 1674,1256 1671,1326 1665,1326 1669,1255 1667,1216 1661,1177 1652,1153">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.DummyConfig.html" title="DummyConfig" alt="" coords="1651,1148,1659,1156">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.DummyConfig.html" title="DummyConfig" alt="" coords="1663,1335,1671,1343">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.DummyConfig.html" title="DummyConfig" alt="" coords="1670,1237,1752,1254">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1573,1149 1544,1164 1526,1178 1522,1190 1525,1204 1520,1205 1517,1190 1522,1175 1541,1159 1571,1145">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1568,1143,1576,1151">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1524,1212,1532,1220">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioSend.html" title="RadioSend" alt="" coords="1523,1176,1583,1193">
+
+      <area shape="poly" href="../ihtml/tos.chips.rf230.RadioCCA.html" title="RadioCCA" alt="" coords="1618,1154 1582,1206 1578,1203 1614,1151">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioCCA.html" title="RadioCCA" alt="" coords="1612,1148,1620,1156">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioCCA.html" title="RadioCCA" alt="" coords="1569,1212,1577,1220">
+
+      <area shape="rect" href="../ihtml/tos.chips.rf230.RadioCCA.html" title="RadioCCA" alt="" coords="1598,1176,1659,1193">
+
+    </map>
+    <img src="tos.chips.rf230.RF230ActiveMessageC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

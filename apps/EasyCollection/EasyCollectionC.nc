@@ -28,10 +28,10 @@ implementation{
 			call RadioControl.start();
 		else {
 			call RoutingControl.start();
-		if (TOS_NODE_ID == 1) 
-			call RootControl.setRoot();
-		else
-			call Timer.startPeriodic(5000);
+			if (TOS_NODE_ID == 1) 
+				call RootControl.setRoot();
+			if(TOS_NODE_ID == 9)
+				call Timer.startOneShot(2000);
 		}
 	}
 
@@ -43,8 +43,10 @@ implementation{
 
 		if (call Send.send(&packet, sizeof(EasyCollectionMsg)) != SUCCESS) 
 			call Leds.led0On();
-		else 
+		else{
+			dbg("EasyCollection", "%s NODE %d ENVIOU UMA SMG.\n", __FUNCTION__, TOS_NODE_ID);
 			sendBusy = TRUE;
+		}
 	}
 	
 	event void Timer.fired() {

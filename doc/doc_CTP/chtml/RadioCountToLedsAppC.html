@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: RadioCountToLedsAppC</title>
+  </head>
+  <body>
+    <h2>Component: RadioCountToLedsAppC
+    </h2>
+    <b>configuration RadioCountToLedsAppC</b>
+    <p>
+ Configuration for the RadioCountToLeds application. RadioCountToLeds 
+ maintains a 4Hz counter, broadcasting its value in an AM packet 
+ every time it gets updated. A RadioCountToLeds node that hears a counter 
+ displays the bottom three bits on its LEDs. This application is a useful 
+ test to show that basic AM communication and timers work.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Philip Levis
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+          June 6 2005
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/RadioCountToLedsC.html" title="RadioCountToLedsC" alt="" coords="317,5,475,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,117,88,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="318,49 217,76 101,119 99,115 215,71 317,44">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="313,42,321,50">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="84,118,92,126">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="213,77,240,94">
+
+      <area shape="rect" href="../chtml/tos.system.AMReceiverC.html" title="AMReceiverC" alt="" coords="112,117,237,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="318,55 264,79 220,111 217,107 261,75 316,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="313,49,321,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="204,113,212,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="270,77,314,94">
+
+      <area shape="rect" href="../chtml/tos.system.AMSenderC.html" title="AMSenderC" alt="" coords="261,117,373,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="343,55 321,78 315,104 309,103 316,76 339,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="337,49,345,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="308,113,316,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="318,77,367,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="389,54 369,94 358,108 354,105 364,92 384,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="383,49,391,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="344,113,352,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="374,77,410,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.ActiveMessageC.html" title="ActiveMessageC" alt="" coords="397,117,536,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="421,51 440,76 453,102 448,105 435,78 417,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="415,49,423,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="452,113,460,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="442,77,510,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="560,117,643,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="466,51 517,75 560,107 557,111 515,79 464,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="461,49,469,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="565,113,573,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="535,77,561,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC" alt="" coords="667,117,776,176">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="475,46 568,74 656,112 654,117 566,80 474,52">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="471,45,479,53">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="663,116,671,124">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="598,77,682,94">
+
+    </map>
+    <img src="RadioCountToLedsAppC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

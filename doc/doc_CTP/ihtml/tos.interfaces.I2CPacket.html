@@ -1,0 +1,200 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.interfaces.I2CPacket</title>
+  </head>
+  <body>
+    <h2>Interface: tos.interfaces.I2CPacket</h2>
+    <b>interface I2CPacket&lt;typedef addr_size&gt;</b><p>
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Phil Buonadonna
+ 
+      </dd>
+      <dd>
+        Philip Levis
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command error_t <a href="#read">read</a>(i2c_flags_t flags, uint16_t addr, uint8_t length, uint8_t *data)
+      </span><menu>
+ Perform an I2C read operation
+
+ 
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command error_t <a href="#write">write</a>(i2c_flags_t flags, uint16_t addr, uint8_t length, uint8_t *data)
+      </span><menu>
+ Perform an I2C write operation
+
+ 
+      </menu>
+    </div><p><div id=heading>Events</div><div id=funcsig><span id=funcnameshort>event void <a href="#readDone">readDone</a>(error_t error, uint16_t addr, uint8_t length, uint8_t *data)
+      </span><menu>
+ Notification that the read operation has completed
+
+ 
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>event void <a href="#writeDone">writeDone</a>(error_t error, uint16_t addr, uint8_t length, uint8_t *data)
+      </span><menu>
+ Notification that the write operation has completed
+
+ 
+      </menu>
+    </div><p><div id=heading>Commands - Details</div>
+    <a name="read"></a>
+    <h4>read
+    </h4>
+    <span id=funcnameshort>command error_t <b>read</b>(i2c_flags_t flags, uint16_t addr, uint8_t length, uint8_t *data)
+    </span>
+    <p>
+    <menu>
+      
+ Perform an I2C read operation
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>flags</code> -  Flags that may be logical ORed and defined by:
+    I2C_START   - The START condition is transmitted at the beginning 
+                   of the packet if set.
+    I2C_STOP    - The STOP condition is transmitted at the end of the 
+                   packet if set.
+    I2C_ACK_END - ACK the last byte if set. Otherwise NACK last byte. This
+                   flag cannot be used with the I2C_STOP flag.
+ 
+        </dd>
+        <dd>
+          <code>addr</code> -  The slave device address. Only used if I2C_START is set.
+ 
+        </dd>
+        <dd>
+          <code>length</code> -  Length, in bytes, to be read
+ 
+        </dd>
+        <dd>
+          'uint8_t* COUNT(length) data' A point to a data buffer to read into
+
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          SUCCESS if bus available and request accepted. 
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="write"></a>
+    <h4>write
+    </h4>
+    <span id=funcnameshort>command error_t <b>write</b>(i2c_flags_t flags, uint16_t addr, uint8_t length, uint8_t *data)
+    </span>
+    <p>
+    <menu>
+      
+ Perform an I2C write operation
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>flags</code> -  Flags that may be logical ORed and defined by:
+    I2C_START   - The START condition is transmitted at the beginning 
+                   of the packet if set.
+    I2C_STOP    - The STOP condition is transmitted at the end of the 
+                   packet if set.
+ 
+        </dd>
+        <dd>
+          <code>addr</code> -  The slave device address. Only used if I2C_START is set.
+ 
+        </dd>
+        <dd>
+          <code>length</code> -  Length, in bytes, to be read
+ 
+        </dd>
+        <dd>
+          'uint8_t* COUNT(length) data' A point to a data buffer to read into
+
+ 
+        </dd>
+        <dt><b>Returns:</b>
+        <dd>
+          SUCCESS if bus available and request accepted. 
+
+        </dd>
+      </dl>
+    </menu>
+    <p><div id=heading>Events - Details</div>
+    <a name="readDone"></a>
+    <h4>readDone
+    </h4>
+    <span id=funcnameshort>event void <b>readDone</b>(error_t error, uint16_t addr, uint8_t length, uint8_t *data)
+    </span>
+    <p>
+    <menu>
+      
+ Notification that the read operation has completed
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>addr</code> -  The slave device address
+ 
+        </dd>
+        <dd>
+          <code>length</code> -  Length, in bytes, read
+ 
+        </dd>
+        <dd>
+          'uint8_t* COUNT(length) data' Pointer to the received data buffer
+ 
+        </dd>
+        <dd>
+          <code>success</code> -  SUCCESS if transfer completed without error.
+
+        </dd>
+      </dl>
+    </menu>
+    <hr>
+    <a name="writeDone"></a>
+    <h4>writeDone
+    </h4>
+    <span id=funcnameshort>event void <b>writeDone</b>(error_t error, uint16_t addr, uint8_t length, uint8_t *data)
+    </span>
+    <p>
+    <menu>
+      
+ Notification that the write operation has completed
+
+ 
+      <p>
+      <dl>
+        <dt><b>Parameters:</b>
+        <dd>
+          <code>addr</code> -  The slave device address
+ 
+        </dd>
+        <dd>
+          <code>length</code> -  Length, in bytes, written
+ 
+        </dd>
+        <dd>
+          'uint8_t* COUNT(length) data' Pointer to the data buffer written
+ 
+        </dd>
+        <dd>
+          <code>success</code> -  SUCCESS if transfer completed without error.
+
+        </dd>
+      </dl>
+    </menu>
+  </body>
+</html>

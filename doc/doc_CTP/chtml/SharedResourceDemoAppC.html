@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: SharedResourceDemoAppC</title>
+  </head>
+  <body>
+    <h2>Component: SharedResourceDemoAppC
+    </h2>
+    <b>configuration SharedResourceDemoAppC</b>
+    <p>
+
+ This application is used to test the use of Shared Resources.  
+ Three Resource users are created and all three request
+ control of the resource before any one of them is granted it.
+ Once the first user is granted control of the resource, it performs
+ some operation on it.  Once this operation has completed, a timer
+ is set to allow this user to have control of it for a specific
+ amount of time.  Once this timer expires, the resource is released
+ and then immediately requested again.  Upon releasing the resource
+ control will be granted to the next user that has requested it in 
+ round robin order.  Initial requests are made by the three resource 
+ users in the following order.<br>
+ <li> Resource 0
+ <li> Resource 2
+ <li> Resource 1
+ <br>
+ It is expected then that using a round robin policy, control of the
+ resource will be granted in the order of 0,1,2 and the Leds
+ corresponding to each resource will flash whenever this occurs.<br>
+ <li> Led 0 -> Resource 0
+ <li> Led 1 -> Resource 1
+ <li> Led 2 -> Resource 2
+ <br>
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues (klueska@cs.wustl.edu)
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+        $Revision: 1.1 $
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+        $Date: 2007/07/13 23:43:17 $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/SharedResourceDemoC.html" title="SharedResourceDemoC" alt="" coords="549,5,723,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,119,88,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="550,36 392,51 303,63 215,80 157,97 103,117 103,117 97,117 97,118 155,92 214,75 302,58 392,46 549,31">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="545,29,553,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="84,120,92,128">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="223,77,250,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="112,119,195,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="550,36 424,50 355,63 287,80 246,96 208,116 205,111 244,91 286,75 354,57 423,45 549,31">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="545,29,553,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="191,116,199,124">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="294,77,320,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer0)" alt="" coords="219,117,328,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="550,40 430,56 377,67 340,80 321,93 305,109 301,105 318,88 337,75 376,62 429,51 549,35">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="545,33,553,41">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="291,113,299,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="345,77,429,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer1)" alt="" coords="352,117,461,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="550,47 486,61 461,70 444,79 423,107 419,104 441,75 459,65 485,56 549,41">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="545,40,553,48">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="412,113,420,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="446,77,530,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer2)" alt="" coords="485,117,595,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="566,55 552,66 542,79 537,91 536,104 531,104 532,90 538,76 549,62 562,51">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="560,49,568,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="529,113,537,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="539,77,623,94">
+
+      <area shape="rect" href="../chtml/SharedResourceC.html" title="SharedResourceC\n(Resource0)" alt="" coords="632,117,776,179">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="635,53 634,73 640,92 648,105 643,108 635,94 629,74 629,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="628,49,636,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="651,113,659,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="636,77,686,94">
+
+      <area shape="poly" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="669,52 689,76 700,103 695,105 684,79 665,55">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="663,49,671,57">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="696,113,704,121">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="690,77,800,94">
+
+      <area shape="rect" href="../chtml/SharedResourceC.html" title="SharedResourceC\n(Resource1)" alt="" coords="839,117,983,179">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="723,47 765,59 806,75 861,107 859,112 804,80 763,64 722,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="719,45,727,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="867,113,875,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="827,77,877,94">
+
+      <area shape="poly" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="723,35 817,50 857,61 884,75 895,88 904,103 899,105 891,91 881,79 855,66 816,55 722,40">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="719,33,727,41">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="901,113,909,121">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="892,77,1002,94">
+
+      <area shape="rect" href="../chtml/SharedResourceC.html" title="SharedResourceC\n(Resource2)" alt="" coords="1063,117,1207,179">
+
+      <area shape="poly" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="723,35 880,52 954,63 1007,75 1043,90 1077,108 1075,113 1041,94 1006,80 953,68 879,57 722,40">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="719,33,727,41">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="1084,113,1092,121">
+
+      <area shape="rect" href="../ihtml/ResourceOperations.html" title="ResourceOperations" alt="" coords="1038,77,1148,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="723,28 853,32 998,41 1122,54 1164,64 1189,76 1194,92 1188,108 1183,106 1189,91 1185,79 1163,69 1121,60 998,46 853,38 723,33">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="719,27,727,35">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="1173,113,1181,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="1190,77,1240,94">
+
+    </map>
+    <img src="SharedResourceDemoAppC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

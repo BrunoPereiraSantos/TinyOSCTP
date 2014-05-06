@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: TestMacP</title>
+  </head>
+  <body>
+    <h2>Component: TestMacP
+    </h2>
+    <b>module TestMacP</b>
+    <p>
+ SEND_RATE the rate in milliseconds a source message should be sent out,
+ if this value is 0, then the message is sent from a task as fast as it can.
+ Set this value to -1 for turning off source messages.
+
+ SEND_SOURCE the id of the source message. Each ping message contains a source
+ identifier and a sequence number. 
+
+ SEND_TARGET the active message address of the source messages sent out by 
+ this node. Use AM_BROADCAST_ADDR to broadcast the message.
+
+ SEND_ACK if it is set to 1, then packet acknowledgements are requested,
+ otherwise set it to 0
+
+ SOURCE_COUNT the number of data sources in the network whose progress we 
+ need to monitor.
+
+    <p><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMSend.html">AMSend</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Boot.html">Boot</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.diagmsg.DiagMsg.html">DiagMsg</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketAcknowledgements.html">PacketAcknowledgements</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SplitControl.html">SplitControl</a> as <b>RadioControl</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.TaskBasic.html">TaskBasic</a> as <b>radioPowerUp</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Timer.html">Timer</a>&lt;TMilli&gt; as <b>ReportTimer</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.TaskBasic.html">TaskBasic</a> as <b>sendTask</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Timer.html">Timer</a>&lt;TMilli&gt; as <b>SendTimer</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SplitControl.html">SplitControl</a> as <b>SerialControl</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.TaskBasic.html">TaskBasic</a> as <b>serialPowerUp</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>Snoop</b></div>
+  </body>
+</html>

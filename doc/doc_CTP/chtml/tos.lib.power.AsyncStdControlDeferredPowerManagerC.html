@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.lib.power.AsyncStdControlDeferredPowerManagerC</title>
+  </head>
+  <body>
+    <h2>Component: tos.lib.power.AsyncStdControlDeferredPowerManagerC
+    </h2>
+    <b>generic configuration AsyncStdControlDeferredPowerManagerC(uint32_t delay)</b>
+    <p>
+ Please refer to TEP 115 for more information about this component and its
+ intended use.<br><br>
+
+ This component povides a power management policy for managing the power
+ states of non-virtualized devices.  Non-virtualized devices are shared
+ using a parameterized Resource interface, and are powered down according
+ to some policy whenever there are no more pending requests to that Resource.
+ The policy implemented by this component is to delay the power down of a
+ device by some contant factor.  Such a policy is useful whenever a device
+ has a long wake-up latency.  The cost of waiting for the device to power
+ up can be avoided if the device is requested again before some predetermined
+ amount of time.<br><br>
+
+ Powerdown of the device is done through the <code>AsyncStdControl</code>
+ interface, so this component can only be used with those devices that
+ provide that interface.<br><br>
+
+ For devices providing either the <code>StdControl</code> or
+ <code>SplitControl</code> interfaces, please use either the
+ <code>StdControlDeferredPowerManagerC</code> component or the
+ <code>SplitControlDeferredPowerManagerC</code> component respectively.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Parameters:</b>
+      <dd>
+        <b>delay</b> -- The amount of time the power manager should wait
+                        before shutting down the device once it is free.
+ 
+ 
+      </dd>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues (klueska@cs.wustl.edu)
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.ArbiterInfo.html">ArbiterInfo</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AsyncStdControl.html">AsyncStdControl</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.power.PowerDownCleanup.html">PowerDownCleanup</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.ResourceDefaultOwner.html">ResourceDefaultOwner</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.lib.power.AsyncDeferredPowerManagerP.html" title="AsyncDeferredPowerManagerP\n(PowerManager)" alt="" coords="345,5,569,56">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AsyncStdControl.html" title="AsyncStdControl" alt="" coords="346,49 280,63 216,83 169,102 127,124 124,119 167,97 214,77 279,58 345,44">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AsyncStdControl.html" title="AsyncStdControl" alt="" coords="341,43,349,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AsyncStdControl.html" title="AsyncStdControl" alt="" coords="109,124,117,132">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AsyncStdControl.html" title="AsyncStdControl" alt="" coords="222,80,317,97">
+
+      <area shape="poly" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="388,58 340,82 291,119 288,115 337,78 385,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="383,52,391,60">
+
+      <area shape="rect" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="276,123,284,131">
+
+      <area shape="rect" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="342,80,456,97">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="460,56 460,112 455,112 455,56">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="453,52,461,60">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="453,121,461,129">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="457,80,585,97">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="553,54 593,78 616,112 611,115 589,82 551,58">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="548,52,556,60">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="615,121,623,129">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="600,80,661,97">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC" alt="" coords="701,120,811,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="570,45 619,59 668,78 693,92 715,109 712,113 690,97 666,82 618,65 569,51">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="565,44,573,52">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="720,116,728,124">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="687,80,771,97">
+
+    </map>
+    <img src="tos.lib.power.AsyncStdControlDeferredPowerManagerC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

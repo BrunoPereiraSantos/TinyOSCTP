@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: TestAdcAppC</title>
+  </head>
+  <body>
+    <h2>Component: TestAdcAppC
+    </h2>
+    <b>configuration TestAdcAppC</b>
+    <p>
+ Tests the AdcC subsystem and switches on leds 0, 1 and 2
+ if the test is successful:
+ LED0 denotes a successful Read operation,
+ LED1 denotes a successful ReadNow operation,
+ LED2 denotes a successful ReadStream operation.
+
+ Requires a platform-specific DemoSensorC component that provides
+ Read<uint16_t>, a platform-specific DemoSensorStreamC component that provides
+ ReadStream<uint16_t> and a platform-specific DemoSensorNowC component that provides
+ ReadNow<uint16_t> and Resource
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Jan Hauer
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/TestAdcC.html" title="TestAdcC" alt="" coords="299,5,384,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,119,88,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="300,44 190,80 103,117 103,117 97,117 97,118 188,75 298,39">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="295,37,303,45">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="84,120,92,128">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="196,77,223,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="112,119,195,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="300,52 247,80 202,112 198,107 244,75 297,47">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="295,45,303,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="185,115,193,123">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="248,77,274,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.micaz.DemoSensorC.html" title="DemoSensorC\n(Sensor)" alt="" coords="219,117,344,179">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="305,55 293,66 285,78 279,105 273,103 280,76 289,63 301,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="299,49,307,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="272,113,280,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="283,77,374,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.micaz.DemoSensorNowC.html" title="DemoSensorNowC\n(SensorNow)" alt="" coords="368,117,525,179">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ReadNow.html" title="ReadNow&lt;uint16_t&gt;" alt="" coords="365,52 413,105 409,108 361,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ReadNow.html" title="ReadNow&lt;uint16_t&gt;" alt="" coords="359,49,367,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ReadNow.html" title="ReadNow&lt;uint16_t&gt;" alt="" coords="416,113,424,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ReadNow.html" title="ReadNow&lt;uint16_t&gt;" alt="" coords="396,77,514,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="385,32 464,48 499,60 521,76 526,93 517,109 512,107 521,93 517,79 496,65 462,54 383,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="380,31,388,39">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="501,113,509,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="522,77,572,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.micaz.DemoSensorStreamC.html" title="DemoSensorStreamC\n(SensorStream)" alt="" coords="549,117,717,179">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ReadStream.html" title="ReadStream&lt;uint16_t&gt;" alt="" coords="384,32 491,49 543,61 579,75 596,88 610,105 606,108 592,92 576,80 541,66 490,54 384,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ReadStream.html" title="ReadStream&lt;uint16_t&gt;" alt="" coords="380,31,388,39">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ReadStream.html" title="ReadStream&lt;uint16_t&gt;" alt="" coords="612,113,620,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ReadStream.html" title="ReadStream&lt;uint16_t&gt;" alt="" coords="592,77,720,94">
+
+    </map>
+    <img src="TestAdcAppC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

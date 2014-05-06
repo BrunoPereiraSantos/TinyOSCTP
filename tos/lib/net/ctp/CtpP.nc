@@ -163,7 +163,10 @@ implementation {
   Forwarder.CtpInfo -> Router;
   Router.CtpCongestion -> Forwarder;
   CtpInfo = Router;
-
+  
+  /*BRUNO*/
+  Router.Intercept -> Forwarder.Intercept;
+  Router.CtpPacket -> Forwarder.CtpPacket;
   
   components new TimerMilliC() as RetxmitTimer;
   Forwarder.RetxmitTimer -> RetxmitTimer;

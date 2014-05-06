@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.lib.power.SplitControlPowerManagerC</title>
+  </head>
+  <body>
+    <h2>Component: tos.lib.power.SplitControlPowerManagerC
+    </h2>
+    <b>generic configuration SplitControlPowerManagerC()</b>
+    <p>
+ Please refer to TEP 115 for more information about this component and its
+ intended use.<br><br>
+
+ This component povides a power management policy for managing the power
+ states of non-virtualized devices.  Non-virtualized devices are shared
+ using a parameterized Resource interface, and are powered down according
+ to some policy whenever there are no more pending requests to that Resource.
+ The policy implemented by this component is to delay the power down of a
+ device by some contant factor.  Such a policy is useful whenever a device
+ has a long wake-up latency.  The cost of waiting for the device to power
+ up can be avoided if the device is requested again before some predetermined
+ amount of time.<br><br>
+
+ Powerdown of the device is done through the <code>SplitControl</code>
+ interface, so this component can only be used with those devices that
+ provide that interface.<br><br>
+
+ For devices providing either the <code>AsyncStdControl</code> or
+ <code>StdControl</code> interfaces, please use either the
+ <code>AsyncStdControlPowerManagerC</code> component or the
+ <code>StdControlPowerManagerC</code> component respectively.
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues (klueska@cs.wustl.edu)
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.ArbiterInfo.html">ArbiterInfo</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.power.PowerDownCleanup.html">PowerDownCleanup</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.ResourceDefaultOwner.html">ResourceDefaultOwner</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SplitControl.html">SplitControl</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.lib.power.PowerManagerP.html" title="PowerManagerP\n(PowerManager)" alt="" coords="259,5,387,56">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="260,55 193,82 109,121 107,116 191,77 258,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="255,49,263,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="92,121,100,129">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="195,79,263,96">
+
+      <area shape="poly" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="302,57 254,111 250,107 298,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="296,52,304,60">
+
+      <area shape="rect" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="239,116,247,124">
+
+      <area shape="rect" href="../ihtml/tos.lib.power.PowerDownCleanup.html" title="PowerDownCleanup" alt="" coords="275,79,389,96">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="368,54 395,78 412,105 407,108 391,81 365,58">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="363,52,371,60">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="411,116,419,124">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="401,79,529,96">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="387,38 472,56 509,66 536,77 570,108 566,112 533,82 507,71 471,61 386,44">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="383,37,391,45">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="572,117,580,125">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="550,79,611,96">
+
+    </map>
+    <img src="tos.lib.power.SplitControlPowerManagerC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

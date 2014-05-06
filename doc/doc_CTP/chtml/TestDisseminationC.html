@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: TestDisseminationC</title>
+  </head>
+  <body>
+    <h2>Component: TestDisseminationC
+    </h2>
+    <b>module TestDisseminationC</b>
+    <p>
+ TestDisseminationC exercises the dissemination layer, by causing
+ the node with ID 1 to inject 2 new values into the network every 4
+ seconds. For the 32-bit object with key 0x1234, node 1 toggles LED
+ 0 when it sends, and every other node toggles LED 0 when it
+ receives the correct value. For the 16-bit object with key 0x2345,
+ node 1 toggles LED 1 when it sends, and every other node toggles
+ LED 1 when it receives the correct value.
+
+ See TEP118 - Dissemination for details.
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Gilman Tolle &lt;gtolle@archedrock.com&gt;
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+        $Revision: 1.6 $ $Date: 2007/04/18 04:02:06 $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Boot.html">Boot</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.StdControl.html">StdControl</a> as <b>DisseminationControl</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Leds.html">Leds</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SplitControl.html">SplitControl</a> as <b>RadioControl</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.Timer.html">Timer</a>&lt;TMilli&gt;</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.DisseminationUpdate.html">DisseminationUpdate</a>&lt;uint16_t&gt; as <b>Update16</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.DisseminationUpdate.html">DisseminationUpdate</a>&lt;uint32_t&gt; as <b>Update32</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.DisseminationValue.html">DisseminationValue</a>&lt;uint16_t&gt; as <b>Value16</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.DisseminationValue.html">DisseminationValue</a>&lt;uint32_t&gt; as <b>Value32</b></div>
+  </body>
+</html>

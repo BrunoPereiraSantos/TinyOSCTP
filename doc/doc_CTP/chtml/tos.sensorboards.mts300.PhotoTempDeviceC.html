@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.sensorboards.mts300.PhotoTempDeviceC</title>
+  </head>
+  <body>
+    <h2>Component: tos.sensorboards.mts300.PhotoTempDeviceC
+    </h2>
+    <b>configuration PhotoTempDeviceC</b>
+    <p>
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Hu Siquan &lt;husq@xbow.com&gt;
+ Revision: $Revision: 1.4 $
+
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Resource.html">Resource</a> as <b>PhotoResource</b>[uint8_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>ReadPhoto</b>[uint8_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>ReadTemp</b>[uint8_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Resource.html">Resource</a> as <b>TempResource</b>[uint8_t]</div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.PhotoTempControlP.html" title="PhotoTempControlP\n(TempControl)" alt="" coords="647,136,799,186">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="724,60 725,122 720,122 719,60">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="717,56,725,64">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="719,132,727,140">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="721,90,860,107">
+
+      <area shape="rect" href="../chtml/tos.system.RoundRobinArbiterC.html" title="RoundRobinArbiterC\n(SharingArbiter)" alt="" coords="243,256,411,317">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="647,181 580,194 532,200 493,200 456,204 410,218 365,249 363,244 408,213 455,198 493,195 532,195 580,189 646,176">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="643,174,651,182">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="351,252,359,260">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="420,215,470,232">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(WarmupTimer)" alt="" coords="452,256,585,317">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="669,189 616,218 571,250 568,245 613,213 667,184">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="664,182,672,190">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="555,252,563,260">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="618,215,702,232">
+
+      <area shape="rect" href="../chtml/tos.platforms.mica.MicaBusC.html" title="MicaBusC" alt="" coords="640,493,739,552">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="776,184 792,198 803,213 804,211 810,197 823,167 827,172 825,200 803,357 793,418 785,442 769,471 751,489 747,486 765,467 781,440 788,416 797,357 820,199 822,173 823,172 815,199 809,214 802,218 788,201 773,188">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="771,182,779,190">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="735,492,743,500">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="800,341,857,358">
+
+      <area shape="rect" href="../chtml/tos.chips.atm128.adc.AdcReadClientC.html" title="AdcReadClientC\n(Adc)" alt="" coords="619,256,760,317">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="719,187 704,243 699,242 713,186">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="712,182,720,190">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="693,252,701,260">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="707,215,798,232">
+
+      <area shape="rect" href="../chtml/tos.system.RoundRobinArbiterC.html" title="RoundRobinArbiterC\n(PhotoArbiter)" alt="" coords="400,130,568,192">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="570,61 561,85 548,108 537,123 533,119 543,105 556,82 566,59">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="564,56,572,64">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="521,126,529,134">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="556,90,654,107">
+
+      <area shape="rect" href="../chtml/tos.system.RoundRobinArbiterC.html" title="RoundRobinArbiterC\n(TempArbiter)" alt="" coords="1064,130,1232,192">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="1234,61 1212,108 1199,123 1195,119 1207,105 1230,59">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="1228,56,1236,64">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="1184,126,1192,134">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="1216,90,1314,107">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.PhotoTempControlP.html" title="PhotoTempControlP\n(PhotoControl)" alt="" coords="148,136,300,186">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="63,59 70,83 83,105 108,124 136,137 134,142 105,128 79,108 65,86 57,60">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="56,56,64,64">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="144,141,152,149">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;[uint8_t]" alt="" coords="83,90,222,107">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="216,187 212,209 217,230 234,249 230,252 212,233 207,210 211,186">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="209,182,217,190">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="239,254,247,262">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="215,215,265,232">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="245,184 268,209 296,229 329,243 357,247 387,248 423,253 439,257 438,262 422,258 386,253 357,252 328,248 293,234 264,213 241,188">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="239,182,247,190">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="448,260,456,268">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="295,215,379,232">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="216,187 208,216 210,248 219,280 233,316 276,358 325,394 378,425 433,450 539,488 627,509 626,514 537,493 431,455 376,430 322,399 273,362 228,318 213,282 204,249 203,215 211,186">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="209,182,217,190">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="636,510,644,518">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.GeneralIO.html" title="GeneralIO" alt="" coords="270,341,327,358">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="301,173 378,190 460,213 497,229 547,242 598,253 606,256 604,261 597,258 546,247 495,234 458,218 377,195 299,178">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="296,172,304,180">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="615,258,623,266">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="497,215,588,232">
+
+      <area shape="rect" href="../chtml/tos.lib.power.SplitControlPowerManagerC.html" title="SplitControlPowerManagerC\n(PhotoPower)" alt="" coords="217,5,433,66">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="321,66 322,87 329,105 351,121 388,135 386,139 348,126 325,108 317,88 316,66">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="315,62,323,70">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="396,137,404,145">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="327,90,455,107">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="424,64 457,89 474,117 470,120 453,92 421,68">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="419,62,427,70">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="473,126,481,134">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="467,90,528,107">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="254,68 230,92 225,106 223,123 217,122 219,105 226,89 250,64">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="248,62,256,70">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="216,132,224,140">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="233,90,301,107">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.PhotoTempP.html" title="PhotoTempP" alt="" coords="637,381,741,429">
+
+      <area shape="poly" href="../ihtml/tos.chips.atm128.adc.Atm128AdcConfig.html" title="Atm128AdcConfig" alt="" coords="692,317 692,368 687,368 687,317">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.adc.Atm128AdcConfig.html" title="Atm128AdcConfig" alt="" coords="685,313,693,321">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.adc.Atm128AdcConfig.html" title="Atm128AdcConfig" alt="" coords="685,377,693,385">
+
+      <area shape="rect" href="../ihtml/tos.chips.atm128.adc.Atm128AdcConfig.html" title="Atm128AdcConfig" alt="" coords="688,341,794,358">
+
+      <area shape="rect" href="../chtml/tos.lib.power.SplitControlPowerManagerC.html" title="SplitControlPowerManagerC\n(TempPower)" alt="" coords="881,5,1097,66">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="939,69 862,109 808,133 806,128 860,104 936,64">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="933,62,941,70">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="789,132,797,140">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="895,90,963,107">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="985,66 986,87 993,105 1015,121 1052,135 1050,139 1012,126 989,108 981,88 980,66">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="979,62,987,70">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="1060,137,1068,145">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ResourceDefaultOwner.html" title="ResourceDefaultOwner" alt="" coords="991,90,1119,107">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="1087,64 1120,88 1131,101 1138,116 1134,118 1127,104 1117,92 1084,68">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="1081,62,1089,70">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="1136,126,1144,134">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.ArbiterInfo.html" title="ArbiterInfo" alt="" coords="1126,90,1187,107">
+
+      <area shape="poly" href="../ihtml/tos.platforms.mica.MicaBusAdc.html" title="MicaBusAdc" alt="" coords="692,429 692,480 687,480 687,429">
+
+      <area shape="rect" href="../ihtml/tos.platforms.mica.MicaBusAdc.html" title="MicaBusAdc" alt="" coords="685,425,693,433">
+
+      <area shape="rect" href="../ihtml/tos.platforms.mica.MicaBusAdc.html" title="MicaBusAdc" alt="" coords="685,489,693,497">
+
+      <area shape="rect" href="../ihtml/tos.platforms.mica.MicaBusAdc.html" title="MicaBusAdc" alt="" coords="689,453,761,470">
+
+    </map>
+    <img src="tos.sensorboards.mts300.PhotoTempDeviceC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

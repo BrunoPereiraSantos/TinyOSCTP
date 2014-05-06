@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.lib.net.drip.DisseminationEngineP</title>
+  </head>
+  <body>
+    <h2>Component: tos.lib.net.drip.DisseminationEngineP
+    </h2>
+    <b>configuration DisseminationEngineP</b>
+    <p>
+ The DisseminationEngineP component retrieves values from the
+ DisseminatorP components and disseminates them over the radio.
+
+ TODO: Hook DisseminationProbe up to the serial instead of the radio.
+
+ See TEP118 - Dissemination for details.
+ 
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Gilman Tolle &lt;gtolle@archrock.com&gt;
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+        $Revision: 1.1 $ $Date: 2007/09/14 00:22:18 $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.StdControl.html">StdControl</a></div><p><div id=heading>Uses</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.drip.DisseminationCache.html">DisseminationCache</a>[uint16_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.StdControl.html">StdControl</a> as <b>DisseminatorControl</b>[uint16_t]</div><div id=funcsig>interface <a href="../ihtml/tos.lib.net.TrickleTimer.html">TrickleTimer</a>[uint16_t]</div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.lib.net.drip.DisseminationEngineImplP.html" title="DisseminationEngineImplP" alt="" coords="644,117,839,165">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="744,53 744,104 739,104 739,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="737,49,745,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="737,113,745,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl" alt="" coords="741,77,801,94">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="644,148 406,162 291,175 207,192 167,210 131,232 128,227 164,205 206,187 290,170 406,157 644,143">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="640,141,648,149">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="113,233,121,241">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.drip.DisseminationCache.html" title="DisseminationCache[uint16_t]" alt="" coords="215,189,383,206">
+
+      <area shape="poly" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="644,149 532,164 472,176 413,192 367,212 324,236 321,231 364,207 411,187 470,171 531,159 644,144">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="640,143,648,151">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="307,236,315,244">
+
+      <area shape="rect" href="../ihtml/tos.lib.net.TrickleTimer.html" title="TrickleTimer[uint16_t]" alt="" coords="425,189,551,206">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="645,167 569,192 492,233 489,228 567,187 643,161">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="640,160,648,168">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="475,233,483,241">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.StdControl.html" title="StdControl[uint16_t]" alt="" coords="581,189,696,206">
+
+      <area shape="rect" href="../chtml/tos.system.AMSenderC.html" title="AMSenderC\n(DisseminationSendC)" alt="" coords="552,229,725,291">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="722,167 677,220 673,217 718,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="716,161,724,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="661,225,669,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="698,189,747,206">
+
+      <area shape="rect" href="../chtml/tos.system.AMReceiverC.html" title="AMReceiverC\n(DisseminationReceiveC)" alt="" coords="749,229,941,291">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="765,164 811,217 807,220 761,167">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="759,161,767,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="815,225,823,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="794,189,838,206">
+
+      <area shape="rect" href="../chtml/tos.system.AMSenderC.html" title="AMSenderC\n(DisseminationProbeSendC)" alt="" coords="965,229,1176,291">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="809,163 973,223 971,228 807,168">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="804,161,812,169">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="981,225,989,233">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="913,189,962,206">
+
+      <area shape="rect" href="../chtml/tos.system.AMReceiverC.html" title="AMReceiverC\n(DisseminationProbeReceiveC)" alt="" coords="1200,229,1429,291">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="839,157 1187,227 1186,232 838,163">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="835,156,843,164">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1196,228,1204,236">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="1063,189,1107,206">
+
+      <area shape="rect" href="../chtml/tos.system.NoLedsC.html" title="NoLedsC" alt="" coords="1453,236,1536,284">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="839,147 1161,178 1325,201 1391,214 1442,227 1445,228 1443,233 1440,232 1390,219 1324,206 1161,183 838,152">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="835,145,843,153">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="1452,232,1460,240">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="1324,189,1350,206">
+
+    </map>
+    <img src="tos.lib.net.drip.DisseminationEngineP.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

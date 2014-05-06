@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: TestRoundRobinArbiterAppC</title>
+  </head>
+  <body>
+    <h2>Component: TestRoundRobinArbiterAppC
+    </h2>
+    <b>configuration TestRoundRobinArbiterAppC</b>
+    <p>
+ Please refer to TEP 108 for more information about the components
+ this application is used to test.<br><br>
+
+ This application is used to test the functionality of the
+ RoundRobinArbiter component developed using the Resource
+ interface.  Three Resource users are created and all three request
+ control of the resource before any one of them is granted it.
+ Once the first user is granted control of the resource, a timer
+ is set to allow this user to have control of it for a specific
+ amount of time.  Once this timer expires, the resource is released
+ and then immediately requested again.  Upon releasing the resource
+ control will be granted to the next user that has
+ requested it in Round Robin order.  Initial requests are made
+ by the three resource users in the following order<br>
+ <li> Resource 0
+ <li> Resource 2
+ <li> Resource 1
+ <br>
+ It is expected then that using a round robin policy, control of the
+ resource will be granted in the order of 0,1,2, and the Leds
+ corresponding to each resource will flash whenever this occurs.<br>
+ <li> Led 0 -> Resource 0
+ <li> Led 1 -> Resource 1
+ <li> Led 2 -> Resource 2
+ <br>
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Kevin Klues &lt;klues@tkn.tu-berlin.de&gt;
+ 
+      </dd>
+      <dt><b>Version:</b>
+      <dd>
+         $Revision: 1.1 $
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+        $Date: 2007/07/10 19:55:30 $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/TestRoundRobinArbiterC.html" title="TestRoundRobinArbiterC" alt="" coords="225,5,412,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,119,88,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="226,43 140,58 106,68 83,79 62,108 58,105 80,75 104,63 139,53 225,37">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="221,36,229,44">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="51,115,59,123">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="91,77,118,94">
+
+      <area shape="rect" href="../chtml/tos.system.RoundRobinArbiterC.html" title="RoundRobinArbiterC\n(Arbiter)" alt="" coords="112,117,280,179">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="226,44 161,58 137,68 122,79 118,93 126,107 122,109 113,93 118,76 134,63 160,53 225,39">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="221,37,229,45">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="129,113,137,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="119,77,169,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="228,55 202,79 193,105 188,103 198,76 225,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="223,49,231,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="187,113,195,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="199,77,249,94">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="295,55 239,110 235,106 291,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="289,49,297,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="224,113,232,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="266,77,316,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer0)" alt="" coords="304,117,413,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="329,52 347,103 341,105 324,54">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="323,49,331,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="344,113,352,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="337,77,421,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer1)" alt="" coords="437,117,547,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="384,51 428,75 460,105 457,109 425,80 381,56">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="379,49,387,57">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="464,113,472,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="441,77,525,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(Timer2)" alt="" coords="571,117,680,179">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="413,39 473,53 532,75 558,90 582,107 578,111 555,94 530,80 471,58 411,44">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="408,37,416,45">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="587,113,595,121">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="554,77,638,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="704,119,787,177">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="412,36 543,52 602,63 645,75 674,90 701,108 699,113 672,95 643,80 601,68 543,58 412,41">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="408,35,416,43">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="707,115,715,123">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="667,77,693,94">
+
+    </map>
+    <img src="TestRoundRobinArbiterAppC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

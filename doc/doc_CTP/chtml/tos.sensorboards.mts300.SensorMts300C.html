@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.sensorboards.mts300.SensorMts300C</title>
+  </head>
+  <body>
+    <h2>Component: tos.sensorboards.mts300.SensorMts300C
+    </h2>
+    <b>generic configuration SensorMts300C()</b>
+    <p>
+  Copyright (c) 2005-2006 Crossbow Technology, Inc.
+  All rights reserved.
+
+  Permission to use, copy, modify, and distribute this software and its
+  documentation for any purpose, without fee, and without written
+  agreement is hereby granted, provided that the above copyright
+  notice, the (updated) modification history and the author appear in
+  all copies of this source code.
+
+  Permission is also granted to distribute this software under the
+  standard BSD license as contained in the TinyOS distribution.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS `AS IS'
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS
+  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOSS OF USE, DATA,
+  OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+  THE POSSIBILITY OF SUCH DAMAGE.
+
+  
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Martin Turon &lt;mturon@xbow.com&gt;
+  
+      </dd>
+      <dd>
+        Hu Siquan &lt;husq@xbow.com&gt;
+
+  $Id: SensorMts300C.nc,v 1.8 2008/06/11 00:42:14 razvanm Exp $
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>AccelX</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>AccelY</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>Light</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>MagX</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>MagY</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>Microphone</b></div><div id=funcsig>interface <a href="../ihtml/tos.sensorboards.mts300.Mts300Sounder.html">Mts300Sounder</a> as <b>Sounder</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>Temp</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Read.html">Read</a>&lt;uint16_t&gt; as <b>Vref</b></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.PhotoC.html" title="PhotoC" alt="" coords="5,117,88,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="49,53 49,104 44,104 44,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="43,49,51,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="43,113,51,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="48,77,139,94">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.AccelXC.html" title="AccelXC" alt="" coords="123,117,213,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="171,53 171,104 165,104 165,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="164,49,172,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="164,113,172,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="168,77,259,94">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.SounderC.html" title="SounderC" alt="" coords="241,117,337,176">
+
+      <area shape="poly" href="../ihtml/tos.sensorboards.mts300.Mts300Sounder.html" title="Mts300Sounder" alt="" coords="292,53 292,104 287,104 287,53">
+
+      <area shape="rect" href="../ihtml/tos.sensorboards.mts300.Mts300Sounder.html" title="Mts300Sounder" alt="" coords="285,49,293,57">
+
+      <area shape="rect" href="../ihtml/tos.sensorboards.mts300.Mts300Sounder.html" title="Mts300Sounder" alt="" coords="285,113,293,121">
+
+      <area shape="rect" href="../ihtml/tos.sensorboards.mts300.Mts300Sounder.html" title="Mts300Sounder" alt="" coords="289,77,376,94">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.MagXC.html" title="MagXC" alt="" coords="365,117,448,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="409,53 409,104 404,104 404,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="403,49,411,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="403,113,411,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="407,77,498,94">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.MicC.html" title="MicC" alt="" coords="487,117,569,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="531,53 531,104 525,104 525,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="524,49,532,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="524,113,532,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="528,77,619,94">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.AccelYC.html" title="AccelYC" alt="" coords="604,117,695,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="652,53 652,104 647,104 647,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="645,49,653,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="645,113,653,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="649,77,740,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.mica.VoltageC.html" title="VoltageC" alt="" coords="724,117,817,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="773,53 773,104 768,104 768,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="767,49,775,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="767,113,775,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="771,77,862,94">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.TempC.html" title="TempC" alt="" coords="851,117,933,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="895,53 895,104 889,104 889,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="888,49,896,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="888,113,896,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="892,77,983,94">
+
+      <area shape="rect" href="../chtml/tos.sensorboards.mts300.MagYC.html" title="MagYC" alt="" coords="972,117,1055,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="1016,53 1016,104 1011,104 1011,53">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="1009,49,1017,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="1009,113,1017,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Read.html" title="Read&lt;uint16_t&gt;" alt="" coords="1013,77,1104,94">
+
+    </map>
+    <img src="tos.sensorboards.mts300.SensorMts300C.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

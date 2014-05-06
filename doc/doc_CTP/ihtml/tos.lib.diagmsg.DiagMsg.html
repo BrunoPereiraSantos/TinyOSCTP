@@ -1,0 +1,247 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: tos.lib.diagmsg.DiagMsg</title>
+  </head>
+  <body>
+    <h2>Interface: tos.lib.diagmsg.DiagMsg</h2>
+    <b>interface DiagMsg</b><p>
+ The DiagMsg interface allows messages to be sent back to the base station
+ containing several values and their type information, like in 
+ <code>printf(...)</code>. The base station must be connected to a PC using 
+ a serial cable. On the PC a Java application (net.tinyos.util.DiagMsg) 
+ decodes the message and displays its content using the correct type 
+ information. See the implementation for the format of the message.
+
+    <p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command void <a href="#chr">chr</a>(char value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#chrs">chrs</a>(const char *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#hex16">hex16</a>(uint16_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#hex16s">hex16s</a>(uint16_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#hex32">hex32</a>(uint32_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#hex32s">hex32s</a>(uint32_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#hex8">hex8</a>(uint8_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#hex8s">hex8s</a>(uint8_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#int16">int16</a>(int16_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#int16s">int16s</a>(int16_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#int32">int32</a>(int32_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#int32s">int32s</a>(int32_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#int64">int64</a>(int64_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#int64s">int64s</a>(int64_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#int8">int8</a>(int8_t value)
+      </span><menu>
+ Adds a new value to the end of the message.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#int8s">int8s</a>(int8_t *value, uint8_t len)
+      </span><menu>
+ Adds an array of values to the end of the message.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#real">real</a>(float value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#reals">reals</a>(const float *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#record">record</a>()
+      </span><menu>
+ Initiates the recording of a new DiagMsg.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#send">send</a>()
+      </span><menu>
+ Initiates the sending of the recorded message.
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#str">str</a>(const char *value)
+      </span><menu>
+ This is a shorthand method for <code>chrs</code>
+
+      </menu>
+    </div><div id=funcsig><span id=funcnameshort>command void <a href="#uint16">uint16</a>(uint16_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#uint16s">uint16s</a>(uint16_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#uint32">uint32</a>(uint32_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#uint32s">uint32s</a>(uint32_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#uint64">uint64</a>(uint64_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#uint64s">uint64s</a>(uint64_t *value, uint8_t len)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#uint8">uint8</a>(uint8_t value)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#uint8s">uint8s</a>(uint8_t *value, uint8_t len)
+      </span></div><p><div id=heading>Commands - Details</div>
+    <a name="chr"></a>
+    <h4>chr
+    </h4>
+    <span id=funcnameshort>command void <b>chr</b>(char value)
+    </span><hr>
+    <a name="chrs"></a>
+    <h4>chrs
+    </h4>
+    <span id=funcnameshort>command void <b>chrs</b>(const char *value, uint8_t len)
+    </span><hr>
+    <a name="hex16"></a>
+    <h4>hex16
+    </h4>
+    <span id=funcnameshort>command void <b>hex16</b>(uint16_t value)
+    </span><hr>
+    <a name="hex16s"></a>
+    <h4>hex16s
+    </h4>
+    <span id=funcnameshort>command void <b>hex16s</b>(uint16_t *value, uint8_t len)
+    </span><hr>
+    <a name="hex32"></a>
+    <h4>hex32
+    </h4>
+    <span id=funcnameshort>command void <b>hex32</b>(uint32_t value)
+    </span><hr>
+    <a name="hex32s"></a>
+    <h4>hex32s
+    </h4>
+    <span id=funcnameshort>command void <b>hex32s</b>(uint32_t *value, uint8_t len)
+    </span><hr>
+    <a name="hex8"></a>
+    <h4>hex8
+    </h4>
+    <span id=funcnameshort>command void <b>hex8</b>(uint8_t value)
+    </span><hr>
+    <a name="hex8s"></a>
+    <h4>hex8s
+    </h4>
+    <span id=funcnameshort>command void <b>hex8s</b>(uint8_t *value, uint8_t len)
+    </span><hr>
+    <a name="int16"></a>
+    <h4>int16
+    </h4>
+    <span id=funcnameshort>command void <b>int16</b>(int16_t value)
+    </span><hr>
+    <a name="int16s"></a>
+    <h4>int16s
+    </h4>
+    <span id=funcnameshort>command void <b>int16s</b>(int16_t *value, uint8_t len)
+    </span><hr>
+    <a name="int32"></a>
+    <h4>int32
+    </h4>
+    <span id=funcnameshort>command void <b>int32</b>(int32_t value)
+    </span><hr>
+    <a name="int32s"></a>
+    <h4>int32s
+    </h4>
+    <span id=funcnameshort>command void <b>int32s</b>(int32_t *value, uint8_t len)
+    </span><hr>
+    <a name="int64"></a>
+    <h4>int64
+    </h4>
+    <span id=funcnameshort>command void <b>int64</b>(int64_t value)
+    </span><hr>
+    <a name="int64s"></a>
+    <h4>int64s
+    </h4>
+    <span id=funcnameshort>command void <b>int64s</b>(int64_t *value, uint8_t len)
+    </span><hr>
+    <a name="int8"></a>
+    <h4>int8
+    </h4>
+    <span id=funcnameshort>command void <b>int8</b>(int8_t value)
+    </span>
+    <p>
+    <menu>
+      
+ Adds a new value to the end of the message. If the message 
+ cannot hold more information, then the new value is simply dropped.
+
+    </menu>
+    <hr>
+    <a name="int8s"></a>
+    <h4>int8s
+    </h4>
+    <span id=funcnameshort>command void <b>int8s</b>(int8_t *value, uint8_t len)
+    </span>
+    <p>
+    <menu>
+      
+ Adds an array of values to the end of the message. 
+ The maximum length of the array is <code>15</code>.
+ If the message cannot hold all elements of the array,
+ then no value is stored.
+
+    </menu>
+    <hr>
+    <a name="real"></a>
+    <h4>real
+    </h4>
+    <span id=funcnameshort>command void <b>real</b>(float value)
+    </span><hr>
+    <a name="reals"></a>
+    <h4>reals
+    </h4>
+    <span id=funcnameshort>command void <b>reals</b>(const float *value, uint8_t len)
+    </span><hr>
+    <a name="record"></a>
+    <h4>record
+    </h4>
+    <span id=funcnameshort>command bool <b>record</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Initiates the recording of a new DiagMsg. It returns FALSE if
+ the component is busy recording or sending another message.
+
+    </menu>
+    <hr>
+    <a name="send"></a>
+    <h4>send
+    </h4>
+    <span id=funcnameshort>command void <b>send</b>()
+    </span>
+    <p>
+    <menu>
+      
+ Initiates the sending of the recorded message. 
+
+    </menu>
+    <hr>
+    <a name="str"></a>
+    <h4>str
+    </h4>
+    <span id=funcnameshort>command void <b>str</b>(const char *value)
+    </span>
+    <p>
+    <menu>
+      
+ This is a shorthand method for <code>chrs</code>
+
+    </menu>
+    <hr>
+    <a name="uint16"></a>
+    <h4>uint16
+    </h4>
+    <span id=funcnameshort>command void <b>uint16</b>(uint16_t value)
+    </span><hr>
+    <a name="uint16s"></a>
+    <h4>uint16s
+    </h4>
+    <span id=funcnameshort>command void <b>uint16s</b>(uint16_t *value, uint8_t len)
+    </span><hr>
+    <a name="uint32"></a>
+    <h4>uint32
+    </h4>
+    <span id=funcnameshort>command void <b>uint32</b>(uint32_t value)
+    </span><hr>
+    <a name="uint32s"></a>
+    <h4>uint32s
+    </h4>
+    <span id=funcnameshort>command void <b>uint32s</b>(uint32_t *value, uint8_t len)
+    </span><hr>
+    <a name="uint64"></a>
+    <h4>uint64
+    </h4>
+    <span id=funcnameshort>command void <b>uint64</b>(uint64_t value)
+    </span><hr>
+    <a name="uint64s"></a>
+    <h4>uint64s
+    </h4>
+    <span id=funcnameshort>command void <b>uint64s</b>(uint64_t *value, uint8_t len)
+    </span><hr>
+    <a name="uint8"></a>
+    <h4>uint8
+    </h4>
+    <span id=funcnameshort>command void <b>uint8</b>(uint8_t value)
+    </span><hr>
+    <a name="uint8s"></a>
+    <h4>uint8s
+    </h4>
+    <span id=funcnameshort>command void <b>uint8s</b>(uint8_t *value, uint8_t len)
+    </span>
+  </body>
+</html>

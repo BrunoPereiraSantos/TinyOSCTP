@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: TestTimerSyncAppC</title>
+  </head>
+  <body>
+    <h2>Component: TestTimerSyncAppC
+    </h2>
+    <b>configuration TestTimerSyncAppC</b>
+    <p>
+ This application sends a single active message broadcast if it has
+ address 0, and then starts a timer at 1Hz.  If it has any address 
+ other than 0, it starts a timer at 1 Hz upon receiving a broadcast 
+ message.  The idea is to have one base station with address 0 send 
+ out a broadacst message to synchronize itself with all receivers.  
+ All Leds from the base station and any receivers of the broadcast 
+ should blink together.
+ It uses the radio HIL component
+ <tt>ActiveMessageC</tt>, and its packets are AM type 240.
+
+ 
+    <p>
+    <dl>
+      <dt><b>Author:</b>
+      <dd>
+        Phil Levis
+ 
+      </dd>
+      <dd>
+        Kevin Klues
+ 
+      </dd>
+      <dt><b>Date:</b>
+      <dd>
+          Nov 7 2005
+
+      </dd>
+    </dl>
+    <p><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" href="../chtml/TestTimerSyncC.html" title="TestTimerSyncC" alt="" coords="328,5,456,53">
+
+      <area shape="rect" href="../chtml/tos.system.MainC.html" title="MainC" alt="" coords="5,117,88,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="329,48 225,76 101,120 99,114 223,70 327,42">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="324,41,332,49">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="84,118,92,126">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Boot.html" title="Boot" alt="" coords="221,77,248,94">
+
+      <area shape="rect" href="../chtml/tos.system.AMReceiverC.html" title="AMReceiverC" alt="" coords="112,117,237,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="348,55 304,79 244,113 241,108 301,75 345,51">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="343,49,351,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="227,113,235,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="311,77,355,94">
+
+      <area shape="rect" href="../chtml/tos.system.AMSenderC.html" title="AMSenderC" alt="" coords="261,117,373,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="378,54 345,106 340,104 374,52">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="372,49,380,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="332,113,340,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="361,77,410,94">
+
+      <area shape="rect" href="../chtml/tos.platforms.iris.ActiveMessageC.html" title="ActiveMessageC" alt="" coords="397,117,536,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="410,52 444,104 439,106 406,54">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="404,49,412,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="444,113,452,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="430,77,498,94">
+
+      <area shape="rect" href="../chtml/tos.system.LedsC.html" title="LedsC" alt="" coords="560,117,643,176">
+
+      <area shape="poly" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="454,51 505,75 555,107 552,111 503,79 452,55">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="449,49,457,57">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="560,113,568,121">
+
+      <area shape="rect" href="../ihtml/tos.interfaces.Leds.html" title="Leds" alt="" coords="523,77,549,94">
+
+      <area shape="rect" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC" alt="" coords="667,117,776,176">
+
+      <area shape="poly" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="457,44 556,74 656,115 654,119 554,80 455,49">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="452,42,460,50">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="663,118,671,126">
+
+      <area shape="rect" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="589,77,673,94">
+
+    </map>
+    <img src="TestTimerSyncAppC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>
