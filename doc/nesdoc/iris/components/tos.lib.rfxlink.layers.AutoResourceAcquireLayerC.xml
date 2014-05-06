@@ -1,0 +1,40 @@
+<?xml version="1.0" ?><component abstract="" loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/AutoResourceAcquireLayerC.nc" nicename="tos.lib.rfxlink.layers.AutoResourceAcquireLayerC" qname="AutoResourceAcquireLayerC">
+      <parameters>
+      </parameters>
+      <module/>
+    <specification><interface loc="44:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/AutoResourceAcquireLayerC.nc" name="SubSend" provided="0" ref="0x406fe420">
+      <component-ref nicename="tos.lib.rfxlink.layers.AutoResourceAcquireLayerC" qname="AutoResourceAcquireLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubSend" ref="0x406fe420" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareSend" qname="BareSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x406fe5f8" scoped=""/>
+        <function-ref name="cancel" ref="0x406fe6d8" scoped=""/>
+        <function-ref name="sendDone" ref="0x406fe7b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/AutoResourceAcquireLayerC.nc" name="Resource" provided="0" ref="0x406fe950">
+      <component-ref nicename="tos.lib.rfxlink.layers.AutoResourceAcquireLayerC" qname="AutoResourceAcquireLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Resource" ref="0x406fe950" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x406feb28" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x406fec08" scoped=""/>
+        <function-ref name="request" ref="0x406fece8" scoped=""/>
+        <function-ref name="granted" ref="0x406fedc8" scoped=""/>
+        <function-ref name="isOwner" ref="0x406feea8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/AutoResourceAcquireLayerC.nc" name="BareSend" provided="1" ref="0x406eddd0">
+      <component-ref nicename="tos.lib.rfxlink.layers.AutoResourceAcquireLayerC" qname="AutoResourceAcquireLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="BareSend" ref="0x406eddd0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareSend" qname="BareSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x406fe010" scoped=""/>
+        <function-ref name="cancel" ref="0x406fe0f0" scoped=""/>
+        <function-ref name="sendDone" ref="0x406fe1d0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

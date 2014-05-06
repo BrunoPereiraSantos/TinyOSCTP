@@ -1,0 +1,259 @@
+<?xml version="1.0" ?><interfacedef loc="37:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig">
+      <function command="" loc="86:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="reportChannelError" provided="0" ref="0x40611210">
+        <documentation loc="82:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ This command is called when a sent packet did not receive an
+ acknowledgement.</short>
+          <long>
+ This command is called when a sent packet did not receive an
+ acknowledgement.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="80:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="createAckPacket" provided="0" ref="0x40600d48">
+        <documentation loc="77:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ Creates an acknowledgement packet for the given data packet.</short>
+          <long>
+ Creates an acknowledgement packet for the given data packet.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="80:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="data" ref="0x406009d0">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="80:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="ack" ref="0x40600be8">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="requiresAckWait" provided="0" ref="0x40603d88">
+        <documentation loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ Returns TRUE if the layer should wait for a software acknowledgement
+ to be received after this packet was transmitted.</short>
+          <long>
+ Returns TRUE if the layer should wait for a software acknowledgement
+ to be received after this packet was transmitted.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="msg" ref="0x40603c30">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="62:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="isAckPacket" provided="0" ref="0x40601478">
+        <documentation loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ Returns TRUE if the received packet is an acknowledgement packet.</short>
+          <long>
+ Returns TRUE if the received packet is an acknowledgement packet.
+ The AckedSend layer will filter out all received acknowledgement
+ packets and uses  only the matching one for the acknowledgement.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="62:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="msg" ref="0x40601320">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="69:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="verifyAckPacket" provided="0" ref="0x40601db0">
+        <documentation loc="64:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ Returns TRUE if the acknowledgement packet corresponds to the
+ data packet.</short>
+          <long>
+ Returns TRUE if the acknowledgement packet corresponds to the
+ data packet. The acknowledgement packect was already verified 
+ to be a valid acknowledgement packet via the isAckPacket command.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="69:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="data" ref="0x40601a38">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="69:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="ack" ref="0x40601c50">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="43:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="getAckTimeout" provided="0" ref="0x40604e50">
+        <documentation loc="39:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ Returns the acknowledgement timeout (in the radio clock units),
+ in which a sent packet must be acknowledged.</short>
+          <long>
+ Returns the acknowledgement timeout (in the radio clock units),
+ in which a sent packet must be acknowledged.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x402141e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="setAckRequired" provided="0" ref="0x40603730">
+        <documentation loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ Sets the flag in the message indicating to the receiver whether
+ the message should be acknowledged.</short>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="msg" ref="0x40603408">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="ack" ref="0x406035d0">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="75:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="requiresAckReply" provided="0" ref="0x406004f0">
+        <documentation loc="71:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc">
+          <short>
+ Returns TRUE if the received packet needs software acknowledgements
+ to be sent back to the sender.</short>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="75:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/SoftwareAckConfig.nc" name="msg" ref="0x40600398">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

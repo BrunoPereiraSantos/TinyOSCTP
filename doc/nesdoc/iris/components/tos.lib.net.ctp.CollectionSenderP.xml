@@ -1,0 +1,221 @@
+<?xml version="1.0" ?><component abstract="" loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderP">
+      <parameters>
+        <constant loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" name="collectid" ref="0x40f56eb8">
+          <component-ref nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderP"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="collection_id_t" ref="0x40c4b598"/></typename>
+          </type-int>
+        </constant>
+        <constant loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" name="clientid" ref="0x40f530e0">
+          <component-ref nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderP"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </constant>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc">
+          <from><interface-ref name="Packet" ref="0x40f53a30" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40c6ba38" scoped=""/></to>
+        </wire>
+        <wire loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc">
+          <from><interface-ref name="Send" ref="0x40f53358" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x40c46970" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+                <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+              </type-int>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+        <wire loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc">
+          <from><interface-ref name="CollectionId" ref="0x40c7e6c8" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+                <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+              </type-int>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="CollectionId" ref="0x40f51670" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="38:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" name="Packet" provided="1" ref="0x40f53a30">
+      <component-ref nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Packet" ref="0x40f53a30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40f53c08" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40f53ce8" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f53dc8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f53ea8" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40f52010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="37:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" name="Send" provided="1" ref="0x40f53358">
+      <component-ref nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40f53358" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40f53530" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f53610" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f536f0" scoped=""/>
+        <function-ref name="cancel" ref="0x40f537d0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40f538b0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="63:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" name="CollectionId" provided="0" ref="0x40c7e6c8">
+      <component-ref nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CollectionId" ref="0x40c7e6c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.net.CollectionId" qname="CollectionId"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="fetch" ref="0x40c7e8a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" name="Packet" provided="1" ref="0x40c6ba38">
+      <component-ref nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Packet" ref="0x40c6ba38" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40c6bc10" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40c6bcf0" scoped=""/>
+        <function-ref name="getPayload" ref="0x40c6bdd0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40c6beb0" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40c70010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" name="Send" provided="1" ref="0x40c46970">
+      <component-ref nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40c46970" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="send" ref="0x40c46b48" scoped=""/>
+        <function-ref name="getPayload" ref="0x40c46c28" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40c46d08" scoped=""/>
+        <function-ref name="cancel" ref="0x40c46de8" scoped=""/>
+        <function-ref name="sendDone" ref="0x40c46ec8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/CollectionIdP.nc" name="CollectionId" provided="1" ref="0x40f51670">
+      <component-ref nicename="tos.lib.net.CollectionIdP" qname="CollectionSenderP.CollectionIdP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CollectionId" ref="0x40f51670" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.net.CollectionId" qname="CollectionId"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fetch" ref="0x40f51848" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="45(CollectionSenderP.CollectionIdP):/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/CollectionIdP.nc" nicename="tos.lib.net.CollectionIdP" qname="CollectionSenderP.CollectionIdP">
+      <documentation loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/CollectionIdP.nc">
+        <short>
+  Interface for fetching the collection ID associated with a
+  collection sender instance.</short>
+        <long>
+  Interface for fetching the collection ID associated with a
+  collection sender instance.
+
+  @author Kyle Jamieson
+  @date   $Date: 2006-12-12 18:23:28 $
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.lib.net.CollectionIdP" qname="CollectionIdP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="collection_id_t" ref="0x40c4b598"/></typename>
+            </type-int>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+        <short>
+ A data collection service that uses a tree routing protocol
+ to deliver data to collection roots, following TEP 119.</short>
+        <long>
+ A data collection service that uses a tree routing protocol
+ to deliver data to collection roots, following TEP 119.
+
+ @author Rodrigo Fonseca
+ @author Omprakash Gnawali
+ @author Kyle Jamieson
+ @author Philip Levis
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="83:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="RootControl" ref="0x40c805e0" scoped=""/></from>
+          <to><interface-ref name="RootControl" ref="0x40c72478" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CollectionPacket" ref="0x40c68de0" scoped=""/></from>
+          <to><interface-ref name="CollectionPacket" ref="0x40c76ce0" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Intercept" ref="0x40c6b6e0" scoped=""/></from>
+          <to><interface-ref name="Intercept" ref="0x40c76248" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Packet" ref="0x40c6ba38" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40c765a0" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Snoop" ref="0x40c45a88" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x40c77b78" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Send" ref="0x40c46970" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x40c799f0" scoped=""/></to>
+        </wire>
+        <wire loc="81:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CtpInfo" ref="0x40c82798" scoped=""/></from>
+          <to><interface-ref name="CtpInfo" ref="0x40c74598" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Receive" ref="0x40c453d8" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40c774c8" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CtpCongestion" ref="0x40c80178" scoped=""/></from>
+          <to><interface-ref name="CtpCongestion" ref="0x40c72010" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CtpPacket" ref="0x40c5e388" scoped=""/></from>
+          <to><interface-ref name="CtpPacket" ref="0x40c75530" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="StdControl" ref="0x40c46240" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40c792c0" scoped=""/></to>
+        </wire>
+        <wire loc="85:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CollectionId" ref="0x40c72d18" scoped=""/></from>
+          <to><interface-ref name="CollectionId" ref="0x40c7e6c8" scoped=""/></to>
+        </wire>
+        <wire loc="86:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CollectionDebug" ref="0x40c9c1e8" scoped=""/></from>
+          <to><interface-ref name="CollectionDebug" ref="0x40c7a550" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

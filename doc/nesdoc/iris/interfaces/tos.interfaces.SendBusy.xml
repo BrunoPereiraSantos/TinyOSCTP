@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><interfacedef loc="2:/home/user/top/t2_cur/tinyos-2.x/tos/interfaces/SendBusy.nc" nicename="tos.interfaces.SendBusy" qname="SendBusy">
+      <function command="" loc="9:/home/user/top/t2_cur/tinyos-2.x/tos/interfaces/SendBusy.nc" name="busy" provided="0" ref="0x40e50ca0">
+        <documentation loc="3:/home/user/top/t2_cur/tinyos-2.x/tos/interfaces/SendBusy.nc">
+          <short>
+ Check whether send queue entry is in use
+
+ </short>
+          <long>
+ Check whether send queue entry is in use
+
+ @return TRUE If client is active.
+         FALSE Otherwise.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.SendBusy" qname="SendBusy"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>

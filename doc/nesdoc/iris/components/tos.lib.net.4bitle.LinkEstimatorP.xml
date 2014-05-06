@@ -1,0 +1,155 @@
+<?xml version="1.0" ?><component loc="42:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP">
+      <module/>
+    <specification><interface loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="SubReceive" provided="0" ref="0x40db3220">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubReceive" ref="0x40db3220" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40db33f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="LinkEstimator" provided="1" ref="0x40db68f8">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="LinkEstimator" ref="0x40db68f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="txAck" ref="0x40db6ad0" scoped=""/>
+        <function-ref name="pinNeighbor" ref="0x40db6bb0" scoped=""/>
+        <function-ref name="txNoAck" ref="0x40db6c90" scoped=""/>
+        <function-ref name="insertNeighbor" ref="0x40db6d70" scoped=""/>
+        <function-ref name="evicted" ref="0x40db6e50" scoped=""/>
+        <function-ref name="clearDLQ" ref="0x40db5010" scoped=""/>
+        <function-ref name="unpinNeighbor" ref="0x40db50f0" scoped=""/>
+        <function-ref name="getLinkQuality" ref="0x40db51d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="Packet" provided="1" ref="0x40db5698">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Packet" ref="0x40db5698" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40db5870" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40db5950" scoped=""/>
+        <function-ref name="getPayload" ref="0x40db5a30" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40db5b10" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40db5bf0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="AMSend" provided="0" ref="0x40db1510">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="AMSend" ref="0x40db1510" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40db16e8" scoped=""/>
+        <function-ref name="getPayload" ref="0x40db17c8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40db18a8" scoped=""/>
+        <function-ref name="cancel" ref="0x40db1988" scoped=""/>
+        <function-ref name="sendDone" ref="0x40db1a68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="Send" provided="1" ref="0x40db7e28">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40db7e28" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40db6050" scoped=""/>
+        <function-ref name="getPayload" ref="0x40db6130" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40db6210" scoped=""/>
+        <function-ref name="cancel" ref="0x40db62f0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40db63d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="Random" provided="0" ref="0x40db3948">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Random" ref="0x40db3948" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rand16" ref="0x40db3ba0" scoped=""/>
+        <function-ref name="rand32" ref="0x40db3c80" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="SubPacket" provided="0" ref="0x40db49f0">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubPacket" ref="0x40db49f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40db4bc8" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40db4ca8" scoped=""/>
+        <function-ref name="getPayload" ref="0x40db4d88" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40db4e68" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40db3010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="Init" provided="1" ref="0x40db5340">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Init" ref="0x40db5340" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40db5518" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="SubAMPacket" provided="0" ref="0x40db1c90">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubAMPacket" ref="0x40db1c90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="group" ref="0x40db1e68" scoped=""/>
+        <function-ref name="source" ref="0x40db4010" scoped=""/>
+        <function-ref name="address" ref="0x40db40f0" scoped=""/>
+        <function-ref name="destination" ref="0x40db41d0" scoped=""/>
+        <function-ref name="setSource" ref="0x40db42b0" scoped=""/>
+        <function-ref name="setDestination" ref="0x40db4390" scoped=""/>
+        <function-ref name="type" ref="0x40db4470" scoped=""/>
+        <function-ref name="setType" ref="0x40db4550" scoped=""/>
+        <function-ref name="isForMe" ref="0x40db4630" scoped=""/>
+        <function-ref name="setGroup" ref="0x40db4710" scoped=""/>
+        <function-ref name="localGroup" ref="0x40db47f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="Receive" provided="1" ref="0x40db6558">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x40db6558" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40db6730" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="CompareBit" provided="1" ref="0x40db1178">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CompareBit" ref="0x40db1178" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.net.ctp.CompareBit" qname="CompareBit"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="shouldInsert" ref="0x40db1350" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="StdControl" provided="1" ref="0x40db79a0">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="StdControl" ref="0x40db79a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x40db7b78" scoped=""/>
+        <function-ref name="stop" ref="0x40db7c58" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimatorP.nc" name="LinkPacketMetadata" provided="0" ref="0x40db35f0">
+      <component-ref nicename="tos.lib.net.4bitle.LinkEstimatorP" qname="LinkEstimatorP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="LinkPacketMetadata" ref="0x40db35f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.LinkPacketMetadata" qname="LinkPacketMetadata"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="highChannelQuality" ref="0x40db37c8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

@@ -1,0 +1,100 @@
+<?xml version="1.0" ?><component abstract="" loc="43:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc" nicename="tos.lib.net.ctp.CollectionSenderC" qname="CollectionSenderC">
+      <documentation loc="32:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc">
+        <short>
+ The virtualized collection sender abstraction.</short>
+        <long>
+ The virtualized collection sender abstraction.
+
+ @author Kyle Jamieson
+ @author Philip Levis
+ @date April 25 2006
+ @see TinyOS Net2-WG
+</long>
+      </documentation>
+      <parameters>
+        <constant loc="43:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc" name="collectid" ref="0x40f57338">
+          <component-ref nicename="tos.lib.net.ctp.CollectionSenderC" qname="CollectionSenderC"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="collection_id_t" ref="0x40c4b598"/></typename>
+          </type-int>
+        </constant>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc">
+          <from><interface-ref name="Packet" ref="0x40f57c88" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40f54010" scoped=""/></to>
+        </wire>
+        <wire loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc">
+          <from><interface-ref name="Send" ref="0x40f575b0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x40f558f8" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc" name="Packet" provided="1" ref="0x40f57c88">
+      <component-ref nicename="tos.lib.net.ctp.CollectionSenderC" qname="CollectionSenderC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Packet" ref="0x40f57c88" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40f57e60" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40f56010" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f560f0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f561d0" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40f562b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc" name="Send" provided="1" ref="0x40f575b0">
+      <component-ref nicename="tos.lib.net.ctp.CollectionSenderC" qname="CollectionSenderC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40f575b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40f57788" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f57868" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f57948" scoped=""/>
+        <function-ref name="cancel" ref="0x40f57a28" scoped=""/>
+        <function-ref name="sendDone" ref="0x40f57b08" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="37:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" name="Send" provided="1" ref="0x40f558f8">
+      <component-ref nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderC.CollectionSenderP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40f558f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40f55ad0" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f55bb0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f55c90" scoped=""/>
+        <function-ref name="cancel" ref="0x40f55d70" scoped=""/>
+        <function-ref name="sendDone" ref="0x40f55e50" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="38:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" name="Packet" provided="1" ref="0x40f54010">
+      <component-ref nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderC.CollectionSenderP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Packet" ref="0x40f54010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40f541e8" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40f542c8" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f543a8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f54488" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40f54568" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="34(CollectionSenderC.CollectionSenderP):/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderP.nc" nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderC.CollectionSenderP">
+      <instance>
+        <component-ref nicename="tos.lib.net.ctp.CollectionSenderP" qname="CollectionSenderP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="collection_id_t" ref="0x40c4b598"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned int" size="I:2" unsigned=""/>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+    </component></referenced></component>

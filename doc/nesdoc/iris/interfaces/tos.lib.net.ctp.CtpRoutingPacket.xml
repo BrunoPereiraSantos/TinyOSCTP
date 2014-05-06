@@ -1,0 +1,235 @@
+<?xml version="1.0" ?><interfacedef loc="43:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket">
+      <documentation loc="33:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc">
+        <short>
+  ADT for CTP routing frames.</short>
+        <long>
+  ADT for CTP routing frames.
+
+  @author Philip Levis
+  @author Kyle Jamieson
+  @date   $Date: 2009-09-21 02:19:42 $
+</long>
+      </documentation>
+      <function command="" loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="clearOptions" provided="0" ref="0x40e97ad0">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e97978">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="setEtx" provided="0" ref="0x40e95c00">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x402141e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e958b0">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="etx" ref="0x40e95aa0">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x402141e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="clearOption" provided="0" ref="0x40e97390">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="ctp_options_t" ref="0x40c4ac30"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e97010">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="opt" ref="0x40e97230">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="ctp_options_t" ref="0x40c4ac30"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="56:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="getEtx" provided="0" ref="0x40e95318">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x402141e8"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="56:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e951c0">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="setOption" provided="0" ref="0x40e99998">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="ctp_options_t" ref="0x40c4ac30"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e99618">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="opt" ref="0x40e99838">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="ctp_options_t" ref="0x40c4ac30"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="54:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="setParent" provided="0" ref="0x40e96ba8">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="54:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e96840">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="54:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="addr" ref="0x40e96a48">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="53:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="getParent" provided="0" ref="0x40e96288">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="53:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e96130">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="getOption" provided="0" ref="0x40e99060">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpRoutingPacket" qname="CtpRoutingPacket"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="ctp_options_t" ref="0x40c4ac30"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="msg" ref="0x40e9dcb8">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingPacket.nc" name="opt" ref="0x40e9ded8">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="ctp_options_t" ref="0x40c4ac30"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

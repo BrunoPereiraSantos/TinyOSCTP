@@ -1,0 +1,618 @@
+<?xml version="1.0" ?><component abstract="" loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+        <short>
+ Generic component to expose a full 8-bit port of GPIO pins.</short>
+        <long>
+ Generic component to expose a full 8-bit port of GPIO pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <parameters>
+        <constant loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="port_addr" ref="0x404af5e8">
+          <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </constant>
+        <constant loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="ddr_addr" ref="0x404af800">
+          <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </constant>
+        <constant loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="pin_addr" ref="0x404afa18">
+          <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </constant>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="68:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin2" ref="0x404b7200" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404d2380" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin5" ref="0x404b5060" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404cdbb8" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin0" ref="0x404afd30" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404be810" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin3" ref="0x404b7be8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404d00c0" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin6" ref="0x404b5a48" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404d79b8" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin1" ref="0x404b8740" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404c8560" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin4" ref="0x404b6660" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404cfe30" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin7" ref="0x404c04a0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404d5718" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin2" provided="1" ref="0x404b7200">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin2" ref="0x404b7200" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b73d8" scoped=""/>
+        <function-ref name="isInput" ref="0x404b74b8" scoped=""/>
+        <function-ref name="toggle" ref="0x404b7598" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b7678" scoped=""/>
+        <function-ref name="get" ref="0x404b7758" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b7838" scoped=""/>
+        <function-ref name="set" ref="0x404b7918" scoped=""/>
+        <function-ref name="clr" ref="0x404b79f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin5" provided="1" ref="0x404b5060">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin5" ref="0x404b5060" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b5238" scoped=""/>
+        <function-ref name="isInput" ref="0x404b5318" scoped=""/>
+        <function-ref name="toggle" ref="0x404b53f8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b54d8" scoped=""/>
+        <function-ref name="get" ref="0x404b55b8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b5698" scoped=""/>
+        <function-ref name="set" ref="0x404b5778" scoped=""/>
+        <function-ref name="clr" ref="0x404b5858" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin0" provided="1" ref="0x404afd30">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin0" ref="0x404afd30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404aff08" scoped=""/>
+        <function-ref name="isInput" ref="0x404b8010" scoped=""/>
+        <function-ref name="toggle" ref="0x404b80f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b81d0" scoped=""/>
+        <function-ref name="get" ref="0x404b82b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b8390" scoped=""/>
+        <function-ref name="set" ref="0x404b8470" scoped=""/>
+        <function-ref name="clr" ref="0x404b8550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin3" provided="1" ref="0x404b7be8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin3" ref="0x404b7be8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b7dc0" scoped=""/>
+        <function-ref name="isInput" ref="0x404b7ea0" scoped=""/>
+        <function-ref name="toggle" ref="0x404b6010" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b60f0" scoped=""/>
+        <function-ref name="get" ref="0x404b61d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b62b0" scoped=""/>
+        <function-ref name="set" ref="0x404b6390" scoped=""/>
+        <function-ref name="clr" ref="0x404b6470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin6" provided="1" ref="0x404b5a48">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin6" ref="0x404b5a48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b5c20" scoped=""/>
+        <function-ref name="isInput" ref="0x404b5d00" scoped=""/>
+        <function-ref name="toggle" ref="0x404b5de0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b5ec0" scoped=""/>
+        <function-ref name="get" ref="0x404c0010" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404c00f0" scoped=""/>
+        <function-ref name="set" ref="0x404c01d0" scoped=""/>
+        <function-ref name="clr" ref="0x404c02b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin1" provided="1" ref="0x404b8740">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin1" ref="0x404b8740" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b8918" scoped=""/>
+        <function-ref name="isInput" ref="0x404b89f8" scoped=""/>
+        <function-ref name="toggle" ref="0x404b8ad8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b8bb8" scoped=""/>
+        <function-ref name="get" ref="0x404b8c98" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b8d78" scoped=""/>
+        <function-ref name="set" ref="0x404b8e58" scoped=""/>
+        <function-ref name="clr" ref="0x404b7010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin4" provided="1" ref="0x404b6660">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin4" ref="0x404b6660" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b6838" scoped=""/>
+        <function-ref name="isInput" ref="0x404b6918" scoped=""/>
+        <function-ref name="toggle" ref="0x404b69f8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b6ad8" scoped=""/>
+        <function-ref name="get" ref="0x404b6bb8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b6c98" scoped=""/>
+        <function-ref name="set" ref="0x404b6d78" scoped=""/>
+        <function-ref name="clr" ref="0x404b6e58" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin7" provided="1" ref="0x404c04a0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin7" ref="0x404c04a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404c0678" scoped=""/>
+        <function-ref name="isInput" ref="0x404c0758" scoped=""/>
+        <function-ref name="toggle" ref="0x404c0838" scoped=""/>
+        <function-ref name="isOutput" ref="0x404c0918" scoped=""/>
+        <function-ref name="get" ref="0x404c09f8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404c0ad8" scoped=""/>
+        <function-ref name="set" ref="0x404c0bb8" scoped=""/>
+        <function-ref name="clr" ref="0x404c0c98" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404cfe30">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit4"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404cfe30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404ce050" scoped=""/>
+        <function-ref name="isInput" ref="0x404ce130" scoped=""/>
+        <function-ref name="toggle" ref="0x404ce210" scoped=""/>
+        <function-ref name="isOutput" ref="0x404ce2f0" scoped=""/>
+        <function-ref name="get" ref="0x404ce3d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404ce4b0" scoped=""/>
+        <function-ref name="set" ref="0x404ce590" scoped=""/>
+        <function-ref name="clr" ref="0x404ce670" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404d79b8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit6"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404d79b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404d7b90" scoped=""/>
+        <function-ref name="isInput" ref="0x404d7c70" scoped=""/>
+        <function-ref name="toggle" ref="0x404d7d50" scoped=""/>
+        <function-ref name="isOutput" ref="0x404d7e30" scoped=""/>
+        <function-ref name="get" ref="0x404d7f10" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404d6010" scoped=""/>
+        <function-ref name="set" ref="0x404d60f0" scoped=""/>
+        <function-ref name="clr" ref="0x404d61d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404d2380">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit2"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404d2380" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404d2558" scoped=""/>
+        <function-ref name="isInput" ref="0x404d2638" scoped=""/>
+        <function-ref name="toggle" ref="0x404d2718" scoped=""/>
+        <function-ref name="isOutput" ref="0x404d27f8" scoped=""/>
+        <function-ref name="get" ref="0x404d28d8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404d29b8" scoped=""/>
+        <function-ref name="set" ref="0x404d2a98" scoped=""/>
+        <function-ref name="clr" ref="0x404d2b78" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404cdbb8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit5"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404cdbb8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404cdd90" scoped=""/>
+        <function-ref name="isInput" ref="0x404cde70" scoped=""/>
+        <function-ref name="toggle" ref="0x404d8010" scoped=""/>
+        <function-ref name="isOutput" ref="0x404d80f0" scoped=""/>
+        <function-ref name="get" ref="0x404d81d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404d82b0" scoped=""/>
+        <function-ref name="set" ref="0x404d8390" scoped=""/>
+        <function-ref name="clr" ref="0x404d8470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404c8560">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit1"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404c8560" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404c8738" scoped=""/>
+        <function-ref name="isInput" ref="0x404c8818" scoped=""/>
+        <function-ref name="toggle" ref="0x404c88f8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404c89d8" scoped=""/>
+        <function-ref name="get" ref="0x404c8ab8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404c8b98" scoped=""/>
+        <function-ref name="set" ref="0x404c8c78" scoped=""/>
+        <function-ref name="clr" ref="0x404c8d58" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404be810">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit0"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404be810" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404be9e8" scoped=""/>
+        <function-ref name="isInput" ref="0x404beac8" scoped=""/>
+        <function-ref name="toggle" ref="0x404beba8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404bec88" scoped=""/>
+        <function-ref name="get" ref="0x404bed68" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404bee48" scoped=""/>
+        <function-ref name="set" ref="0x404bef28" scoped=""/>
+        <function-ref name="clr" ref="0x404bd018" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404d5718">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit7"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404d5718" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404d58f0" scoped=""/>
+        <function-ref name="isInput" ref="0x404d59d0" scoped=""/>
+        <function-ref name="toggle" ref="0x404d5ab0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404d5b90" scoped=""/>
+        <function-ref name="get" ref="0x404d5c70" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404d5d50" scoped=""/>
+        <function-ref name="set" ref="0x404d5e30" scoped=""/>
+        <function-ref name="clr" ref="0x404d5f10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" name="IO" provided="1" ref="0x404d00c0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit3"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404d00c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404d0298" scoped=""/>
+        <function-ref name="isInput" ref="0x404d0378" scoped=""/>
+        <function-ref name="toggle" ref="0x404d0458" scoped=""/>
+        <function-ref name="isOutput" ref="0x404d0538" scoped=""/>
+        <function-ref name="get" ref="0x404d0618" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404d06f8" scoped=""/>
+        <function-ref name="set" ref="0x404d07d8" scoped=""/>
+        <function-ref name="clr" ref="0x404d08b8" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit5):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit5">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:5">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit4):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit4">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:4">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit7):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit7">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:7">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit6):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit6">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:6">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit1):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit1">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:1">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit0):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit0">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:0">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit3):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit3">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:3">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component abstract="" loc="41(HplAtm128GeneralIOPortP.Bit2):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPortP.Bit2">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm128/pins/HplAtm128GeneralIOPinP.nc">
+        <short>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates).</short>
+        <long>
+ Generic pin access for pins mapped into I/O space (for which the sbi, cbi
+ instructions give atomic updates). This can be used for ports A-E.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPinP" qname="HplAtm128GeneralIOPinP"/>
+        <arguments>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:2">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component></referenced></component>

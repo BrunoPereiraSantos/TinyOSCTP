@@ -1,0 +1,148 @@
+<?xml version="1.0" ?><component abstract="" loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC">
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc">
+          <from><interface-ref name="SplitControl" ref="0x40819b68" scoped=""/></from>
+          <to><interface-ref name="SubControl" ref="0x40815ad0" scoped=""/></to>
+        </wire>
+        <wire loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc">
+          <from><interface-ref name="Send" ref="0x408161f8" scoped=""/></from>
+          <to><interface-ref name="SubSend" ref="0x4082e210" scoped=""/></to>
+        </wire>
+        <wire loc="60:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc">
+          <from><interface-ref name="RadioPacket" ref="0x40816b30" scoped=""/></from>
+          <to><interface-ref name="SubPacket" ref="0x4082ebe8" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc">
+          <from><interface-ref name="LowPowerListening" ref="0x408153c0" scoped=""/></from>
+          <to><interface-ref name="LowPowerListening" ref="0x4082c010" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc">
+          <from><interface-ref name="Receive" ref="0x408167a8" scoped=""/></from>
+          <to><interface-ref name="SubReceive" ref="0x4082e7e0" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="39:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="SplitControl" provided="1" ref="0x40819b68">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SplitControl" ref="0x40819b68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x40819d40" scoped=""/>
+        <function-ref name="stopDone" ref="0x40819e20" scoped=""/>
+        <function-ref name="start" ref="0x40819f00" scoped=""/>
+        <function-ref name="stop" ref="0x40816010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="SubSend" provided="0" ref="0x4082e210">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubSend" ref="0x4082e210" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareSend" qname="BareSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x4082e3e8" scoped=""/>
+        <function-ref name="cancel" ref="0x4082e4c8" scoped=""/>
+        <function-ref name="sendDone" ref="0x4082e5a8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="SubReceive" provided="0" ref="0x4082e7e0">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubReceive" ref="0x4082e7e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareReceive" qname="BareReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x4082e9b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="Send" provided="1" ref="0x408161f8">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x408161f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareSend" qname="BareSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x408163d0" scoped=""/>
+        <function-ref name="cancel" ref="0x408164b0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40816590" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="RadioPacket" provided="1" ref="0x40816b30">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioPacket" ref="0x40816b30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioPacket" qname="RadioPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40816d08" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40816de8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40816ec8" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40815010" scoped=""/>
+        <function-ref name="headerLength" ref="0x408150f0" scoped=""/>
+        <function-ref name="metadataLength" ref="0x408151d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="LowPowerListening" provided="1" ref="0x408153c0">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="LowPowerListening" ref="0x408153c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setRemoteWakeupInterval" ref="0x40815598" scoped=""/>
+        <function-ref name="getRemoteWakeupInterval" ref="0x40815678" scoped=""/>
+        <function-ref name="getLocalWakeupInterval" ref="0x40815758" scoped=""/>
+        <function-ref name="setLocalWakeupInterval" ref="0x40815838" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="SubControl" provided="0" ref="0x40815ad0">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubControl" ref="0x40815ad0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x40815ca8" scoped=""/>
+        <function-ref name="stopDone" ref="0x40815d88" scoped=""/>
+        <function-ref name="start" ref="0x40815e68" scoped=""/>
+        <function-ref name="stop" ref="0x4082e010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="Receive" provided="1" ref="0x408167a8">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x408167a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareReceive" qname="BareReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40816980" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyC.nc" name="SubPacket" provided="0" ref="0x4082ebe8">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyC" qname="LowPowerListeningDummyC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubPacket" ref="0x4082ebe8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioPacket" qname="RadioPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x4082edc0" scoped=""/>
+        <function-ref name="payloadLength" ref="0x4082eea0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x4082d010" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x4082d0f0" scoped=""/>
+        <function-ref name="headerLength" ref="0x4082d1d0" scoped=""/>
+        <function-ref name="metadataLength" ref="0x4082d2b0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="37:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyP.nc" name="LowPowerListening" provided="1" ref="0x4082c010">
+      <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyP" qname="LowPowerListeningDummyC.LowPowerListeningDummyP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="LowPowerListening" ref="0x4082c010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setRemoteWakeupInterval" ref="0x4082c1e8" scoped=""/>
+        <function-ref name="getRemoteWakeupInterval" ref="0x4082c2c8" scoped=""/>
+        <function-ref name="getLocalWakeupInterval" ref="0x4082c3a8" scoped=""/>
+        <function-ref name="setLocalWakeupInterval" ref="0x4082c488" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="35(LowPowerListeningDummyC.LowPowerListeningDummyP):/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/LowPowerListeningDummyP.nc" nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyP" qname="LowPowerListeningDummyC.LowPowerListeningDummyP">
+      <instance>
+        <component-ref nicename="tos.lib.rfxlink.layers.LowPowerListeningDummyP" qname="LowPowerListeningDummyP"/>
+      </instance>
+      <module/>
+    </component></referenced></component>

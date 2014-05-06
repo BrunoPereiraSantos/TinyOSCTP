@@ -1,0 +1,227 @@
+<?xml version="1.0" ?><component abstract="" loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc" nicename="tos.lib.rfxlink.layers.RandomCollisionLayerC" qname="RandomCollisionLayerC">
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="59:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc">
+          <from><interface-ref name="RadioReceive" ref="0x4087ccb8" scoped=""/></from>
+          <to><interface-ref name="RadioReceive" ref="0x40875900" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc">
+          <from><interface-ref name="RadioSend" ref="0x4087c760" scoped=""/></from>
+          <to><interface-ref name="RadioSend" ref="0x40875428" scoped=""/></to>
+        </wire>
+        <wire loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc">
+          <from><interface-ref name="SubSend" ref="0x40875d48" scoped=""/></from>
+          <to><interface-ref name="SubSend" ref="0x40878268" scoped=""/></to>
+        </wire>
+        <wire loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc">
+          <from><interface-ref name="Config" ref="0x40892170" scoped=""/></from>
+          <to><interface-ref name="Config" ref="0x40877528" scoped=""/></to>
+        </wire>
+        <wire loc="60:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc">
+          <from><interface-ref name="SubReceive" ref="0x40894258" scoped=""/></from>
+          <to><interface-ref name="SubReceive" ref="0x40878848" scoped=""/></to>
+        </wire>
+        <wire loc="61:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc">
+          <from><interface-ref name="RadioAlarm" ref="0x40894650" scoped=""/></from>
+          <to><interface-ref name="RadioAlarm" ref="0x40878ca8" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc">
+          <from><interface-ref name="Random" ref="0x40894ce8" scoped=""/></from>
+          <to><interface-ref name="Random" ref="0x4088e478" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="44:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc" name="SubSend" provided="0" ref="0x40878268">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerC" qname="RandomCollisionLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubSend" ref="0x40878268" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioSend" qname="RadioSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40878440" scoped=""/>
+        <function-ref name="ready" ref="0x40878520" scoped=""/>
+        <function-ref name="sendDone" ref="0x40878600" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc" name="SubReceive" provided="0" ref="0x40878848">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerC" qname="RandomCollisionLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubReceive" ref="0x40878848" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioReceive" qname="RadioReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40878a20" scoped=""/>
+        <function-ref name="header" ref="0x40878b00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc" name="RadioAlarm" provided="0" ref="0x40878ca8">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerC" qname="RandomCollisionLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioAlarm" ref="0x40878ca8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioAlarm" qname="RadioAlarm"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x40878e80" scoped=""/>
+        <function-ref name="wait" ref="0x40877010" scoped=""/>
+        <function-ref name="cancel" ref="0x408770f0" scoped=""/>
+        <function-ref name="isFree" ref="0x408771d0" scoped=""/>
+        <function-ref name="getNow" ref="0x408772b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc" name="Config" provided="0" ref="0x40877528">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerC" qname="RandomCollisionLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Config" ref="0x40877528" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.RandomCollisionConfig" qname="RandomCollisionConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x40877700" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x408777e0" scoped=""/>
+        <function-ref name="getMinimumBackoff" ref="0x408778c0" scoped=""/>
+        <function-ref name="getTransmitBarrier" ref="0x408779a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc" name="RadioReceive" provided="1" ref="0x4087ccb8">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerC" qname="RandomCollisionLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioReceive" ref="0x4087ccb8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioReceive" qname="RadioReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x4087ce90" scoped=""/>
+        <function-ref name="header" ref="0x40878010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerC.nc" name="RadioSend" provided="1" ref="0x4087c760">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerC" qname="RandomCollisionLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioSend" ref="0x4087c760" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioSend" qname="RadioSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x4087c938" scoped=""/>
+        <function-ref name="ready" ref="0x4087ca18" scoped=""/>
+        <function-ref name="sendDone" ref="0x4087caf8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" name="Config" provided="0" ref="0x40892170">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Config" ref="0x40892170" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.RandomCollisionConfig" qname="RandomCollisionConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x40892348" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x40892428" scoped=""/>
+        <function-ref name="getMinimumBackoff" ref="0x40892508" scoped=""/>
+        <function-ref name="getTransmitBarrier" ref="0x408925e8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" name="RadioAlarm" provided="0" ref="0x40894650">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioAlarm" ref="0x40894650" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioAlarm" qname="RadioAlarm"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x40894828" scoped=""/>
+        <function-ref name="wait" ref="0x40894908" scoped=""/>
+        <function-ref name="cancel" ref="0x408949e8" scoped=""/>
+        <function-ref name="isFree" ref="0x40894ac8" scoped=""/>
+        <function-ref name="getNow" ref="0x40894ba8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomC.nc" name="Random" provided="1" ref="0x4088e478">
+      <component-ref nicename="tos.system.RandomC" qname="RandomC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Random" ref="0x4088e478" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rand16" ref="0x4088e650" scoped=""/>
+        <function-ref name="rand32" ref="0x4088e730" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" name="SubSend" provided="0" ref="0x40875d48">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubSend" ref="0x40875d48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioSend" qname="RadioSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40875f20" scoped=""/>
+        <function-ref name="ready" ref="0x40894018" scoped=""/>
+        <function-ref name="sendDone" ref="0x408940f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" name="SubReceive" provided="0" ref="0x40894258">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubReceive" ref="0x40894258" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioReceive" qname="RadioReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40894430" scoped=""/>
+        <function-ref name="header" ref="0x40894510" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" name="RadioReceive" provided="1" ref="0x40875900">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioReceive" ref="0x40875900" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioReceive" qname="RadioReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40875ad8" scoped=""/>
+        <function-ref name="header" ref="0x40875bb8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" name="Random" provided="0" ref="0x40894ce8">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Random" ref="0x40894ce8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rand16" ref="0x40894ec0" scoped=""/>
+        <function-ref name="rand32" ref="0x40892010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="42:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" name="RadioSend" provided="1" ref="0x40875428">
+      <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioSend" ref="0x40875428" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioSend" qname="RadioSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40875600" scoped=""/>
+        <function-ref name="ready" ref="0x408756e0" scoped=""/>
+        <function-ref name="sendDone" ref="0x408757c0" scoped=""/>
+      </interface-functions>
+    </interface><component loc="43:/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomC.nc" nicename="tos.system.RandomC" qname="RandomC">
+      <documentation loc="33:/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomC.nc">
+        <short>
+ The standard TinyOS random number generator.</short>
+        <long>
+ The standard TinyOS random number generator. If your system requires a 
+ specific random number generator, it should wire to that component
+ directly. 
+
+ @author  Barbara Hohlt 
+ @author  Phil Levis 
+ @date    March 1 2005
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="56:/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomC.nc">
+          <from><interface-ref name="Random" ref="0x4088e478" scoped=""/></from>
+          <to><interface-ref name="Random" ref="0x408a6ef8" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomC.nc">
+          <from><interface-ref name="SeedInit" ref="0x4088cb58" scoped=""/></from>
+          <to><interface-ref name="SeedInit" ref="0x408a6638" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomC.nc">
+          <from><interface-ref name="Init" ref="0x40891918" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x408a6118" scoped=""/></to>
+        </wire>
+        <wire loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x40473738" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x408a6118" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component abstract="" loc="38(RandomCollisionLayerC.RandomCollisionLayerP):/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/RandomCollisionLayerP.nc" nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerC.RandomCollisionLayerP">
+      <instance>
+        <component-ref nicename="tos.lib.rfxlink.layers.RandomCollisionLayerP" qname="RandomCollisionLayerP"/>
+      </instance>
+      <module/>
+    </component></referenced></component>

@@ -1,0 +1,396 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Component: tos.chips.rf230.RF230RadioC</title>
+  </head>
+  <body>
+    <h2>Component: tos.chips.rf230.RF230RadioC
+    </h2>
+    <b>configuration RF230RadioC</b>
+    <p><p><div id=heading>Provides</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMPacket.html">AMPacket</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.AMSend.html">AMSend</a>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SendNotifier.html">SendNotifier</a> as <b>Ieee154Notifier</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Ieee154Packet.html">Ieee154Packet</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>Ieee154Receive</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Ieee154Send.html">Ieee154Send</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.LinkPacketMetadata.html">LinkPacketMetadata</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.timer.LocalTime.html">LocalTime</a>&lt;TRadio&gt; as <b>LocalTimeRadio</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.LowPowerListening.html">LowPowerListening</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketAcknowledgements.html">PacketAcknowledgements</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Packet.html">Packet</a> as <b>PacketForActiveMessage</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Packet.html">Packet</a> as <b>PacketForIeee154Message</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketLink.html">PacketLink</a></div><div id=funcsig>interface <a href="../ihtml/tos.lib.rfxlink.util.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketLinkQuality</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.rfxlink.util.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketRSSI</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketTimeStamp.html">PacketTimeStamp</a>&lt;TMilli, uint32_t&gt; as <b>PacketTimeStampMilli</b></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.PacketTimeStamp.html">PacketTimeStamp</a>&lt;TRadio, uint32_t&gt; as <b>PacketTimeStampRadio</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.rfxlink.util.PacketField.html">PacketField</a>&lt;uint8_t&gt; as <b>PacketTransmitPower</b></div><div id=funcsig>interface <a href="../ihtml/tos.lib.rfxlink.util.RadioChannel.html">RadioChannel</a></div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>ReceiveDefault</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SendNotifier.html">SendNotifier</a>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Resource.html">Resource</a> as <b>SendResource</b>[uint8_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>Snoop</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.Receive.html">Receive</a> as <b>SnoopDefault</b>[am_id_t]</div><div id=funcsig>interface <a href="../ihtml/tos.interfaces.SplitControl.html">SplitControl</a></div><p><div id=heading>Wiring</div><p>
+    <map name="comp">
+      <area shape="rect" id="node2" href="../chtml/tos.lib.rfxlink.layers.LowPowerListeningDummyC.html" title="LowPowerListeningDummyC\n(LowPowerListeningLayerC)" alt="" coords="1364,245,1617,307">
+
+      <area shape="poly" id="edge2" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1408,171 1459,233 1455,237 1404,174">
+
+      <area shape="rect" id="edge2" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1444,203,1519,221">
+
+      <area shape="rect" id="node21" href="../chtml/tos.lib.rfxlink.layers.TimeStampingLayerC.html" title="TimeStampingLayerC" alt="" coords="2436,501,2631,560">
+
+      <area shape="poly" id="edge110" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="1618,302 1630,304 1710,312 1811,316 2046,321 2166,326 2279,334 2377,349 2454,371 2490,386 2516,402 2537,425 2556,458 2559,473 2558,489 2552,488 2554,473 2551,460 2533,428 2513,407 2487,391 2452,376 2376,354 2278,340 2166,331 2046,326 1811,321 1710,317 1629,309 1617,307">
+
+      <area shape="rect" id="edge110" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="2540,395,2617,413">
+
+      <area shape="rect" id="node31" href="../chtml/tos.lib.rfxlink.layers.MessageBufferLayerC.html" title="MessageBufferLayerC" alt="" coords="1504,375,1704,433">
+
+      <area shape="poly" id="edge104" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1555,305 1581,329 1597,360 1592,363 1577,332 1551,309">
+
+      <area shape="rect" id="edge104" href="../ihtml/tos.interfaces.SplitControl.html" title="SplitControl" alt="" coords="1589,331,1664,349">
+
+      <area shape="poly" id="edge106" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1423,309 1405,328 1403,337 1407,348 1420,358 1439,367 1491,382 1489,388 1437,372 1417,362 1403,351 1398,338 1400,326 1420,305">
+
+      <area shape="rect" id="edge106" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1405,331,1469,349">
+
+      <area shape="poly" id="edge108" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="1488,307 1489,328 1497,348 1512,364 1508,368 1492,351 1484,329 1483,307">
+
+      <area shape="rect" id="edge108" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="1495,331,1573,349">
+
+      <area shape="rect" id="node4" href="../chtml/tos.chips.rf230.RF230DriverLayerC.html" title="RF230DriverLayerC" alt="" coords="2955,628,3139,687">
+
+      <area shape="poly" id="edge4" href="../ihtml/tos.lib.rfxlink.util.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="3144,556 3135,580 3121,604 3106,621 3102,617 3117,601 3130,578 3139,554">
+
+      <area shape="rect" id="edge4" href="../ihtml/tos.lib.rfxlink.util.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="3129,585,3267,602">
+
+      <area shape="poly" id="edge164" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRadio, uint32_t&gt;" alt="" coords="2954,652 2842,635 2781,622 2722,605 2703,596 2686,586 2637,567 2639,562 2688,582 2706,591 2724,600 2782,617 2843,630 2955,647">
+
+      <area shape="rect" id="edge164" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRadio, uint32_t&gt;" alt="" coords="2723,585,2964,602">
+
+      <area shape="rect" id="node37" href="../chtml/tos.chips.rf230.RF230RadioP.html" title="RF230RadioP" alt="" coords="1893,755,2019,803">
+
+      <area shape="poly" id="edge162" href="../ihtml/tos.chips.rf230.RF230DriverConfig.html" title="RF230DriverConfig" alt="" coords="2954,662 2641,676 2446,691 2250,715 2135,736 2033,761 2031,755 2134,731 2249,709 2445,686 2641,670 2954,656">
+
+      <area shape="rect" id="edge162" href="../ihtml/tos.chips.rf230.RF230DriverConfig.html" title="RF230DriverConfig" alt="" coords="2249,713,2367,730">
+
+      <area shape="rect" id="node38" href="../chtml/tos.lib.rfxlink.util.RadioAlarmC.html" title="RadioAlarmC" alt="" coords="2060,1236,2191,1295">
+
+      <area shape="poly" id="edge172" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="2965,689 2901,719 2838,757 2776,805 2731,846 2642,954 2615,993 2598,1027 2580,1060 2550,1098 2509,1138 2474,1166 2435,1189 2382,1213 2338,1230 2292,1242 2205,1259 2204,1254 2291,1237 2336,1224 2380,1208 2432,1184 2471,1162 2505,1134 2546,1094 2576,1057 2594,1025 2611,990 2638,950 2727,842 2772,800 2834,752 2898,714 2963,684">
+
+      <area shape="rect" id="edge172" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="2640,953,2713,970">
+
+      <area shape="rect" id="node44" href="../chtml/tos.lib.rfxlink.layers.MetadataFlagsLayerC.html" title="MetadataFlagsLayerC" alt="" coords="2845,1241,3032,1289">
+
+      <area shape="poly" id="edge166" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="3049,687 3049,779 3049,1144 3044,1171 3031,1196 3013,1217 2993,1235 2989,1231 3009,1213 3027,1193 3039,1170 3044,1144 3044,779 3044,687">
+
+      <area shape="rect" id="edge166" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="3047,953,3116,970">
+
+      <area shape="poly" id="edge168" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="3093,685 3113,703 3131,725 3144,751 3149,778 3149,1144 3147,1163 3140,1181 3117,1209 3084,1231 3046,1246 3044,1241 3081,1226 3113,1205 3136,1178 3142,1162 3144,1144 3144,779 3139,752 3127,728 3109,707 3089,689">
+
+      <area shape="rect" id="edge168" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="3147,953,3216,970">
+
+      <area shape="poly" id="edge170" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="3140,674 3179,689 3214,711 3239,741 3247,759 3249,778 3249,1144 3244,1162 3230,1177 3208,1192 3181,1205 3116,1228 3047,1247 3045,1242 3114,1223 3179,1200 3205,1187 3226,1173 3239,1159 3244,1144 3244,779 3242,760 3235,743 3211,715 3177,694 3138,679">
+
+      <area shape="rect" id="edge170" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="3247,953,3316,970">
+
+      <area shape="rect" id="node6" href="../chtml/tos.lib.rfxlink.layers.Ieee154MessageLayerC.html" title="Ieee154MessageLayerC" alt="" coords="400,252,605,300">
+
+      <area shape="poly" id="edge6" href="../ihtml/tos.interfaces.SendNotifier.html" title="SendNotifier" alt="" coords="493,173 501,238 496,238 488,174">
+
+      <area shape="rect" id="edge6" href="../ihtml/tos.interfaces.SendNotifier.html" title="SendNotifier" alt="" coords="497,203,577,221">
+
+      <area shape="rect" id="node14" href="../chtml/tos.lib.rfxlink.layers.Ieee154PacketLayerC.html" title="Ieee154PacketLayerC" alt="" coords="816,869,1013,928">
+
+      <area shape="poly" id="edge76" href="../ihtml/tos.lib.rfxlink.layers.Ieee154PacketLayer.html" title="Ieee154PacketLayer" alt="" coords="606,287 647,298 689,316 727,340 758,372 773,396 781,417 784,468 784,778 788,803 801,825 818,844 839,860 836,864 815,848 796,828 783,805 779,779 779,468 776,418 769,398 754,375 723,344 686,321 646,304 605,292">
+
+      <area shape="rect" id="edge76" href="../ihtml/tos.lib.rfxlink.layers.Ieee154PacketLayer.html" title="Ieee154PacketLayer" alt="" coords="781,585,911,602">
+
+      <area shape="rect" id="node40" href="../chtml/tos.lib.rfxlink.layers.TinyosNetworkLayerC.html" title="TinyosNetworkLayerC" alt="" coords="552,380,744,428">
+
+      <area shape="poly" id="edge78" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="556,298 600,329 631,366 626,370 597,333 553,302">
+
+      <area shape="rect" id="edge78" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="616,331,680,349">
+
+      <area shape="poly" id="edge80" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="441,303 425,313 413,324 409,335 414,348 432,361 462,373 539,389 537,394 460,378 430,366 410,351 404,336 409,321 421,309 438,298">
+
+      <area shape="rect" id="edge80" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="412,331,491,349">
+
+      <area shape="poly" id="edge82" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="504,300 507,325 518,348 546,371 542,375 514,351 502,326 499,301">
+
+      <area shape="rect" id="edge82" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="516,331,593,349">
+
+      <area shape="rect" id="node8" href="../chtml/tos.system.SimpleFcfsArbiterC.html" title="SimpleFcfsArbiterC\n(SendResourceC)" alt="" coords="879,373,1057,435">
+
+      <area shape="poly" id="edge8" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="1198,297 1155,309 1121,315 1094,317 1069,320 1039,333 1018,347 1001,365 997,361 1015,343 1036,328 1067,315 1094,311 1121,310 1154,304 1197,292">
+
+      <area shape="rect" id="edge8" href="../ihtml/tos.interfaces.Resource.html" title="Resource[uint8_t]" alt="" coords="1037,331,1151,349">
+
+      <area shape="rect" id="node10" href="../chtml/tos.lib.rfxlink.layers.ActiveMessageLayerC.html" title="ActiveMessageLayerC" alt="" coords="920,120,1120,179">
+
+      <area shape="poly" id="edge10" href="../ihtml/tos.interfaces.SendNotifier.html" title="SendNotifier[am_id_t]" alt="" coords="433,50 464,74 501,94 537,102 583,108 693,112 809,112 906,117 906,123 809,118 693,117 583,113 536,108 499,98 461,79 430,54">
+
+      <area shape="rect" id="edge10" href="../ihtml/tos.interfaces.SendNotifier.html" title="SendNotifier[am_id_t]" alt="" coords="500,78,641,95">
+
+      <area shape="poly" id="edge64" href="../ihtml/tos.lib.rfxlink.layers.ActiveMessageConfig.html" title="ActiveMessageConfig" alt="" coords="1121,158 1303,176 1452,177 1650,179 1745,187 1824,203 1855,216 1879,232 1895,252 1900,276 1900,657 1903,680 1910,702 1931,742 1926,744 1905,704 1897,681 1895,657 1895,276 1890,254 1875,236 1853,221 1822,208 1744,192 1650,184 1452,182 1303,181 1120,163">
+
+      <area shape="rect" id="edge64" href="../ihtml/tos.lib.rfxlink.layers.ActiveMessageConfig.html" title="ActiveMessageConfig" alt="" coords="1897,459,2035,477">
+
+      <area shape="rect" id="node39" href="../chtml/tos.lib.rfxlink.layers.AutoResourceAcquireLayerC.html" title="AutoResourceAcquireLayerC" alt="" coords="897,252,1143,300">
+
+      <area shape="poly" id="edge66" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1023,179 1023,238 1017,238 1017,179">
+
+      <area shape="rect" id="edge66" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1020,203,1084,221">
+
+      <area shape="poly" id="edge68" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="921,179 909,181 872,187 839,189 782,191 756,195 733,204 711,221 690,247 684,260 682,272 685,295 691,320 688,350 679,369 674,367 683,349 686,320 680,296 676,272 679,258 686,244 707,217 731,200 755,190 781,186 839,184 872,182 907,176 919,173">
+
+      <area shape="rect" id="edge68" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="688,267,767,285">
+
+      <area shape="poly" id="edge70" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="928,181 867,209 810,247 796,262 789,276 781,291 769,308 732,344 695,374 692,370 729,340 765,305 777,288 784,274 792,259 806,243 864,205 925,176">
+
+      <area shape="rect" id="edge70" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="808,267,885,285">
+
+      <area shape="poly" id="edge12" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="607,49 641,73 682,94 741,109 790,112 842,111 906,117 906,123 841,117 790,117 741,114 680,98 639,78 604,53">
+
+      <area shape="rect" id="edge12" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend[am_id_t]" alt="" coords="681,78,796,95">
+
+      <area shape="poly" id="edge14" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="739,45 844,94 907,116 906,121 842,98 737,49">
+
+      <area shape="rect" id="edge14" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="843,78,952,95">
+
+      <area shape="poly" id="edge16" href="../ihtml/tos.interfaces.Ieee154Packet.html" title="Ieee154Packet" alt="" coords="917,803 917,856 912,856 912,803">
+
+      <area shape="rect" id="edge16" href="../ihtml/tos.interfaces.Ieee154Packet.html" title="Ieee154Packet" alt="" coords="915,827,1008,845">
+
+      <area shape="rect" id="node29" href="../chtml/tos.lib.rfxlink.layers.PacketLinkLayerC.html" title="PacketLinkLayerC" alt="" coords="1071,995,1239,1053">
+
+      <area shape="poly" id="edge90" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="938,926 959,949 984,968 1020,987 1059,1001 1057,1006 1018,992 981,973 956,953 934,930">
+
+      <area shape="rect" id="edge90" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="983,953,1060,970">
+
+      <area shape="poly" id="edge18" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="683,173 609,205 548,246 545,242 607,200 681,168">
+
+      <area shape="rect" id="edge18" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="608,203,651,221">
+
+      <area shape="poly" id="edge20" href="../ihtml/tos.lib.rfxlink.util.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="3341,556 3310,582 3273,605 3214,628 3153,644 3152,639 3212,623 3271,600 3307,578 3337,552">
+
+      <area shape="rect" id="edge20" href="../ihtml/tos.lib.rfxlink.util.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="3301,585,3439,602">
+
+      <area shape="poly" id="edge22" href="../ihtml/tos.interfaces.LowPowerListening.html" title="LowPowerListening" alt="" coords="1576,175 1527,236 1522,233 1572,171">
+
+      <area shape="rect" id="edge22" href="../ihtml/tos.interfaces.LowPowerListening.html" title="LowPowerListening" alt="" coords="1548,203,1668,221">
+
+      <area shape="poly" id="edge24" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="937,52 987,108 983,112 933,55">
+
+      <area shape="rect" id="edge24" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="971,78,1013,95">
+
+      <area shape="poly" id="edge26" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="1109,54 1058,111 1054,108 1105,50">
+
+      <area shape="rect" id="edge26" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="1083,78,1192,95">
+
+      <area shape="poly" id="edge28" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRadio, uint32_t&gt;" alt="" coords="2757,429 2610,498 2608,493 2755,424">
+
+      <area shape="rect" id="edge28" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRadio, uint32_t&gt;" alt="" coords="2684,459,2925,477">
+
+      <area shape="poly" id="edge146" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRadio&gt;" alt="" coords="2538,559 2545,582 2559,601 2577,609 2611,616 2710,630 2941,649 2940,654 2709,635 2610,622 2576,614 2556,605 2540,584 2533,561">
+
+      <area shape="rect" id="edge146" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRadio&gt;" alt="" coords="2557,585,2687,602">
+
+      <area shape="poly" id="edge148" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="2528,561 2519,606 2515,657 2515,836 2511,905 2514,934 2525,970 2546,1014 2578,1051 2649,1110 2726,1160 2802,1202 2868,1233 2866,1238 2800,1207 2724,1165 2646,1114 2574,1055 2542,1017 2520,972 2508,935 2506,905 2509,836 2509,657 2514,605 2523,560">
+
+      <area shape="rect" id="edge148" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="2511,890,2588,907">
+
+      <area shape="poly" id="edge150" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="2470,562 2443,580 2420,602 2404,628 2397,658 2397,1144 2400,1151 2408,1158 2442,1174 2492,1190 2554,1204 2697,1230 2832,1250 2831,1255 2696,1235 2553,1210 2490,1195 2440,1179 2405,1163 2396,1154 2392,1144 2392,657 2399,626 2416,599 2440,576 2467,558">
+
+      <area shape="rect" id="edge150" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="2395,890,2464,907">
+
+      <area shape="poly" id="edge30" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRadio&gt;" alt="" coords="3562,555 3507,582 3445,605 3370,624 3293,638 3153,654 3152,649 3292,632 3369,619 3443,600 3505,577 3560,550">
+
+      <area shape="rect" id="edge30" href="../ihtml/tos.lib.timer.LocalTime.html" title="LocalTime&lt;TRadio&gt;" alt="" coords="3492,585,3621,602">
+
+      <area shape="poly" id="edge32" href="../ihtml/tos.lib.rfxlink.util.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="3772,555 3705,582 3627,605 3536,620 3410,633 3152,653 3152,648 3410,628 3535,615 3626,600 3703,577 3770,550">
+
+      <area shape="rect" id="edge32" href="../ihtml/tos.lib.rfxlink.util.PacketField.html" title="PacketField&lt;uint8_t&gt;" alt="" coords="3685,585,3823,602">
+
+      <area shape="rect" id="node25" href="../chtml/tos.lib.rfxlink.layers.SoftwareAckLayerC.html" title="SoftwareAckLayerC" alt="" coords="1636,1120,1809,1168">
+
+      <area shape="poly" id="edge34" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1680,1048 1678,1072 1683,1095 1689,1108 1685,1111 1677,1097 1673,1072 1675,1048">
+
+      <area shape="rect" id="edge34" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1680,1078,1847,1095">
+
+      <area shape="poly" id="edge132" href="../ihtml/tos.lib.rfxlink.layers.SoftwareAckConfig.html" title="SoftwareAckConfig" alt="" coords="1804,1118 1830,1106 1845,1094 1854,1076 1856,1060 1849,1028 1838,993 1836,974 1840,951 1856,911 1877,873 1923,812 1927,815 1882,876 1861,913 1845,953 1842,974 1843,992 1854,1027 1861,1060 1859,1078 1849,1098 1832,1111 1806,1122">
+
+      <area shape="rect" id="edge132" href="../ihtml/tos.lib.rfxlink.layers.SoftwareAckConfig.html" title="SoftwareAckConfig" alt="" coords="1843,953,1963,970">
+
+      <area shape="poly" id="edge130" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="1810,1162 1914,1189 2048,1234 2046,1239 1913,1195 1809,1167">
+
+      <area shape="rect" id="edge130" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="1972,1193,2045,1210">
+
+      <area shape="poly" id="edge128" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="1810,1152 2307,1208 2832,1254 2831,1260 2306,1213 1809,1157">
+
+      <area shape="rect" id="edge128" href="../ihtml/tos.lib.rfxlink.util.PacketFlag.html" title="PacketFlag" alt="" coords="2307,1193,2376,1210">
+
+      <area shape="rect" id="node45" href="../chtml/tos.lib.rfxlink.layers.DummyLayerC.html" title="DummyLayerC\n(CsmaLayerC)" alt="" coords="1872,1235,2019,1296">
+
+      <area shape="poly" id="edge134" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="1719,1168 1719,1190 1726,1209 1746,1223 1778,1235 1859,1252 1858,1257 1777,1240 1743,1228 1722,1212 1713,1191 1714,1168">
+
+      <area shape="rect" id="edge134" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="1724,1193,1793,1210">
+
+      <area shape="poly" id="edge136" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1760,1166 1825,1208 1861,1226 1859,1231 1823,1213 1757,1171">
+
+      <area shape="rect" id="edge136" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1824,1193,1908,1210">
+
+      <area shape="poly" id="edge36" href="../ihtml/tos.interfaces.Ieee154Send.html" title="Ieee154Send" alt="" coords="136,166 290,219 389,246 387,251 289,224 134,171">
+
+      <area shape="rect" id="edge36" href="../ihtml/tos.interfaces.Ieee154Send.html" title="Ieee154Send" alt="" coords="289,203,375,221">
+
+      <area shape="poly" id="edge38" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="1264,54 1234,77 1199,98 1134,124 1132,119 1196,94 1231,73 1261,50">
+
+      <area shape="rect" id="edge38" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="1227,78,1336,95">
+
+      <area shape="poly" id="edge40" href="../ihtml/tos.interfaces.PacketLink.html" title="PacketLink" alt="" coords="1262,924 1197,987 1193,983 1258,920">
+
+      <area shape="rect" id="edge40" href="../ihtml/tos.interfaces.PacketLink.html" title="PacketLink" alt="" coords="1227,953,1295,970">
+
+      <area shape="poly" id="edge98" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1153,994 1156,952 1170,851 1185,772 1197,694 1203,593 1203,404 1205,386 1211,372 1233,354 1298,328 1349,307 1352,311 1300,333 1236,359 1215,375 1210,387 1208,404 1208,593 1203,695 1190,773 1175,851 1161,952 1158,995">
+
+      <area shape="rect" id="edge98" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1204,649,1268,666">
+
+      <area shape="poly" id="edge100" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="1122,996 1091,953 1080,927 1076,899 1076,721 1081,664 1089,610 1102,549 1123,484 1153,422 1172,393 1193,368 1218,346 1246,328 1350,304 1351,310 1248,333 1221,350 1197,372 1176,397 1158,424 1128,486 1108,550 1094,611 1086,664 1081,721 1081,898 1085,925 1096,950 1126,993">
+
+      <area shape="rect" id="edge100" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="1088,649,1167,666">
+
+      <area shape="poly" id="edge102" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="1238,1008 1274,996 1308,979 1338,956 1360,927 1366,912 1367,900 1360,870 1349,844 1334,826 1321,807 1315,779 1315,404 1320,374 1336,349 1358,328 1385,311 1388,315 1362,332 1340,352 1325,376 1320,404 1320,778 1325,805 1338,823 1353,842 1365,869 1372,899 1371,913 1365,929 1342,960 1311,984 1276,1001 1240,1013">
+
+      <area shape="rect" id="edge102" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="1317,649,1395,666">
+
+      <area shape="poly" id="edge96" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1191,1051 1226,1075 1265,1093 1331,1109 1424,1121 1622,1136 1622,1142 1424,1126 1330,1114 1263,1099 1223,1079 1188,1056">
+
+      <area shape="rect" id="edge96" href="../ihtml/tos.interfaces.PacketAcknowledgements.html" title="PacketAcknowledgements" alt="" coords="1264,1078,1431,1095">
+
+      <area shape="poly" id="edge42" href="../ihtml/tos.lib.rfxlink.util.RadioChannel.html" title="RadioChannel" alt="" coords="1710,302 1671,351 1655,367 1651,364 1667,348 1705,298">
+
+      <area shape="rect" id="edge42" href="../ihtml/tos.lib.rfxlink.util.RadioChannel.html" title="RadioChannel" alt="" coords="1683,331,1771,349">
+
+      <area shape="rect" id="node41" href="../chtml/tos.lib.rfxlink.layers.UniqueLayerC.html" title="UniqueLayerC" alt="" coords="1415,501,1556,560">
+
+      <area shape="poly" id="edge114" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1531,435 1503,460 1491,489 1486,487 1499,457 1528,431">
+
+      <area shape="rect" id="edge114" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1501,459,1585,477">
+
+      <area shape="rect" id="node42" href="../chtml/tos.lib.rfxlink.layers.RandomCollisionLayerC.html" title="RandomCollisionLayerC\n(CollisionAvoidanceLayerC)" alt="" coords="1481,627,1721,688">
+
+      <area shape="poly" id="edge112" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="1606,434 1604,613 1599,613 1601,434">
+
+      <area shape="rect" id="edge112" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="1603,522,1672,539">
+
+      <area shape="rect" id="node43" href="../chtml/tos.lib.rfxlink.layers.DummyLayerC.html" title="DummyLayerC\n(TrafficMonitorLayerC)" alt="" coords="2260,1363,2463,1424">
+
+      <area shape="poly" id="edge116" href="../ihtml/tos.lib.rfxlink.util.RadioState.html" title="RadioState" alt="" coords="1705,410 1874,428 2062,454 2147,470 2216,488 2263,507 2276,518 2281,530 2281,721 2284,822 2293,900 2325,1077 2345,1192 2361,1349 2356,1349 2340,1192 2320,1078 2287,901 2279,822 2276,721 2276,531 2272,522 2260,512 2214,493 2146,475 2062,459 1873,433 1704,415">
+
+      <area shape="rect" id="edge116" href="../ihtml/tos.lib.rfxlink.util.RadioState.html" title="RadioState" alt="" coords="2293,890,2364,907">
+
+      <area shape="poly" id="edge44" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="1433,53 1391,77 1342,99 1236,126 1134,143 1133,137 1235,121 1340,93 1389,72 1430,48">
+
+      <area shape="rect" id="edge44" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="1383,78,1445,95">
+
+      <area shape="poly" id="edge46" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="2319,428 2318,453 2326,476 2340,487 2363,497 2423,512 2422,517 2361,502 2337,491 2322,479 2312,454 2314,428">
+
+      <area shape="rect" id="edge46" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TMilli, uint32_t&gt;" alt="" coords="2324,459,2553,477">
+
+      <area shape="poly" id="edge48" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="321,169 450,243 447,247 319,174">
+
+      <area shape="rect" id="edge48" href="../ihtml/tos.interfaces.Receive.html" title="Receive" alt="" coords="405,203,455,221">
+
+      <area shape="poly" id="edge50" href="../ihtml/tos.interfaces.LinkPacketMetadata.html" title="LinkPacketMetadata" alt="" coords="2955,553 2986,601 3001,617 2997,621 2982,604 2951,556">
+
+      <area shape="rect" id="edge50" href="../ihtml/tos.interfaces.LinkPacketMetadata.html" title="LinkPacketMetadata" alt="" coords="2984,585,3113,602">
+
+      <area shape="poly" id="edge52" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="1586,52 1523,77 1451,99 1311,121 1134,141 1133,136 1310,116 1450,93 1521,72 1584,47">
+
+      <area shape="rect" id="edge52" href="../ihtml/tos.interfaces.Receive.html" title="Receive[am_id_t]" alt="" coords="1511,78,1620,95">
+
+      <area shape="poly" id="edge60" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="2019,769 2530,709 2940,666 2941,671 2531,715 2019,774">
+
+      <area shape="rect" id="edge60" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="2531,713,2608,730">
+
+      <area shape="poly" id="edge54" href="../ihtml/tos.lib.rfxlink.layers.Ieee154PacketLayer.html" title="Ieee154PacketLayer" alt="" coords="1894,789 1027,888 1026,883 1893,783">
+
+      <area shape="rect" id="edge54" href="../ihtml/tos.lib.rfxlink.layers.Ieee154PacketLayer.html" title="Ieee154PacketLayer" alt="" coords="1528,827,1657,845">
+
+      <area shape="poly" id="edge58" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRadio, uint32_t&gt;" alt="" coords="1975,753 2041,688 2085,654 2133,624 2205,593 2281,570 2355,552 2422,541 2423,546 2356,558 2282,575 2207,598 2136,629 2089,658 2045,692 1979,757">
+
+      <area shape="rect" id="edge58" href="../ihtml/tos.interfaces.PacketTimeStamp.html" title="PacketTimeStamp&lt;TRadio, uint32_t&gt;" alt="" coords="2135,649,2376,666">
+
+      <area shape="poly" id="edge56" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="1970,802 1980,826 2060,1047 2115,1222 2110,1223 2055,1049 1975,828 1965,804">
+
+      <area shape="rect" id="edge56" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="2057,1015,2131,1033">
+
+      <area shape="poly" id="edge62" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TRadio, tradio_size&gt;" alt="" coords="2191,1260 2453,1242 2576,1227 2618,1218 2641,1208 2669,1180 2685,1152 2693,1123 2696,1092 2700,1025 2709,989 2727,951 2777,873 2823,817 2877,768 2949,710 2975,692 2978,696 2952,714 2880,772 2827,821 2781,876 2732,953 2714,991 2706,1026 2701,1092 2698,1123 2690,1154 2673,1184 2644,1213 2620,1223 2576,1232 2453,1247 2191,1265">
+
+      <area shape="rect" id="edge62" href="../ihtml/tos.lib.timer.Alarm.html" title="Alarm&lt;TRadio, tradio_size&gt;" alt="" coords="2729,953,2909,970">
+
+      <area shape="poly" id="edge72" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="977,302 962,316 950,332 947,345 948,360 943,361 942,345 946,330 958,312 973,298">
+
+      <area shape="rect" id="edge72" href="../ihtml/tos.interfaces.Resource.html" title="Resource" alt="" coords="948,331,1007,349">
+
+      <area shape="poly" id="edge74" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="955,303 816,352 736,378 735,373 814,347 953,298">
+
+      <area shape="rect" id="edge74" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="867,331,931,349">
+
+      <area shape="poly" id="edge88" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="656,428 665,475 669,531 669,778 672,790 681,801 712,824 755,845 804,864 802,869 753,850 709,828 677,805 667,792 664,779 664,531 660,476 651,429">
+
+      <area shape="rect" id="edge88" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="667,649,744,666">
+
+      <area shape="poly" id="edge86" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="623,430 605,450 588,474 576,502 571,531 571,898 574,906 584,915 622,932 679,949 750,964 911,991 1057,1010 1057,1016 910,996 749,970 678,954 620,937 581,919 569,909 565,899 565,530 570,500 583,472 601,447 619,427">
+
+      <area shape="rect" id="edge86" href="../ihtml/tos.lib.rfxlink.util.BareReceive.html" title="BareReceive" alt="" coords="568,713,647,730">
+
+      <area shape="poly" id="edge84" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="744,416 1402,515 1401,521 744,421">
+
+      <area shape="rect" id="edge84" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1116,459,1180,477">
+
+      <area shape="poly" id="edge94" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1475,561 1445,622 1402,690 1375,720 1350,744 1301,779 1254,814 1231,838 1208,871 1181,927 1165,982 1160,980 1176,925 1203,868 1227,835 1251,810 1298,774 1346,740 1372,717 1398,686 1440,620 1470,559">
+
+      <area shape="rect" id="edge94" href="../ihtml/tos.lib.rfxlink.util.BareSend.html" title="BareSend" alt="" coords="1331,770,1395,787">
+
+      <area shape="poly" id="edge92" href="../ihtml/tos.lib.rfxlink.layers.UniqueConfig.html" title="UniqueConfig" alt="" coords="1557,547 1645,578 1691,599 1735,624 1754,640 1766,655 1778,670 1795,686 1844,719 1893,746 1891,751 1841,723 1792,690 1774,673 1762,658 1750,644 1732,629 1689,604 1643,583 1556,552">
+
+      <area shape="rect" id="edge92" href="../ihtml/tos.lib.rfxlink.layers.UniqueConfig.html" title="UniqueConfig" alt="" coords="1793,649,1879,666">
+
+      <area shape="poly" id="edge118" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1489,560 1494,581 1504,601 1519,617 1515,620 1499,604 1489,583 1484,561">
+
+      <area shape="rect" id="edge118" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1501,585,1585,602">
+
+      <area shape="poly" id="edge122" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="1569,690 1550,713 1532,749 1523,780 1513,811 1494,847 1481,859 1470,871 1458,920 1454,985 1462,1048 1471,1074 1483,1094 1504,1108 1538,1119 1623,1133 1622,1139 1537,1124 1502,1113 1479,1098 1466,1077 1457,1049 1449,985 1453,919 1466,868 1477,855 1490,844 1508,809 1518,778 1527,747 1546,711 1565,687">
+
+      <area shape="rect" id="edge122" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="1468,890,1537,907">
+
+      <area shape="poly" id="edge124" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1596,689 1557,860 1528,995 1522,1026 1522,1038 1528,1052 1546,1075 1570,1093 1596,1108 1624,1120 1622,1125 1594,1113 1567,1098 1543,1079 1523,1055 1516,1039 1516,1025 1523,994 1551,859 1591,688">
+
+      <area shape="rect" id="edge124" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1551,890,1635,907">
+
+      <area shape="poly" id="edge120" href="../ihtml/tos.lib.rfxlink.layers.RandomCollisionConfig.html" title="RandomCollisionConfig" alt="" coords="1601,688 1603,710 1614,729 1626,735 1649,741 1717,753 1880,770 1879,775 1717,758 1648,747 1624,740 1610,733 1598,712 1595,689">
+
+      <area shape="rect" id="edge120" href="../ihtml/tos.lib.rfxlink.layers.RandomCollisionConfig.html" title="RandomCollisionConfig" alt="" coords="1612,713,1757,730">
+
+      <area shape="poly" id="edge126" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="1722,684 1729,685 1776,694 1817,697 1890,697 1924,701 1958,709 1994,726 2032,753 2058,777 2075,802 2087,826 2094,851 2105,906 2113,936 2126,969 2133,981 2139,994 2141,1024 2139,1054 2131,1222 2125,1222 2133,1053 2136,1024 2133,995 2128,984 2122,972 2108,938 2100,907 2088,853 2082,828 2071,804 2054,781 2029,757 1991,730 1957,714 1923,706 1890,703 1817,702 1775,699 1727,691 1721,689">
+
+      <area shape="rect" id="edge126" href="../ihtml/tos.lib.rfxlink.util.RadioAlarm.html" title="RadioAlarm" alt="" coords="2124,953,2197,970">
+
+      <area shape="poly" id="edge156" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="2463,1387 2698,1376 2977,1353 3105,1337 3210,1317 3250,1305 3280,1292 3299,1279 3305,1265 3305,1087 3309,1028 3315,970 3318,890 3313,825 3304,796 3290,769 3268,742 3239,714 3204,697 3152,682 3153,677 3206,692 3241,710 3272,738 3294,766 3309,794 3318,824 3323,890 3320,971 3315,1029 3311,1087 3311,1266 3303,1282 3283,1297 3252,1310 3211,1322 3106,1342 2978,1359 2698,1381 2463,1393">
+
+      <area shape="rect" id="edge156" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="3315,1015,3384,1033">
+
+      <area shape="poly" id="edge158" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="2463,1389 2725,1380 2884,1372 3044,1360 3191,1343 3312,1322 3358,1310 3394,1296 3415,1281 3423,1265 3423,779 3416,760 3397,742 3367,726 3330,712 3242,689 3152,673 3153,668 3243,684 3332,707 3370,721 3400,738 3420,757 3428,778 3428,1266 3419,1284 3396,1301 3360,1315 3313,1328 3191,1349 3044,1365 2884,1377 2726,1386 2463,1394">
+
+      <area shape="rect" id="edge158" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="3425,1015,3509,1033">
+
+      <area shape="poly" id="edge160" href="../ihtml/tos.lib.rfxlink.util.RadioState.html" title="RadioState" alt="" coords="2463,1388 2899,1369 3130,1354 3298,1336 3344,1332 3389,1333 3472,1337 3506,1333 3532,1322 3541,1313 3549,1301 3555,1265 3555,779 3552,765 3544,752 3514,729 3468,710 3411,695 3279,674 3153,664 3153,659 3279,669 3412,690 3470,705 3517,724 3548,749 3557,763 3560,778 3560,1266 3554,1303 3546,1316 3535,1327 3507,1338 3472,1342 3389,1338 3344,1337 3299,1341 3131,1360 2900,1375 2463,1393">
+
+      <area shape="rect" id="edge160" href="../ihtml/tos.lib.rfxlink.util.RadioState.html" title="RadioState" alt="" coords="3557,1015,3628,1033">
+
+      <area shape="poly" id="edge154" href="../ihtml/tos.lib.rfxlink.layers.DummyConfig.html" title="DummyConfig" alt="" coords="2297,1365 2271,1346 2248,1323 2232,1296 2225,1266 2225,1087 2225,1016 2218,987 2200,953 2163,907 2117,868 2069,836 2024,811 2026,806 2072,832 2121,864 2167,904 2205,951 2223,985 2230,1015 2231,1087 2231,1265 2237,1295 2252,1320 2275,1342 2300,1360">
+
+      <area shape="rect" id="edge154" href="../ihtml/tos.lib.rfxlink.layers.DummyConfig.html" title="DummyConfig" alt="" coords="2228,1078,2320,1095">
+
+      <area shape="poly" id="edge152" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="2936,1241 2936,1144 2936,778 2940,754 2951,731 2967,711 2985,694 2989,697 2971,714 2956,734 2945,755 2941,779 2941,1144 2941,1241">
+
+      <area shape="rect" id="edge152" href="../ihtml/tos.lib.rfxlink.util.RadioPacket.html" title="RadioPacket" alt="" coords="2939,953,3016,970">
+
+      <area shape="poly" id="edge144" href="../ihtml/tos.lib.rfxlink.util.RadioCCA.html" title="RadioCCA" alt="" coords="2018,1234 2161,1172 2324,1094 2593,926 2679,839 2766,753 2808,728 2853,707 2941,678 2942,683 2855,712 2811,733 2770,757 2683,843 2596,930 2327,1098 2163,1177 2020,1239">
+
+      <area shape="rect" id="edge144" href="../ihtml/tos.lib.rfxlink.util.RadioCCA.html" title="RadioCCA" alt="" coords="2556,953,2619,970">
+
+      <area shape="poly" id="edge138" href="../ihtml/tos.lib.rfxlink.layers.DummyConfig.html" title="DummyConfig" alt="" coords="1937,1235 1930,1187 1926,1126 1929,1060 1943,994 1952,981 1960,970 1960,952 1955,816 1961,816 1965,952 1965,971 1956,984 1948,996 1934,1060 1932,1126 1935,1187 1942,1234">
+
+      <area shape="rect" id="edge138" href="../ihtml/tos.lib.rfxlink.layers.DummyConfig.html" title="DummyConfig" alt="" coords="1945,1015,2037,1033">
+
+      <area shape="poly" id="edge140" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="2020,1293 2141,1336 2247,1365 2246,1370 2139,1341 2018,1298">
+
+      <area shape="rect" id="edge140" href="../ihtml/tos.lib.rfxlink.util.RadioSend.html" title="RadioSend" alt="" coords="2140,1321,2209,1338">
+
+      <area shape="poly" id="edge142" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1961,1295 1977,1318 1997,1336 2040,1353 2103,1366 2246,1383 2246,1389 2102,1372 2039,1358 1995,1341 1973,1321 1957,1298">
+
+      <area shape="rect" id="edge142" href="../ihtml/tos.lib.rfxlink.util.RadioReceive.html" title="RadioReceive" alt="" coords="1996,1321,2080,1338">
+
+    </map>
+    <img src="tos.chips.rf230.RF230RadioC.png" usemap="#comp" id=imgwiring>
+  </body>
+</html>

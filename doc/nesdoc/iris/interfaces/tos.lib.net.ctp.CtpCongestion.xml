@@ -1,0 +1,32 @@
+<?xml version="1.0" ?><interfacedef loc="1:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpCongestion.nc" nicename="tos.lib.net.ctp.CtpCongestion" qname="CtpCongestion">
+      <function command="" loc="7:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpCongestion.nc" name="isCongested" provided="0" ref="0x40c679a0">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpCongestion" qname="CtpCongestion"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="14:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpCongestion.nc" name="setClientCongested" provided="0" ref="0x40c80010">
+        <interfacedef-ref nicename="tos.lib.net.ctp.CtpCongestion" qname="CtpCongestion"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="14:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpCongestion.nc" name="congested" ref="0x40c67df8">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

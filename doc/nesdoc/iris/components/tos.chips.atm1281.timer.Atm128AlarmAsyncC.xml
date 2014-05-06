@@ -1,0 +1,383 @@
+<?xml version="1.0" ?><component abstract="" loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc" nicename="tos.chips.atm1281.timer.Atm128AlarmAsyncC" qname="Atm128AlarmAsyncC">
+      <documentation loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+        <short>
+ Build a 32-bit alarm and counter from the atmega1281's 8-bit timer 2
+ in asynchronous mode.</short>
+        <long>
+ Build a 32-bit alarm and counter from the atmega1281's 8-bit timer 2
+ in asynchronous mode. Attempting to use the generic Atm128AlarmC
+ component and the generic timer components runs into problems
+ apparently related to letting timer 2 overflow.
+ 
+ So, instead, this version (inspired by the 1.x code and a remark from
+ Martin Turon) directly builds a 32-bit alarm and counter on top of timer 2
+ and never lets timer 2 overflow.
+
+ @author David Gay
+ @author Janos Sallai &lt;janos.sallai@vanderbilt.edu&gt;
+</long>
+      </documentation>
+      <parameters>
+        <typedef loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc" name="precision" ref="0x40924330">
+          <component-ref nicename="tos.chips.atm1281.timer.Atm128AlarmAsyncC" qname="Atm128AlarmAsyncC"/>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision" ref="0x40924330" scoped=""/></type-var>
+        </typedef>
+        <constant loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc" name="divider" ref="0x409244f0">
+          <component-ref nicename="tos.chips.atm1281.timer.Atm128AlarmAsyncC" qname="Atm128AlarmAsyncC"/>
+          <type-int alignment="I:1" cname="int" size="I:2"/>
+        </constant>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="71:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+          <from><interface-ref name="Alarm" ref="0x40924f08" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x4091d9f0" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+          <from><interface-ref name="Init" ref="0x409249e0" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4091d5b8" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+          <from><interface-ref name="Counter" ref="0x40922a90" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x4095f5b8" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+          <from><interface-ref name="Timer" ref="0x4095d7f0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x40956de0" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+          <from><interface-ref name="TimerCtrl" ref="0x4095b9d0" scoped=""/></from>
+          <to><interface-ref name="TimerCtrl" ref="0x4096e1a0" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+          <from><interface-ref name="Compare" ref="0x4095a3c8" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x4096ecc0" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc">
+          <from><interface-ref name="TimerAsync" ref="0x40958dc0" scoped=""/></from>
+          <to><interface-ref name="TimerAsync" ref="0x4096c858" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="61:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc" name="Alarm" provided="1" ref="0x40924f08">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm128AlarmAsyncC" qname="Atm128AlarmAsyncC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Alarm" ref="0x40924f08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision" ref="0x40924330" scoped=""/></type-var>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x40214848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x409223e8" scoped=""/>
+        <function-ref name="fired" ref="0x40923b98" scoped=""/>
+        <function-ref name="startAt" ref="0x409220a8" scoped=""/>
+        <function-ref name="isRunning" ref="0x40923e10" scoped=""/>
+        <function-ref name="getAlarm" ref="0x40922660" scoped=""/>
+        <function-ref name="start" ref="0x40923680" scoped=""/>
+        <function-ref name="stop" ref="0x40923920" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc" name="Init" provided="1" ref="0x409249e0">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm128AlarmAsyncC" qname="Atm128AlarmAsyncC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Init" ref="0x409249e0" scoped=""/></type-interface>
+      <attribute-value>
+        <attribute-ref name="atleastonce" ref="0x40352ae0"/>
+        <value-structured>
+          <type-tag alignment="I:1" size="I:0"><attribute-ref name="atleastonce" ref="0x40352ae0"/></type-tag>
+        </value-structured>
+      </attribute-value>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x40924bb8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm128AlarmAsyncC.nc" name="Counter" provided="1" ref="0x40922a90">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm128AlarmAsyncC" qname="Atm128AlarmAsyncC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Counter" ref="0x40922a90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision" ref="0x40924330" scoped=""/></type-var>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x40214848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x40921200" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x409216f0" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40921478" scoped=""/>
+        <function-ref name="overflow" ref="0x40921968" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="66:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" name="TimerCtrl" provided="0" ref="0x4095b9d0">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="TimerCtrl" ref="0x4095b9d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm1281.timer.HplAtm128TimerCtrl8" qname="HplAtm128TimerCtrl8"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getInterruptFlag" ref="0x4095bba8" scoped=""/>
+        <function-ref name="getInterruptMask" ref="0x4095bc88" scoped=""/>
+        <function-ref name="getControlA" ref="0x4095bd68" scoped=""/>
+        <function-ref name="setInterruptMask" ref="0x4095be48" scoped=""/>
+        <function-ref name="setControlB" ref="0x4095bf28" scoped=""/>
+        <function-ref name="setInterruptFlag" ref="0x4095a018" scoped=""/>
+        <function-ref name="getControlB" ref="0x4095a0f8" scoped=""/>
+        <function-ref name="setControlA" ref="0x4095a1d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="81:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc" name="Timer" provided="1" ref="0x40956de0">
+      <component-ref nicename="tos.chips.atm1281.timer.HplAtm1281Timer2AsyncC" qname="HplAtm1281Timer2AsyncC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Timer" ref="0x40956de0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Timer" qname="HplAtm128Timer"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="off" ref="0x40970878" scoped=""/>
+        <function-ref name="test" ref="0x40970388" scoped=""/>
+        <function-ref name="get" ref="0x40971468" scoped=""/>
+        <function-ref name="setScale" ref="0x40970af0" scoped=""/>
+        <function-ref name="getScale" ref="0x40970d90" scoped=""/>
+        <function-ref name="reset" ref="0x40971bf8" scoped=""/>
+        <function-ref name="overflow" ref="0x40971980" scoped=""/>
+        <function-ref name="isOn" ref="0x40970600" scoped=""/>
+        <function-ref name="set" ref="0x409716e0" scoped=""/>
+        <function-ref name="start" ref="0x40971e70" scoped=""/>
+        <function-ref name="stop" ref="0x40970110" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="68:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" name="TimerAsync" provided="0" ref="0x40958dc0">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="TimerAsync" ref="0x40958dc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm1281.timer.HplAtm128TimerAsync" qname="HplAtm128TimerAsync"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="compareBBusy" ref="0x40957010" scoped=""/>
+        <function-ref name="setTimer2Asynchronous" ref="0x409570f0" scoped=""/>
+        <function-ref name="controlABusy" ref="0x409571d0" scoped=""/>
+        <function-ref name="controlBBusy" ref="0x409572b0" scoped=""/>
+        <function-ref name="countBusy" ref="0x40957390" scoped=""/>
+        <function-ref name="compareABusy" ref="0x40957470" scoped=""/>
+        <function-ref name="getAssr" ref="0x40957550" scoped=""/>
+        <function-ref name="setAssr" ref="0x40957630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="82:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc" name="TimerCtrl" provided="1" ref="0x4096e1a0">
+      <component-ref nicename="tos.chips.atm1281.timer.HplAtm1281Timer2AsyncC" qname="HplAtm1281Timer2AsyncC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="TimerCtrl" ref="0x4096e1a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm1281.timer.HplAtm128TimerCtrl8" qname="HplAtm128TimerCtrl8"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getInterruptFlag" ref="0x4096e378" scoped=""/>
+        <function-ref name="getInterruptMask" ref="0x4096e458" scoped=""/>
+        <function-ref name="getControlA" ref="0x4096e538" scoped=""/>
+        <function-ref name="setInterruptMask" ref="0x4096e618" scoped=""/>
+        <function-ref name="setControlB" ref="0x4096e6f8" scoped=""/>
+        <function-ref name="setInterruptFlag" ref="0x4096e7d8" scoped=""/>
+        <function-ref name="getControlB" ref="0x4096e8b8" scoped=""/>
+        <function-ref name="setControlA" ref="0x4096e998" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="65:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" name="Timer" provided="0" ref="0x4095d7f0">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Timer" ref="0x4095d7f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Timer" qname="HplAtm128Timer"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="off" ref="0x4095b288" scoped=""/>
+        <function-ref name="test" ref="0x4095cd58" scoped=""/>
+        <function-ref name="get" ref="0x4095de38" scoped=""/>
+        <function-ref name="setScale" ref="0x4095b500" scoped=""/>
+        <function-ref name="getScale" ref="0x4095b7a0" scoped=""/>
+        <function-ref name="reset" ref="0x4095c5f0" scoped=""/>
+        <function-ref name="overflow" ref="0x4095c378" scoped=""/>
+        <function-ref name="isOn" ref="0x4095b010" scoped=""/>
+        <function-ref name="set" ref="0x4095c0d8" scoped=""/>
+        <function-ref name="start" ref="0x4095c868" scoped=""/>
+        <function-ref name="stop" ref="0x4095cae0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="84:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc" name="TimerAsync" provided="1" ref="0x4096c858">
+      <component-ref nicename="tos.chips.atm1281.timer.HplAtm1281Timer2AsyncC" qname="HplAtm1281Timer2AsyncC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="TimerAsync" ref="0x4096c858" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm1281.timer.HplAtm128TimerAsync" qname="HplAtm128TimerAsync"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="compareBBusy" ref="0x4096ca30" scoped=""/>
+        <function-ref name="setTimer2Asynchronous" ref="0x4096cb10" scoped=""/>
+        <function-ref name="controlABusy" ref="0x4096cbf0" scoped=""/>
+        <function-ref name="controlBBusy" ref="0x4096ccd0" scoped=""/>
+        <function-ref name="countBusy" ref="0x4096cdb0" scoped=""/>
+        <function-ref name="compareABusy" ref="0x4096ce90" scoped=""/>
+        <function-ref name="getAssr" ref="0x4096b010" scoped=""/>
+        <function-ref name="setAssr" ref="0x4096b0f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="83:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc" name="Compare" provided="1" ref="0x4096ecc0">
+      <component-ref nicename="tos.chips.atm1281.timer.HplAtm1281Timer2AsyncC" qname="HplAtm1281Timer2AsyncC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Compare" ref="0x4096ecc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Compare" qname="HplAtm128Compare"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="test" ref="0x4096c288" scoped=""/>
+        <function-ref name="fired" ref="0x4096d830" scoped=""/>
+        <function-ref name="get" ref="0x4096d318" scoped=""/>
+        <function-ref name="reset" ref="0x4096daa8" scoped=""/>
+        <function-ref name="isOn" ref="0x4096c500" scoped=""/>
+        <function-ref name="set" ref="0x4096d590" scoped=""/>
+        <function-ref name="start" ref="0x4096dd20" scoped=""/>
+        <function-ref name="stop" ref="0x4096c010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="61:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" name="Alarm" provided="1" ref="0x4091d9f0">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Alarm" ref="0x4091d9f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision" ref="0x40924330" scoped=""/></type-var>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x40214848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x4095f010" scoped=""/>
+        <function-ref name="fired" ref="0x40960718" scoped=""/>
+        <function-ref name="startAt" ref="0x40960c08" scoped=""/>
+        <function-ref name="isRunning" ref="0x40960990" scoped=""/>
+        <function-ref name="getAlarm" ref="0x4095f288" scoped=""/>
+        <function-ref name="start" ref="0x40960200" scoped=""/>
+        <function-ref name="stop" ref="0x409604a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" name="Compare" provided="0" ref="0x4095a3c8">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Compare" ref="0x4095a3c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Compare" qname="HplAtm128Compare"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x40212b68"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="test" ref="0x40958918" scoped=""/>
+        <function-ref name="fired" ref="0x4095af28" scoped=""/>
+        <function-ref name="get" ref="0x4095aa10" scoped=""/>
+        <function-ref name="reset" ref="0x409581b0" scoped=""/>
+        <function-ref name="isOn" ref="0x40958b90" scoped=""/>
+        <function-ref name="set" ref="0x4095ac88" scoped=""/>
+        <function-ref name="start" ref="0x40958428" scoped=""/>
+        <function-ref name="stop" ref="0x409586a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" name="Counter" provided="1" ref="0x4095f5b8">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Counter" ref="0x4095f5b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision" ref="0x40924330" scoped=""/></type-var>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x40214848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x4095fd08" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x4095d288" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x4095d010" scoped=""/>
+        <function-ref name="overflow" ref="0x4095d500" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" name="Init" provided="1" ref="0x4091d5b8">
+      <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Init" ref="0x4091d5b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x4091d790" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="58(Atm128AlarmAsyncC.Atm1281AlarmAsyncP):/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc" nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm128AlarmAsyncC.Atm1281AlarmAsyncP">
+      <documentation loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/Atm1281AlarmAsyncP.nc">
+        <short>
+ Build a 32-bit alarm and counter from the atmega1281's 8-bit timer 2
+ in asynchronous mode.</short>
+        <long>
+ Build a 32-bit alarm and counter from the atmega1281's 8-bit timer 2
+ in asynchronous mode. Attempting to use the generic Atm128AlarmC
+ component and the generic timer components runs into problems
+ apparently related to letting timer 2 overflow.
+
+ So, instead, this version (inspired by the 1.x code and a remark from
+ Martin Turon) directly builds a 32-bit alarm and counter on top of timer 2
+ and never lets timer 2 overflow.
+
+ @author David Gay
+ @author Janos Sallai &lt;janos.sallai@vanderbilt.edu&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm1281.timer.Atm1281AlarmAsyncP" qname="Atm1281AlarmAsyncP"/>
+        <arguments>
+          <type-var alignment="U:" size="U:"><typedef-ref name="precision" ref="0x40924330" scoped=""/></type-var>
+          <value cst="U:">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="77:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc" nicename="tos.chips.atm1281.timer.HplAtm1281Timer2AsyncC" qname="HplAtm1281Timer2AsyncC">
+      <documentation loc="66:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc">
+        <short>
+ Simple wrapper around the actual timer implementation that automatically
+ wires it to McuSleepC for low-power calculations..</short>
+        <long>
+ Simple wrapper around the actual timer implementation that automatically
+ wires it to McuSleepC for low-power calculations..
+
+ @author Philip Levis
+ @author David Gay
+ @author Janos Sallai &lt;janos.sallai@vanderbilt.edu&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="95:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc">
+          <from><interface-ref name="TimerCtrl" ref="0x4096e1a0" scoped=""/></from>
+          <to><interface-ref name="TimerCtrl" ref="0x409651a0" scoped=""/></to>
+        </wire>
+        <wire loc="97:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc">
+          <from><interface-ref name="TimerAsync" ref="0x4096c858" scoped=""/></from>
+          <to><interface-ref name="TimerAsync" ref="0x40963c18" scoped=""/></to>
+        </wire>
+        <wire loc="96:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc">
+          <from><interface-ref name="Compare" ref="0x4096ecc0" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x40965cc0" scoped=""/></to>
+        </wire>
+        <wire loc="94:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc">
+          <from><interface-ref name="Timer" ref="0x40956de0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x4096bdf0" scoped=""/></to>
+        </wire>
+        <wire loc="92:/home/user/top/t2_cur/tinyos-2.x/tos/chips/atm1281/timer/HplAtm1281Timer2AsyncC.nc">
+          <from><interface-ref name="McuPowerOverride" ref="0x403fd218" scoped=""/></from>
+          <to><interface-ref name="McuPowerOverride" ref="0x409637b8" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

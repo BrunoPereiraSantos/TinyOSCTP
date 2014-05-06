@@ -1,0 +1,51 @@
+<?xml version="1.0" ?><interfacedef loc="37:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/RadioCCA.nc" nicename="tos.lib.rfxlink.util.RadioCCA" qname="RadioCCA">
+      <function event="" loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/RadioCCA.nc" name="done" provided="0" ref="0x408ca010">
+        <documentation loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/RadioCCA.nc">
+          <short>
+ Signals the completion of the clear channel assesment send command.</short>
+          <long>
+ Signals the completion of the clear channel assesment send command.
+ SUCCESS means the channel is clear, EBUSY means the channel is not
+ clear, and FAIL means that the clear channel assesment could not
+ be finished or the operation was cancelled.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioCCA" qname="RadioCCA"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+              <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+            </type-tag>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/RadioCCA.nc" name="error" ref="0x408cde78">
+            <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+              <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+            </type-tag>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="44:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/RadioCCA.nc" name="request" provided="0" ref="0x408cd998">
+        <documentation loc="39:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/RadioCCA.nc">
+          <short>
+ Starts the clear channel assesment procedure.</short>
+          <long>
+ Starts the clear channel assesment procedure. Returns EBUSY if the radio
+ is currently servicing a clear channel assesment, and SUCCESS otherwise.
+ The check will be performed only in the RX_READY state.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioCCA" qname="RadioCCA"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+            <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+          </type-tag>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+    </interfacedef>

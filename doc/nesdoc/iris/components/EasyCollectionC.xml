@@ -1,0 +1,110 @@
+<?xml version="1.0" ?><component loc="3:EasyCollectionC.nc" nicename="EasyCollectionC" qname="EasyCollectionC">
+      <module/>
+    <specification><interface loc="10:EasyCollectionC.nc" name="RootControl" provided="0" ref="0x40464538">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RootControl" ref="0x40464538" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.net.RootControl" qname="RootControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="isRoot" ref="0x40464710" scoped=""/>
+        <function-ref name="setRoot" ref="0x404647f0" scoped=""/>
+        <function-ref name="unsetRoot" ref="0x404648d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:EasyCollectionC.nc" name="Boot" provided="0" ref="0x403d4ac8">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Boot" ref="0x403d4ac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x403d4ca0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="5:EasyCollectionC.nc" name="RadioControl" provided="0" ref="0x4040b010">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioControl" ref="0x4040b010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x4040b1e8" scoped=""/>
+        <function-ref name="stopDone" ref="0x4040b2c8" scoped=""/>
+        <function-ref name="start" ref="0x4040b3a8" scoped=""/>
+        <function-ref name="stop" ref="0x4040b488" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="7:EasyCollectionC.nc" name="Send" provided="0" ref="0x40456548">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40456548" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40456720" scoped=""/>
+        <function-ref name="getPayload" ref="0x40456800" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x404568e0" scoped=""/>
+        <function-ref name="cancel" ref="0x404569c0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40456aa0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="6:EasyCollectionC.nc" name="RoutingControl" provided="0" ref="0x4040f768">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RoutingControl" ref="0x4040f768" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x4040f940" scoped=""/>
+        <function-ref name="stop" ref="0x4040fa20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="11:EasyCollectionC.nc" name="Receive" provided="0" ref="0x4046b500">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x4046b500" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x4046b6d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="8:EasyCollectionC.nc" name="Leds" provided="0" ref="0x4045bca8">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Leds" ref="0x4045bca8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x4045be80" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x4040a010" scoped=""/>
+        <function-ref name="led1On" ref="0x4040a0f0" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x4040a1d0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x4040a2b0" scoped=""/>
+        <function-ref name="get" ref="0x4040a390" scoped=""/>
+        <function-ref name="led1Off" ref="0x4040a470" scoped=""/>
+        <function-ref name="led2Off" ref="0x4040a7f0" scoped=""/>
+        <function-ref name="set" ref="0x4040a550" scoped=""/>
+        <function-ref name="led0On" ref="0x4040a630" scoped=""/>
+        <function-ref name="led2On" ref="0x4040a710" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="9:EasyCollectionC.nc" name="Timer" provided="0" ref="0x40468330">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Timer" ref="0x40468330" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403bd178"/>
+            <typename><typedef-ref name="TMilli" ref="0x403bd340"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40410e38" scoped=""/>
+        <function-ref name="fired" ref="0x404100f0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x404107f8" scoped=""/>
+        <function-ref name="isOneShot" ref="0x404105a0" scoped=""/>
+        <function-ref name="getdt" ref="0x40467310" scoped=""/>
+        <function-ref name="gett0" ref="0x404670b8" scoped=""/>
+        <function-ref name="isRunning" ref="0x40410348" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40468958" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40410b18" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40468bd8" scoped=""/>
+        <function-ref name="stop" ref="0x40468e58" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

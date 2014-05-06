@@ -1,0 +1,169 @@
+<?xml version="1.0" ?><interfacedef loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator">
+      <documentation loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc">
+        <short> Provides an additive quality measure for a neighbor.</short>
+        <long> Provides an additive quality measure for a neighbor. The
+ provided quality increases when the true link quality increases.
+  @author Rodrigo Fonseca
+  @author Omprakash Gnawali
+  @date   $Date: 2010-06-29 22:07:47 $
+</long>
+      </documentation>
+      <function command="" loc="62:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="txAck" provided="0" ref="0x40c9a2f8">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+            <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+          </type-tag>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="62:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c9a1a0">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="pinNeighbor" provided="0" ref="0x40c9b740">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+            <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+          </type-tag>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c9b5e8">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="66:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="txNoAck" provided="0" ref="0x40c9a8a8">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+            <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+          </type-tag>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="66:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c9a750">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="insertNeighbor" provided="0" ref="0x40c9b168">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+            <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+          </type-tag>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c9b010">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function event="" loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="evicted" provided="0" ref="0x40c98418">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c982c0">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="69:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="clearDLQ" provided="0" ref="0x40c9ae68">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+            <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+          </type-tag>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="69:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c9ad10">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="unpinNeighbor" provided="0" ref="0x40c9bd30">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-tag alignment="I:1" size="I:2"><enum-ref name="__nesc_unnamed4242" ref="0x40367210"/>
+            <typename><typedef-ref name="error_t" ref="0x4036f340"/></typename>
+          </type-tag>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="58:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c9bbd8">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="am_addr_t" ref="0x40444868"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="getLinkQuality" provided="0" ref="0x40c73b38">
+        <interfacedef-ref nicename="tos.lib.net.4bitle.LinkEstimator" qname="LinkEstimator"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x402141e8"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x402141e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/4bitle/LinkEstimator.nc" name="neighbor" ref="0x40c739e0">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x402141e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

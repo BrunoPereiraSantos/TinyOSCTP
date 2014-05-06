@@ -1,0 +1,26 @@
+digraph "EasyCollectionAppC" {
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "MainC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.MainC.html"];
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "ActiveMessageC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.platforms.iris.ActiveMessageC.html"];
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "CollectionC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.lib.net.ctp.CollectionC.html"];
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "LedsC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.system.LedsC.html"];
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "EasyCollectionAppC.TimerMilliC" [fontsize=12, shape=box,peripheries=2, style=dashed, label="TimerMilliC", URL="../chtml/tos.system.TimerMilliC.html"];
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "EasyCollectionAppC.CollectionSenderC" [fontsize=12, shape=box,peripheries=2, style=dashed, label="CollectionSenderC", URL="../chtml/tos.lib.net.ctp.CollectionSenderC.html"];
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "CollectionC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.lib.net.ctp.CollectionC.html"];
+  "EasyCollectionC" [fontsize=12, shape=box, URL="../chtml/EasyCollectionC.html"];
+  "CollectionC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/tos.lib.net.ctp.CollectionC.html"];
+  "EasyCollectionC" -> "MainC" [label="Boot", URL="../ihtml/tos.interfaces.Boot.html", fontsize=10];
+  "EasyCollectionC" -> "ActiveMessageC" [label="SplitControl", URL="../ihtml/tos.interfaces.SplitControl.html", fontsize=10];
+  "EasyCollectionC" -> "CollectionC" [label="StdControl", URL="../ihtml/tos.interfaces.StdControl.html", fontsize=10];
+  "EasyCollectionC" -> "LedsC" [label="Leds", URL="../ihtml/tos.interfaces.Leds.html", fontsize=10];
+  "EasyCollectionC" -> "EasyCollectionAppC.TimerMilliC" [label="Timer<TMilli>", URL="../ihtml/tos.lib.timer.Timer.html", fontsize=10];
+  "EasyCollectionC" -> "EasyCollectionAppC.CollectionSenderC" [label="Send", URL="../ihtml/tos.interfaces.Send.html", fontsize=10];
+  "EasyCollectionC" -> "CollectionC" [label="RootControl", URL="../ihtml/tos.lib.net.RootControl.html", fontsize=10];
+  "EasyCollectionC" -> "CollectionC" [label="Receive", URL="../ihtml/tos.interfaces.Receive.html", fontsize=10];
+}

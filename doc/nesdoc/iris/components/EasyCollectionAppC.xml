@@ -1,0 +1,558 @@
+<?xml version="1.0" ?><component loc="1:EasyCollectionAppC.nc" nicename="EasyCollectionAppC" qname="EasyCollectionAppC">
+      <configuration/>
+      <wiring>
+        <wire loc="9:EasyCollectionAppC.nc">
+          <from><interface-ref name="Boot" ref="0x403d4ac8" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x4040dae8" scoped=""/></to>
+        </wire>
+        <wire loc="10:EasyCollectionAppC.nc">
+          <from><interface-ref name="RadioControl" ref="0x4040b010" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x40476960" scoped=""/></to>
+        </wire>
+        <wire loc="11:EasyCollectionAppC.nc">
+          <from><interface-ref name="RoutingControl" ref="0x4040f768" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40c46240" scoped=""/></to>
+        </wire>
+        <wire loc="12:EasyCollectionAppC.nc">
+          <from><interface-ref name="Leds" ref="0x4045bca8" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x40474e80" scoped=""/></to>
+        </wire>
+        <wire loc="13:EasyCollectionAppC.nc">
+          <from><interface-ref name="Timer" ref="0x40468330" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x40f4d890" scoped=""/></to>
+        </wire>
+        <wire loc="14:EasyCollectionAppC.nc">
+          <from><interface-ref name="Send" ref="0x40456548" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x40f58010" scoped=""/></to>
+        </wire>
+        <wire loc="15:EasyCollectionAppC.nc">
+          <from><interface-ref name="RootControl" ref="0x40464538" scoped=""/></from>
+          <to><interface-ref name="RootControl" ref="0x40c805e0" scoped=""/></to>
+        </wire>
+        <wire loc="16:EasyCollectionAppC.nc">
+          <from><interface-ref name="Receive" ref="0x4046b500" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40c453d8" scoped=""/>
+          <arguments>
+            <value cst="I:238">
+              <type-int alignment="I:1" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    <specification/><referenced><interface loc="7:EasyCollectionC.nc" name="Send" provided="0" ref="0x40456548">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40456548" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40456720" scoped=""/>
+        <function-ref name="getPayload" ref="0x40456800" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x404568e0" scoped=""/>
+        <function-ref name="cancel" ref="0x404569c0" scoped=""/>
+        <function-ref name="sendDone" ref="0x40456aa0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="6:EasyCollectionC.nc" name="RoutingControl" provided="0" ref="0x4040f768">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RoutingControl" ref="0x4040f768" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x4040f940" scoped=""/>
+        <function-ref name="stop" ref="0x4040fa20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" name="StdControl" provided="1" ref="0x40c46240">
+      <component-ref nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="StdControl" ref="0x40c46240" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x40c46418" scoped=""/>
+        <function-ref name="stop" ref="0x40c464f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:EasyCollectionC.nc" name="Boot" provided="0" ref="0x403d4ac8">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Boot" ref="0x403d4ac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x403d4ca0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="10:EasyCollectionC.nc" name="RootControl" provided="0" ref="0x40464538">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RootControl" ref="0x40464538" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.net.RootControl" qname="RootControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="isRoot" ref="0x40464710" scoped=""/>
+        <function-ref name="setRoot" ref="0x404647f0" scoped=""/>
+        <function-ref name="unsetRoot" ref="0x404648d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/system/TimerMilliC.nc" name="Timer" provided="1" ref="0x40f4d890">
+      <component-ref nicename="tos.system.TimerMilliC" qname="EasyCollectionAppC.TimerMilliC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Timer" ref="0x40f4d890" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403bd178"/>
+            <typename><typedef-ref name="TMilli" ref="0x403bd340"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40f4b388" scoped=""/>
+        <function-ref name="fired" ref="0x40f4c628" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40f4cd30" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40f4cad8" scoped=""/>
+        <function-ref name="getdt" ref="0x40f4b838" scoped=""/>
+        <function-ref name="gett0" ref="0x40f4b5e0" scoped=""/>
+        <function-ref name="isRunning" ref="0x40f4c880" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40f4deb8" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40f4b068" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40f4c150" scoped=""/>
+        <function-ref name="stop" ref="0x40f4c3d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc" name="Leds" provided="1" ref="0x40474e80">
+      <component-ref nicename="tos.system.LedsC" qname="LedsC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Leds" ref="0x40474e80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x40554070" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x40554150" scoped=""/>
+        <function-ref name="led1On" ref="0x40554230" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x40554310" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x405543f0" scoped=""/>
+        <function-ref name="get" ref="0x405544d0" scoped=""/>
+        <function-ref name="led1Off" ref="0x405545b0" scoped=""/>
+        <function-ref name="led2Off" ref="0x40554930" scoped=""/>
+        <function-ref name="set" ref="0x40554690" scoped=""/>
+        <function-ref name="led0On" ref="0x40554770" scoped=""/>
+        <function-ref name="led2On" ref="0x40554850" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc" name="Send" provided="1" ref="0x40f58010">
+      <component-ref nicename="tos.lib.net.ctp.CollectionSenderC" qname="EasyCollectionAppC.CollectionSenderC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40f58010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40f581e8" scoped=""/>
+        <function-ref name="getPayload" ref="0x40f582c8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40f583a8" scoped=""/>
+        <function-ref name="cancel" ref="0x40f58488" scoped=""/>
+        <function-ref name="sendDone" ref="0x40f58568" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="9:EasyCollectionC.nc" name="Timer" provided="0" ref="0x40468330">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Timer" ref="0x40468330" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403bd178"/>
+            <typename><typedef-ref name="TMilli" ref="0x403bd340"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40410e38" scoped=""/>
+        <function-ref name="fired" ref="0x404100f0" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x404107f8" scoped=""/>
+        <function-ref name="isOneShot" ref="0x404105a0" scoped=""/>
+        <function-ref name="getdt" ref="0x40467310" scoped=""/>
+        <function-ref name="gett0" ref="0x404670b8" scoped=""/>
+        <function-ref name="isRunning" ref="0x40410348" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40468958" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40410b18" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40468bd8" scoped=""/>
+        <function-ref name="stop" ref="0x40468e58" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" name="RootControl" provided="1" ref="0x40c805e0">
+      <component-ref nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RootControl" ref="0x40c805e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.net.RootControl" qname="RootControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="isRoot" ref="0x40c807b8" scoped=""/>
+        <function-ref name="setRoot" ref="0x40c80898" scoped=""/>
+        <function-ref name="unsetRoot" ref="0x40c80978" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc" name="SplitControl" provided="1" ref="0x40476960">
+      <component-ref nicename="tos.platforms.iris.ActiveMessageC" qname="ActiveMessageC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SplitControl" ref="0x40476960" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x40476b38" scoped=""/>
+        <function-ref name="stopDone" ref="0x40476c18" scoped=""/>
+        <function-ref name="start" ref="0x40476cf8" scoped=""/>
+        <function-ref name="stop" ref="0x40476dd8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" name="Receive" provided="1" ref="0x40c453d8">
+      <component-ref nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x40c453d8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="collection_id_t" ref="0x40c4b598"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40c455b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="5:EasyCollectionC.nc" name="RadioControl" provided="0" ref="0x4040b010">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioControl" ref="0x4040b010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x4040b1e8" scoped=""/>
+        <function-ref name="stopDone" ref="0x4040b2c8" scoped=""/>
+        <function-ref name="start" ref="0x4040b3a8" scoped=""/>
+        <function-ref name="stop" ref="0x4040b488" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/home/user/top/t2_cur/tinyos-2.x/tos/system/MainC.nc" name="Boot" provided="1" ref="0x4040dae8">
+      <component-ref nicename="tos.system.MainC" qname="MainC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Boot" ref="0x4040dae8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Boot" qname="Boot"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="booted" ref="0x4040dcc0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="8:EasyCollectionC.nc" name="Leds" provided="0" ref="0x4045bca8">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Leds" ref="0x4045bca8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x4045be80" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x4040a010" scoped=""/>
+        <function-ref name="led1On" ref="0x4040a0f0" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x4040a1d0" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x4040a2b0" scoped=""/>
+        <function-ref name="get" ref="0x4040a390" scoped=""/>
+        <function-ref name="led1Off" ref="0x4040a470" scoped=""/>
+        <function-ref name="led2Off" ref="0x4040a7f0" scoped=""/>
+        <function-ref name="set" ref="0x4040a550" scoped=""/>
+        <function-ref name="led0On" ref="0x4040a630" scoped=""/>
+        <function-ref name="led2On" ref="0x4040a710" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="11:EasyCollectionC.nc" name="Receive" provided="0" ref="0x4046b500">
+      <component-ref nicename="EasyCollectionC" qname="EasyCollectionC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x4046b500" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x4046b6d8" scoped=""/>
+      </interface-functions>
+    </interface><component loc="44(EasyCollectionAppC.TimerMilliC):/home/user/top/t2_cur/tinyos-2.x/tos/system/TimerMilliC.nc" nicename="tos.system.TimerMilliC" qname="EasyCollectionAppC.TimerMilliC">
+      <documentation loc="33:/home/user/top/t2_cur/tinyos-2.x/tos/system/TimerMilliC.nc">
+        <short>
+ The virtualized millisecond timer abstraction.</short>
+        <long>
+ The virtualized millisecond timer abstraction. Instantiating this 
+ component gives an independent millisecond granularity timer.
+
+ @author Philip Levis
+ @date   January 16 2006
+ @see    TEP 102: Timers
+</long>
+      </documentation>
+      <instance number="3">
+        <component-ref nicename="tos.system.TimerMilliC" qname="TimerMilliC"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/system/TimerMilliC.nc">
+          <from><interface-ref name="Timer" ref="0x40f4d890" scoped=""/></from>
+          <to><interface-ref name="TimerMilli" ref="0x409f9d18" scoped=""/>
+          <arguments>
+            <value cst="I:3">
+              <type-int alignment="I:1" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component><component loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc" nicename="tos.lib.net.ctp.CollectionC" qname="CollectionC">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+        <short>
+ A data collection service that uses a tree routing protocol
+ to deliver data to collection roots, following TEP 119.</short>
+        <long>
+ A data collection service that uses a tree routing protocol
+ to deliver data to collection roots, following TEP 119.
+
+ @author Rodrigo Fonseca
+ @author Omprakash Gnawali
+ @author Kyle Jamieson
+ @author Philip Levis
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="83:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="RootControl" ref="0x40c805e0" scoped=""/></from>
+          <to><interface-ref name="RootControl" ref="0x40c72478" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CollectionPacket" ref="0x40c68de0" scoped=""/></from>
+          <to><interface-ref name="CollectionPacket" ref="0x40c76ce0" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Intercept" ref="0x40c6b6e0" scoped=""/></from>
+          <to><interface-ref name="Intercept" ref="0x40c76248" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Packet" ref="0x40c6ba38" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x40c765a0" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Snoop" ref="0x40c45a88" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x40c77b78" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Send" ref="0x40c46970" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x40c799f0" scoped=""/></to>
+        </wire>
+        <wire loc="81:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CtpInfo" ref="0x40c82798" scoped=""/></from>
+          <to><interface-ref name="CtpInfo" ref="0x40c74598" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="Receive" ref="0x40c453d8" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40c774c8" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CtpCongestion" ref="0x40c80178" scoped=""/></from>
+          <to><interface-ref name="CtpCongestion" ref="0x40c72010" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CtpPacket" ref="0x40c5e388" scoped=""/></from>
+          <to><interface-ref name="CtpPacket" ref="0x40c75530" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="StdControl" ref="0x40c46240" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40c792c0" scoped=""/></to>
+        </wire>
+        <wire loc="85:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CollectionId" ref="0x40c72d18" scoped=""/></from>
+          <to><interface-ref name="CollectionId" ref="0x40c7e6c8" scoped=""/></to>
+        </wire>
+        <wire loc="86:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionC.nc">
+          <from><interface-ref name="CollectionDebug" ref="0x40c9c1e8" scoped=""/></from>
+          <to><interface-ref name="CollectionDebug" ref="0x40c7a550" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="43(EasyCollectionAppC.CollectionSenderC):/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc" nicename="tos.lib.net.ctp.CollectionSenderC" qname="EasyCollectionAppC.CollectionSenderC">
+      <documentation loc="32:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc">
+        <short>
+ The virtualized collection sender abstraction.</short>
+        <long>
+ The virtualized collection sender abstraction.
+
+ @author Kyle Jamieson
+ @author Philip Levis
+ @date April 25 2006
+ @see TinyOS Net2-WG
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.lib.net.ctp.CollectionSenderC" qname="CollectionSenderC"/>
+        <arguments>
+          <value cst="I:238">
+            <type-int alignment="I:1" cname="unsigned int" size="I:2" unsigned=""/>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc">
+          <from><interface-ref name="Packet" ref="0x40f586a8" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x4141dd48" scoped=""/></to>
+        </wire>
+        <wire loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CollectionSenderC.nc">
+          <from><interface-ref name="Send" ref="0x40f58010" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x4141d6b0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="37:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc" nicename="tos.platforms.iris.ActiveMessageC" qname="ActiveMessageC">
+      <configuration/>
+      <wiring>
+        <wire loc="65:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="SplitControl" ref="0x40476960" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x405c2010" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="SendNotifier" ref="0x4059bb18" scoped=""/></from>
+          <to><interface-ref name="SendNotifier" ref="0x405c0010" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="Packet" ref="0x405a7af0" scoped=""/></from>
+          <to><interface-ref name="Packet" ref="0x405cf190" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="AMSend" ref="0x4059e388" scoped=""/></from>
+          <to><interface-ref name="AMSend" ref="0x405c28e8" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="Snoop" ref="0x405943f8" scoped=""/></from>
+          <to><interface-ref name="Snoop" ref="0x405c1960" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="LowPowerListening" ref="0x405b4980" scoped=""/></from>
+          <to><interface-ref name="LowPowerListening" ref="0x405cdb38" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="Receive" ref="0x4059ed48" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x405c12c8" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="PacketAcknowledgements" ref="0x405b7be8" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x405cd5b0" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="PacketLink" ref="0x405be2c8" scoped=""/></from>
+          <to><interface-ref name="PacketLink" ref="0x405cc1b8" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="AMPacket" ref="0x405ac990" scoped=""/></from>
+          <to><interface-ref name="AMPacket" ref="0x405cf880" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="RadioChannel" ref="0x405bfd10" scoped=""/></from>
+          <to><interface-ref name="RadioChannel" ref="0x405cc8d0" scoped=""/></to>
+        </wire>
+        <wire loc="81:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="PacketTimeStampMicro" ref="0x405c77c0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampRadio" ref="0x405d3838" scoped=""/></to>
+        </wire>
+        <wire loc="80:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/iris/ActiveMessageC.nc">
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x405bb1a0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x405de288" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="3:EasyCollectionC.nc" nicename="EasyCollectionC" qname="EasyCollectionC">
+      <module/>
+    </component><component loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc" nicename="tos.system.LedsC" qname="LedsC">
+      <documentation loc="34:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc">
+        <short>
+
+ The basic TinyOS LEDs abstraction.</short>
+        <long>
+
+ The basic TinyOS LEDs abstraction.
+
+ @author Phil Buonadonna
+ @author David Gay
+ @author Philip Levis
+ @author Joe Polastre
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc">
+          <from><interface-ref name="Leds" ref="0x40474e80" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x4057e520" scoped=""/></to>
+        </wire>
+        <wire loc="53:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc">
+          <from><interface-ref name="Init" ref="0x40589870" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4057e1d8" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc">
+          <from><interface-ref name="Led0" ref="0x4057d240" scoped=""/></from>
+          <to><interface-ref name="Led0" ref="0x4058ba70" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc">
+          <from><interface-ref name="Led1" ref="0x4057dc28" scoped=""/></from>
+          <to><interface-ref name="Led1" ref="0x4058a4c0" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/user/top/t2_cur/tinyos-2.x/tos/system/LedsC.nc">
+          <from><interface-ref name="Led2" ref="0x4057c660" scoped=""/></from>
+          <to><interface-ref name="Led2" ref="0x4058aec8" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="56:/home/user/top/t2_cur/tinyos-2.x/tos/system/MainC.nc" nicename="tos.system.MainC" qname="MainC">
+      <documentation loc="1:/home/user/top/t2_cur/tinyos-2.x/tos/platforms/micaz/hardware.h">
+        <short>                                                                     
+  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.</short>
+        <long>                                                                     
+  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.  By
+  downloading, copying, installing or using the software you agree to
+  this license.  If you do not agree to this license, do not download,
+  install, copy or use the software.
+
+  Copyright (c) 2004-2005 Crossbow Technology, Inc.
+  Copyright (c) 2002-2003 Intel Corporation.
+  Copyright (c) 2000-2003 The Regents of the University  of California.    
+  All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+
+ - Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ - Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the
+   distribution.
+ - Neither the name of the copyright holder nor the names of
+   its contributors may be used to endorse or promote products derived
+   from this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL
+ THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ OF THE POSSIBILITY OF SUCH DAMAGE.
+
+  @author Jason Hill, Philip Levis, Nelson Lee, David Gay
+  @author Alan Broad &lt;abroad@xbow.com&gt;
+  @author Matt Miller &lt;mmiller@xbow.com&gt;
+  @author Martin Turon &lt;mturon@xbow.com&gt;
+
+  $Id: hardware.h,v 1.8 2010-06-29 22:07:54 scipio Exp $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="72:/home/user/top/t2_cur/tinyos-2.x/tos/system/MainC.nc">
+          <from><interface-ref name="Boot" ref="0x4040dae8" scoped=""/></from>
+          <to><interface-ref name="Boot" ref="0x40475a38" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/user/top/t2_cur/tinyos-2.x/tos/system/MainC.nc">
+          <from><interface-ref name="Scheduler" ref="0x40475dd0" scoped=""/></from>
+          <to><interface-ref name="Scheduler" ref="0x4036da78" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/user/top/t2_cur/tinyos-2.x/tos/system/MainC.nc">
+          <from><interface-ref name="PlatformInit" ref="0x4056c400" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x4047e010" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/user/top/t2_cur/tinyos-2.x/tos/system/MainC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x4056c808" scoped=""/></from>
+          <to><interface-ref name="SoftwareInit" ref="0x40473738" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

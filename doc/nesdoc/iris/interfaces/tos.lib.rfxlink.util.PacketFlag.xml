@@ -1,0 +1,124 @@
+<?xml version="1.0" ?><interfacedef loc="35:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" nicename="tos.lib.rfxlink.util.PacketFlag" qname="PacketFlag">
+      <function command="" loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="clear" provided="0" ref="0x408af3b8">
+        <documentation loc="52:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc">
+          <short>
+ Sets the flag in this message to FALSE
+</short>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.PacketFlag" qname="PacketFlag"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="55:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="msg" ref="0x408af260">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="get" provided="0" ref="0x408b0088">
+        <documentation loc="37:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc">
+          <short>
+ Returns if the flag is set for this message.</short>
+          <long>
+ Returns if the flag is set for this message. 
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.PacketFlag" qname="PacketFlag"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="40:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="msg" ref="0x408b3f18">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="setValue" provided="0" ref="0x408b0858">
+        <documentation loc="42:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc">
+          <short>
+ Sets the flag in this message to the specified value.</short>
+          <long>
+ Sets the flag in this message to the specified value.
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.PacketFlag" qname="PacketFlag"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="msg" ref="0x408b0518">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="value" ref="0x408b06f8">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x40353b90"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="50:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="set" provided="0" ref="0x408b0e18">
+        <documentation loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc">
+          <short>
+ Sets the flag in this message to TRUE
+</short>
+        </documentation>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.PacketFlag" qname="PacketFlag"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="50:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/util/PacketFlag.nc" name="msg" ref="0x408b0cc0">
+            <type-pointer alignment="I:1" size="I:2">
+              <type-tag alignment="I:1" size="I:47"><nx_struct-ref name="message_t" ref="0x4044ba30"/>
+                <typename><typedef-ref name="message_t" ref="0x404537d8"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

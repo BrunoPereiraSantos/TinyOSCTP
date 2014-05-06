@@ -1,0 +1,154 @@
+<?xml version="1.0" ?><component abstract="" loc="73:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC">
+      <documentation loc="64:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc">
+        <short>
+ Reliable Packet Link Functionality
+ </short>
+        <long>
+ Reliable Packet Link Functionality
+ @author David Moss
+ @author Jon Wyant
+ @author Miklos Maroti
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="118:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc">
+          <from><interface-ref name="UnconnectedPacketAcks" ref="0x40820c50" scoped=""/></from>
+          <to><interface-ref name="PacketAcknowledgements" ref="0x40821c90" scoped=""/></to>
+        </wire>
+        <wire loc="113:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc">
+          <from><interface-ref name="Send" ref="0x40809108" scoped=""/></from>
+          <to><interface-ref name="SubSend" ref="0x40808a48" scoped=""/></to>
+        </wire>
+        <wire loc="115:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc">
+          <from><interface-ref name="RadioPacket" ref="0x408081c0" scoped=""/></from>
+          <to><interface-ref name="SubPacket" ref="0x40821438" scoped=""/></to>
+        </wire>
+        <wire loc="114:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc">
+          <from><interface-ref name="Receive" ref="0x408096b8" scoped=""/></from>
+          <to><interface-ref name="SubReceive" ref="0x40821030" scoped=""/></to>
+        </wire>
+        <wire loc="117:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc">
+          <from><interface-ref name="PacketLink" ref="0x40809a38" scoped=""/></from>
+          <to><interface-ref name="UnconnectedPacketLink" ref="0x408203c0" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="85:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="SubSend" provided="0" ref="0x40808a48">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubSend" ref="0x40808a48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareSend" qname="BareSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40808c20" scoped=""/>
+        <function-ref name="cancel" ref="0x40808d00" scoped=""/>
+        <function-ref name="sendDone" ref="0x40808de0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="86:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="SubReceive" provided="0" ref="0x40821030">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubReceive" ref="0x40821030" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareReceive" qname="BareReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40821208" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="93:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="UnconnectedPacketAcks" provided="1" ref="0x40820c50">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="UnconnectedPacketAcks" ref="0x40820c50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x40820e28" scoped=""/>
+        <function-ref name="noAck" ref="0x40820f08" scoped=""/>
+        <function-ref name="wasAcked" ref="0x4081e010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="77:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="Send" provided="1" ref="0x40809108">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40809108" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareSend" qname="BareSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x408092e0" scoped=""/>
+        <function-ref name="cancel" ref="0x408093c0" scoped=""/>
+        <function-ref name="sendDone" ref="0x408094a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="80:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="RadioPacket" provided="1" ref="0x408081c0">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioPacket" ref="0x408081c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioPacket" qname="RadioPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40808398" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40808478" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40808558" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40808638" scoped=""/>
+        <function-ref name="headerLength" ref="0x40808718" scoped=""/>
+        <function-ref name="metadataLength" ref="0x408087f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="87:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="SubPacket" provided="0" ref="0x40821438">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubPacket" ref="0x40821438" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioPacket" qname="RadioPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40821610" scoped=""/>
+        <function-ref name="payloadLength" ref="0x408216f0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x408217d0" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x408218b0" scoped=""/>
+        <function-ref name="headerLength" ref="0x40821990" scoped=""/>
+        <function-ref name="metadataLength" ref="0x40821a70" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="92:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="UnconnectedPacketLink" provided="0" ref="0x408203c0">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="UnconnectedPacketLink" ref="0x408203c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketLink" qname="PacketLink"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRetryDelay" ref="0x40820598" scoped=""/>
+        <function-ref name="setRetries" ref="0x40820678" scoped=""/>
+        <function-ref name="getRetries" ref="0x40820758" scoped=""/>
+        <function-ref name="setRetryDelay" ref="0x40820838" scoped=""/>
+        <function-ref name="wasDelivered" ref="0x40820918" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="78:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="Receive" provided="1" ref="0x408096b8">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x408096b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.BareReceive" qname="BareReceive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40809890" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="88:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="PacketAcknowledgements" provided="0" ref="0x40821c90">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PacketAcknowledgements" ref="0x40821c90" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketAcknowledgements" qname="PacketAcknowledgements"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestAck" ref="0x40821e68" scoped=""/>
+        <function-ref name="noAck" ref="0x40820010" scoped=""/>
+        <function-ref name="wasAcked" ref="0x408200f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="79:/home/user/top/t2_cur/tinyos-2.x/tos/lib/rfxlink/layers/PacketLinkLayerC.nc" name="PacketLink" provided="1" ref="0x40809a38">
+      <component-ref nicename="tos.lib.rfxlink.layers.PacketLinkLayerC" qname="PacketLinkLayerC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PacketLink" ref="0x40809a38" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketLink" qname="PacketLink"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getRetryDelay" ref="0x40809c10" scoped=""/>
+        <function-ref name="setRetries" ref="0x40809cf0" scoped=""/>
+        <function-ref name="getRetries" ref="0x40809dd0" scoped=""/>
+        <function-ref name="setRetryDelay" ref="0x40809eb0" scoped=""/>
+        <function-ref name="wasDelivered" ref="0x40808010" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

@@ -1,0 +1,191 @@
+<?xml version="1.0" ?><component loc="39:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP">
+      <module/>
+    <specification><interface loc="51:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="DummyConfig" provided="1" ref="0x4060be88">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="DummyConfig" ref="0x4060be88" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.DummyConfig" qname="DummyConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="nothing" ref="0x40619070" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="TrafficMonitorConfig" provided="1" ref="0x40606888">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="TrafficMonitorConfig" ref="0x40606888" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.TrafficMonitorConfig" qname="TrafficMonitorConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getBytes" ref="0x40606a60" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="ActiveMessageConfig" provided="1" ref="0x40613f00">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="ActiveMessageConfig" ref="0x40613f00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.ActiveMessageConfig" qname="ActiveMessageConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="group" ref="0x4060b0f0" scoped=""/>
+        <function-ref name="checkFrame" ref="0x4060b1d0" scoped=""/>
+        <function-ref name="source" ref="0x4060b2b0" scoped=""/>
+        <function-ref name="destination" ref="0x4060b390" scoped=""/>
+        <function-ref name="setSource" ref="0x4060b470" scoped=""/>
+        <function-ref name="setDestination" ref="0x4060b550" scoped=""/>
+        <function-ref name="setGroup" ref="0x4060b630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="SlottedCollisionConfig" provided="1" ref="0x40617418">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SlottedCollisionConfig" ref="0x40617418" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SlottedCollisionConfig" qname="SlottedCollisionConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getInitialDelay" ref="0x406175f0" scoped=""/>
+        <function-ref name="getScheduleExponent" ref="0x406176d0" scoped=""/>
+        <function-ref name="getCollisionWindowLength" ref="0x406177b0" scoped=""/>
+        <function-ref name="getTransmitTime" ref="0x40617890" scoped=""/>
+        <function-ref name="getCollisionWindowStart" ref="0x40617970" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="61:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="RadioAlarm" provided="0" ref="0x40634098">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioAlarm" ref="0x40634098" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioAlarm" qname="RadioAlarm"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x40634270" scoped=""/>
+        <function-ref name="wait" ref="0x40634350" scoped=""/>
+        <function-ref name="cancel" ref="0x40634430" scoped=""/>
+        <function-ref name="isFree" ref="0x40634510" scoped=""/>
+        <function-ref name="getNow" ref="0x406345f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="RF230Packet" provided="0" ref="0x406302a8">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RF230Packet" ref="0x406302a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.util.RadioPacket" qname="RadioPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40630480" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40630560" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40630640" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40630720" scoped=""/>
+        <function-ref name="headerLength" ref="0x40630800" scoped=""/>
+        <function-ref name="metadataLength" ref="0x406308e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="64:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="PacketTimeStamp" provided="0" ref="0x40630c70">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PacketTimeStamp" ref="0x40630c70" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.PacketTimeStamp" qname="PacketTimeStamp"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403bdbf8"/>
+            <typename><typedef-ref name="TRadio" ref="0x4043ad68"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x40214848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="timestamp" ref="0x40625828" scoped=""/>
+        <function-ref name="clear" ref="0x40625bd8" scoped=""/>
+        <function-ref name="isValid" ref="0x40625478" scoped=""/>
+        <function-ref name="set" ref="0x40624010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="RF230DriverConfig" provided="1" ref="0x40604120">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RF230DriverConfig" ref="0x40604120" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.rf230.RF230DriverConfig" qname="RF230DriverConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="maxPayloadLength" ref="0x406042f8" scoped=""/>
+        <function-ref name="headerLength" ref="0x406043d8" scoped=""/>
+        <function-ref name="metadataLength" ref="0x406044b8" scoped=""/>
+        <function-ref name="headerPreloadLength" ref="0x40604598" scoped=""/>
+        <function-ref name="requiresRssiCca" ref="0x40604678" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="CsmaConfig" provided="1" ref="0x40607b50">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CsmaConfig" ref="0x40607b50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.CsmaConfig" qname="CsmaConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requiresSoftwareCCA" ref="0x40607d28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="SoftwareAckConfig" provided="1" ref="0x40611428">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SoftwareAckConfig" ref="0x40611428" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.SoftwareAckConfig" qname="SoftwareAckConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="reportChannelError" ref="0x40611600" scoped=""/>
+        <function-ref name="createAckPacket" ref="0x406116e0" scoped=""/>
+        <function-ref name="requiresAckWait" ref="0x406117c0" scoped=""/>
+        <function-ref name="isAckPacket" ref="0x406118a0" scoped=""/>
+        <function-ref name="verifyAckPacket" ref="0x40611980" scoped=""/>
+        <function-ref name="getAckTimeout" ref="0x40611a60" scoped=""/>
+        <function-ref name="setAckRequired" ref="0x40611b40" scoped=""/>
+        <function-ref name="requiresAckReply" ref="0x40611c20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="Ieee154PacketLayer" provided="0" ref="0x40626a38">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Ieee154PacketLayer" ref="0x40626a38" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.Ieee154PacketLayer" qname="Ieee154PacketLayer"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getDestPan" ref="0x40626c10" scoped=""/>
+        <function-ref name="getDSN" ref="0x40626cf0" scoped=""/>
+        <function-ref name="setFCF" ref="0x40626dd0" scoped=""/>
+        <function-ref name="isAckFrame" ref="0x40626eb0" scoped=""/>
+        <function-ref name="setSrcAddr" ref="0x40612010" scoped=""/>
+        <function-ref name="createDataFrame" ref="0x406120f0" scoped=""/>
+        <function-ref name="setDSN" ref="0x406121d0" scoped=""/>
+        <function-ref name="createAckReply" ref="0x406122b0" scoped=""/>
+        <function-ref name="getSrcAddr" ref="0x40612390" scoped=""/>
+        <function-ref name="isDataFrame" ref="0x40612470" scoped=""/>
+        <function-ref name="getAckRequired" ref="0x40612550" scoped=""/>
+        <function-ref name="verifyAckReply" ref="0x40612630" scoped=""/>
+        <function-ref name="localAddr" ref="0x40612710" scoped=""/>
+        <function-ref name="requiresAckWait" ref="0x40612870" scoped=""/>
+        <function-ref name="localPan" ref="0x40612950" scoped=""/>
+        <function-ref name="setDestAddr" ref="0x40612a30" scoped=""/>
+        <function-ref name="createAckFrame" ref="0x40612b10" scoped=""/>
+        <function-ref name="setFramePending" ref="0x40612bf0" scoped=""/>
+        <function-ref name="setDestPan" ref="0x40612cd0" scoped=""/>
+        <function-ref name="isForMe" ref="0x40612db0" scoped=""/>
+        <function-ref name="setAckRequired" ref="0x40612e90" scoped=""/>
+        <function-ref name="getFCF" ref="0x40623010" scoped=""/>
+        <function-ref name="requiresAckReply" ref="0x406230f0" scoped=""/>
+        <function-ref name="getDestAddr" ref="0x406231d0" scoped=""/>
+        <function-ref name="getFramePending" ref="0x406232b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="UniqueConfig" provided="1" ref="0x4060eb08">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="UniqueConfig" ref="0x4060eb08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.UniqueConfig" qname="UniqueConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setSequenceNumber" ref="0x4060ece0" scoped=""/>
+        <function-ref name="reportChannelError" ref="0x4060edc0" scoped=""/>
+        <function-ref name="getSequenceNumber" ref="0x4060eea0" scoped=""/>
+        <function-ref name="getSender" ref="0x40607010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/user/top/t2_cur/tinyos-2.x/tos/chips/rf230/RF230RadioP.nc" name="RandomCollisionConfig" provided="1" ref="0x40609990">
+      <component-ref nicename="tos.chips.rf230.RF230RadioP" qname="RF230RadioP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RandomCollisionConfig" ref="0x40609990" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.rfxlink.layers.RandomCollisionConfig" qname="RandomCollisionConfig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getCongestionBackoff" ref="0x40609b68" scoped=""/>
+        <function-ref name="getInitialBackoff" ref="0x40609c48" scoped=""/>
+        <function-ref name="getMinimumBackoff" ref="0x40609d28" scoped=""/>
+        <function-ref name="getTransmitBarrier" ref="0x40609e08" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>
