@@ -712,5 +712,27 @@ implementation {
     }
     return payload;
   }
+  
+  /*BRUNO*/
+  
+  	//verifica se existe o vizinho com aquele endereco
+  	// na neighborTable caso exista retorna TRUE, caso contrario FALSE
+	command bool LinkEstimator.neighborTableFind(am_addr_t neighbor){
+		uint8_t i;
+		
+		for (i = 0; i < NEIGHBOR_TABLE_SIZE; i++) {
+			if (NeighborTable[i].flags & VALID_ENTRY) {
+				if (NeighborTable[i].ll_addr == neighbor) {
+					return TRUE;
+				}
+			}
+		}
+		return FALSE;
+	}
+	
+	command void LinkEstimator.printNeigborTable(){
+		print_neighbor_table();
+	}
+   /*FIM BRUNO*/
 
 }

@@ -125,13 +125,13 @@ generic module CtpRoutingEngineP(uint8_t routingTableSize, uint32_t minInterval,
         interface CollectionDebug;
         interface CtpCongestion;
 
-		interface CompareBit;
+	interface CompareBit;
 
-		/*BRUNO*/
-		//Recebe uma sinalizacao do CtpForwardingEngineP 
-		//informando que interceptou uma mensagem
-		interface Intercept[collection_id_t id];
-		interface CtpPacket;
+	/*BRUNO*/
+	//Recebe uma sinalizacao do CtpForwardingEngineP 
+	//informando que interceptou uma mensagem
+	interface Intercept[collection_id_t id];
+	interface CtpPacket;
     }
 }
 
@@ -165,6 +165,10 @@ implementation {
 	
 	// forward declarations
 	void routingTableDescendantsInit();
+	uint8_t routingTableDescendantsFind(am_addr_t);
+    error_t routingTableDescendantsUpdateEntry(am_addr_t, uint16_t);
+    error_t routingTableDescendantsEvict(am_addr_t neighbor);
+    void print_descendants_table();
 	
 	/*FIM BRUNO*/
 
@@ -225,13 +229,16 @@ implementation {
     }
 
     command error_t Init.init() {
-        uint8_t maxLength;
+    	uint8_t maxLength;
         radioOn = FALSE;
         running = FALSE;
         parentChanges = 0;
         state_is_root = 0;
         routeInfoInit(&routeInfo);
         routingTableInit();
+        /*BRUNO*/
+    	routingTableDescendantsInit();
+    	/*FIM BRUNO*/       
         beaconMsg = call BeaconSend.getPayload(&beaconMsgBuffer, call BeaconSend.maxPayloadLength());
         maxLength = call BeaconSend.maxPayloadLength();
         dbg("TreeRoutingCtl","TreeRouting initialized. (used payload:%d max payload:%d!\n", 
@@ -857,6 +864,13 @@ implementation {
 																		 		 call CtpPacket.getThl(msg), 		
 																		 		 call CtpPacket.getType(msg), 
 																		 		 call CtpPacket.getEtx(msg));
+																		 		 
+		
+		routingTableDescendantsUpdateEntry(call CtpPacket.getOrigin(msg),  call CtpPacket.getEtx(msg));
+		print_descendants_table();
+		
+		//dbg("BRUNO_RE", "%s: IMPRIMINDO TAB DE VIZINHOS DIRETOS\n",__FUNCTION__);
+		//call LinkEstimator.printNeigborTable();
 		return TRUE;
     }
     
@@ -877,7 +891,7 @@ implementation {
         routingTableActive = 0;
     }
     
-     /* Returns the index of parent in the table or
+     /* Returns the index of descentent in the table or
      * routingTableActive if not found */
     uint8_t routingTableDescendantsFind(am_addr_t neighbor) {
         uint8_t i;
@@ -890,6 +904,52 @@ implementation {
         return i;
     }
     
+    
+     error_t routingTableDescendantsUpdateEntry(am_addr_t from, uint16_t etx){
+        uint8_t idx;
+		
+		//verifica se eh vizinho direto
+		/*idx = routingTableFind(from);
+		if (idx < routingTableActive) {
+		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d, logo nao precisa add em Descendents table. \n", __FUNCTION__, from, TOS_NODE_ID);
+		 	return SUCCESS;
+		}*/
+		if (call LinkEstimator.neighborTableFind(from)) {
+		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d, logo nao precisa add em Descendents table. \n", __FUNCTION__, from, TOS_NODE_ID);
+		 	return SUCCESS;
+		}
+		
+		idx = routingTableSize;
+        idx = routingTableDescendantsFind(from);
+        if (idx == routingTableSize) {
+            //not found and table is full
+            //if (passLinkEtxThreshold(linkEtx))
+                //TODO: add replacement here, replace the worst
+            //}
+            dbg("BRUNO_RE", "%s FAIL, table routingTableDescendants is full\n", __FUNCTION__);
+            return FAIL;
+        }
+        else if (idx == routingTableDescendantsActive) {
+            //not found and there is space
+            
+			routingTableDescendants[idx].neighbor = from;
+			routingTableDescendants[idx].info.etx = etx;
+			routingTableDescendants[idx].info.haveHeard = 1;
+			routingTableDescendants[idx].info.congested = FALSE;
+			routingTableDescendantsActive++;
+			dbg("BRUNO_RE", "%s OK, routingTableDescendants new entry\n", __FUNCTION__);
+            
+        } else {
+            //found, just update
+			routingTableDescendants[idx].neighbor = from;
+			routingTableDescendants[idx].info.etx = etx;
+			routingTableDescendants[idx].info.haveHeard = 1;
+			dbg("BRUNO_RE", "%s OK, routingTableDescendants updated entry\n", __FUNCTION__);
+        }
+        return SUCCESS;
+    }
+
+    
     /* if this gets expensive, introduce indirection through an array of pointers */
     error_t routingTableDescendantsEvict(am_addr_t neighbor) {
         uint8_t idx,i;
@@ -897,11 +957,37 @@ implementation {
         if (idx == routingTableDescendantsActive) 
             return FAIL;
         routingTableDescendantsActive--;
-        for (i = idx; i < routingTableActive; i++) {
-            routingTable[i] = routingTable[i+1];    
+        for (i = idx; i < routingTableDescendantsActive; i++) {
+            routingTableDescendants[i] = routingTableDescendants[i+1];    
         } 
         return SUCCESS; 
     }
+    
+    
+    
+    void print_descendants_table() {
+        uint8_t i;
+        routing_table_entry *rtd;
+        
+       	if (routingTableDescendantsActive <= 0){
+       		dbg("BRUNO_RE", "%s: NODO %hu ainda n tem descendentes\n",__FUNCTION__, TOS_NODE_ID);
+       		return;
+       	}
+        
+        dbg("BRUNO_RE", "%s: Descendentes para NODO %hu \n",__FUNCTION__, TOS_NODE_ID);
+        for(i = 0; i < routingTableDescendantsActive; i++){
+        	rtd = &routingTableDescendants[i];
+        	if(rtd->neighbor != INVALID_ADDR){
+        		dbg("BRUNO_RE", "%s: Descentente[%d] id=%hu etx=%d \n", 
+		    															__FUNCTION__,
+		    															i,
+																		rtd->neighbor,
+																		rtd->info.etx
+																		);
+        	}
+        }
+    }
+    
     /*********** end routing table functions ***************/
     
 	/***********FIM DAS ADIÇÔES DE BRUNO ***************/

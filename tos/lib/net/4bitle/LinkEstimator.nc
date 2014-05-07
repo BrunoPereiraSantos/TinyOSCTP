@@ -43,6 +43,10 @@
  * It could be ETX, PRR, etc.
  */
 
+/*Bruno*/
+#include<LinkEstimator.h>
+/*FIM Bruno*/
+
 interface LinkEstimator {
   
   /* get link quality for link to the neighbor */
@@ -68,8 +72,21 @@ interface LinkEstimator {
   /* called when the parent changes; clear state about data-driven link quality  */
   command error_t clearDLQ(am_addr_t neighbor);
 
+  /*BRUNO*/
+  /*verifica na tabela de vizinhos se existe esse neighbor
+  	caso exista retorna TRUE, caso constrario retorna FALSE*/
+  command bool neighborTableFind(am_addr_t neighbor);
+  
+  /*Imprime a tabela de vizinhos do no*/
+  command void printNeigborTable();
+  /*FIM BRUNO*/
+
+
   /* signal when this neighbor is evicted from the neighbor table */
   event void evicted(am_addr_t neighbor);
+  
+  
+  
 }
 
 
