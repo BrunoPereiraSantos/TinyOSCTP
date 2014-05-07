@@ -857,7 +857,7 @@ implementation {
 																		 		 call CtpPacket.getThl(msg), 		
 																		 		 call CtpPacket.getType(msg), 
 																		 		 call CtpPacket.getEtx(msg));
-		return TRUE;
+		return true;
     }
     
     
