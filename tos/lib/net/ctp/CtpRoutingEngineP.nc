@@ -132,6 +132,7 @@ generic module CtpRoutingEngineP(uint8_t routingTableSize, uint32_t minInterval,
 	//informando que interceptou uma mensagem
 	interface Intercept[collection_id_t id];
 	interface CtpPacket;
+	/*FIM BRUNO*/
     }
 }
 
@@ -160,6 +161,13 @@ implementation {
     ctp_routing_header_t* beaconMsg;
 
 	/*BRUNO*/
+	sons_table_entry sonsTable[routingTableSize];
+	uint8_t sonsTableActive;
+	
+	// forward declarations
+	void sonsTableInit();
+	uint8_t sonsTableFind(am_addr_t);
+	
 	routing_table_entry routingTableDescendants[routingTableSize];
 	uint8_t routingTableDescendantsActive;
 	
@@ -237,6 +245,7 @@ implementation {
         routeInfoInit(&routeInfo);
         routingTableInit();
         /*BRUNO*/
+        sonsTableInit();
     	routingTableDescendantsInit();
     	/*FIM BRUNO*/       
         beaconMsg = call BeaconSend.getPayload(&beaconMsgBuffer, call BeaconSend.maxPayloadLength());
@@ -851,10 +860,11 @@ implementation {
 	
     event bool Intercept.forward[collection_id_t id](message_t *msg, void *payload, uint8_t len){
     	
-    	 dbg("BRUNO_RE", "%s: NODO %d INTERCEPTOU UMA MSG DE %hu PARA %hu.\n", 
+    	 dbg("BRUNO_RE", "%s: NODO %d INTERCEPTOU UMA MSG DO NO %hu encaminhada por %hu com nextHop %hu.\n", 
     	 																		__FUNCTION__, 
     	 																		TOS_NODE_ID,
     	 																		call CtpPacket.getOrigin(msg),
+    	 																		call AMPacket.source(msg),
     	 																		call AMPacket.destination(msg));
     	 																		
     	 dbg("BRUNO_RE", "%s: CtpPacket: O=%hu seq=%hhu thl=%d type=%d etx=%d.\n",
@@ -887,9 +897,74 @@ implementation {
      *   - no replacement: eviction follows the LinkEstimator table
 	 */
     
+    void sonsTableInit() {
+        sonsTableActive = 0;
+    }
+    
     void routingTableDescendantsInit() {
         routingTableActive = 0;
     }
+    
+    /* Retorna o index para sonsTable o qual tem o prox hop para um dado son
+     * segundo a sonsTable, caso nao encontre
+     * retrona INVALID_ADDR
+     */
+    uint8_t sonsTableFind(am_addr_t son) {
+        uint8_t i, j;
+        
+        if (son == INVALID_ADDR)
+            return sonsTableActive;
+        
+        for(i = 0; i < sonsTableActive; i++){
+        	for(j = 0; j < sonsTable[i].activeSons; j++){
+        		if(sonsTable[i].sons[j] == son)
+        			return i;
+        	}
+        }
+        
+        return sonsTableActive;
+    }
+    
+    error_t sonsTableUpdateEntry(am_addr_t son, am_addr_t neighbor){
+        uint8_t idx;
+		
+		
+		if (call LinkEstimator.neighborTableFind(son)) {
+			//verifica se eh vizinho direto
+		 	
+		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d. \n", __FUNCTION__, from, TOS_NODE_ID);
+		 	return SUCCESS;
+		}
+		
+        idx = sonsTableFind(son);
+        if (idx == sonsTableActive) {
+            //not found and table is full
+            //if (passLinkEtxThreshold(linkEtx))
+                //TODO: add replacement here, replace the worst
+            //}
+            dbg("BRUNO_RE", "%s FAIL, table routingTableDescendants is full\n", __FUNCTION__);
+            return FAIL;
+        }
+        else if (idx == routingTableDescendantsActive) {
+            //not found and there is space
+            
+			routingTableDescendants[idx].neighbor = from;
+			routingTableDescendants[idx].info.etx = etx;
+			routingTableDescendants[idx].info.haveHeard = 1;
+			routingTableDescendants[idx].info.congested = FALSE;
+			routingTableDescendantsActive++;
+			dbg("BRUNO_RE", "%s OK, routingTableDescendants new entry\n", __FUNCTION__);
+            
+        } else {
+            //found, just update
+			routingTableDescendants[idx].neighbor = from;
+			routingTableDescendants[idx].info.etx = etx;
+			routingTableDescendants[idx].info.haveHeard = 1;
+			dbg("BRUNO_RE", "%s OK, routingTableDescendants updated entry\n", __FUNCTION__);
+        }
+        return SUCCESS;
+    }
+    
     
      /* Returns the index of descentent in the table or
      * routingTableActive if not found */
@@ -908,13 +983,10 @@ implementation {
      error_t routingTableDescendantsUpdateEntry(am_addr_t from, uint16_t etx){
         uint8_t idx;
 		
-		//verifica se eh vizinho direto
-		/*idx = routingTableFind(from);
-		if (idx < routingTableActive) {
-		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d, logo nao precisa add em Descendents table. \n", __FUNCTION__, from, TOS_NODE_ID);
-		 	return SUCCESS;
-		}*/
+		
 		if (call LinkEstimator.neighborTableFind(from)) {
+			//verifica se eh vizinho direto
+		 	
 		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d, logo nao precisa add em Descendents table. \n", __FUNCTION__, from, TOS_NODE_ID);
 		 	return SUCCESS;
 		}

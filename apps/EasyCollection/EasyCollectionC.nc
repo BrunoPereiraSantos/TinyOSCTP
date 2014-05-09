@@ -30,6 +30,8 @@ implementation{
 			call RoutingControl.start();
 			if (TOS_NODE_ID == 1) 
 				call RootControl.setRoot();
+			//else
+			//call Timer.startPeriodic(2000);
 			if(TOS_NODE_ID == 9 || TOS_NODE_ID == 6 || TOS_NODE_ID == 8){
 				call Timer.startOneShot(2000);
 			}
