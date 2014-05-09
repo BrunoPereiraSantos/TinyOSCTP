@@ -166,7 +166,11 @@ implementation {
 	
 	// forward declarations
 	void sonsTableInit();
-	uint8_t sonsTableFind(am_addr_t);
+	uint8_t sonListFind(am_addr_t, uint8_t);
+	uint8_t neighborInSonsTableFind(am_addr_t);
+	error_t sonsTableUpdateEntry(am_addr_t, am_addr_t);
+	 error_t sonsTableEvict(am_addr_t);
+	void print_sons_table();
 	
 	routing_table_entry routingTableDescendants[routingTableSize];
 	uint8_t routingTableDescendantsActive;
@@ -545,6 +549,10 @@ implementation {
     /* Signals that a neighbor is no longer reachable. need special care if
      * that neighbor is our parent */
     event void LinkEstimator.evicted(am_addr_t neighbor) {
+    	/*BRUNO*/
+    	sonsTableEvict(neighbor);
+    	/*FIM BRUNO*/
+    
         routingTableEvict(neighbor);
         dbg("TreeRouting","%s\n",__FUNCTION__);
         if (routeInfo.parent == neighbor) {
@@ -876,8 +884,13 @@ implementation {
 																		 		 call CtpPacket.getEtx(msg));
 																		 		 
 		
-		routingTableDescendantsUpdateEntry(call CtpPacket.getOrigin(msg),  call CtpPacket.getEtx(msg));
-		print_descendants_table();
+		//routingTableDescendantsUpdateEntry(call CtpPacket.getOrigin(msg),  call CtpPacket.getEtx(msg));
+		//print_descendants_table();
+		
+		
+		
+		sonsTableUpdateEntry(call AMPacket.source(msg), call CtpPacket.getOrigin(msg));
+		print_sons_table();
 		
 		//dbg("BRUNO_RE", "%s: IMPRIMINDO TAB DE VIZINHOS DIRETOS\n",__FUNCTION__);
 		//call LinkEstimator.printNeigborTable();
@@ -901,70 +914,154 @@ implementation {
         sonsTableActive = 0;
     }
     
-    void routingTableDescendantsInit() {
-        routingTableActive = 0;
+    
+    
+    /* Retorna o index para o son na lista de sons da estrutura sonsTable
+     * , caso nao encontre retrona sonsTable[idxSonsTable].activeSons */
+    uint8_t sonListFind(am_addr_t son, uint8_t idxSonsTable) {
+        uint8_t i;
+        
+        if (idxSonsTable >= sonsTableActive)
+            return sonsTableActive;
+        
+        for(i = 0; i < sonsTable[idxSonsTable].activeSons; i++){
+    		if(sonsTable[idxSonsTable].sons[i] == son)
+    			return i;
+        }
+        
+        return i;
     }
     
-    /* Retorna o index para sonsTable o qual tem o prox hop para um dado son
-     * segundo a sonsTable, caso nao encontre
-     * retrona INVALID_ADDR
-     */
-    uint8_t sonsTableFind(am_addr_t son) {
-        uint8_t i, j;
+  
+    /* Retorna o index para sonsTable o qual tem o am_addr_t neighbor 
+     * como entrada, caso nao encontre retrona sonsTableActive */
+    uint8_t neighborInSonsTableFind(am_addr_t neighbor) {
+        uint8_t i;
         
-        if (son == INVALID_ADDR)
+        if (neighbor == INVALID_ADDR)
             return sonsTableActive;
         
         for(i = 0; i < sonsTableActive; i++){
-        	for(j = 0; j < sonsTable[i].activeSons; j++){
-        		if(sonsTable[i].sons[j] == son)
-        			return i;
-        	}
+    		if(sonsTable[i].neighbor == neighbor)
+    			return i;
         }
         
-        return sonsTableActive;
+        return i;
     }
     
-    error_t sonsTableUpdateEntry(am_addr_t son, am_addr_t neighbor){
-        uint8_t idx;
+    /* Insere ou atualiza a tabela sonsTable e a lista sons*/
+    error_t sonsTableUpdateEntry(am_addr_t neighbor, am_addr_t son){
+        uint8_t idx, i;
 		
 		
-		if (call LinkEstimator.neighborTableFind(son)) {
+		if (neighbor == soncall || LinkEstimator.neighborTableFind(son)) {
 			//verifica se eh vizinho direto
 		 	
-		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d. \n", __FUNCTION__, from, TOS_NODE_ID);
+		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d. \n", __FUNCTION__, son, TOS_NODE_ID);
 		 	return SUCCESS;
 		}
 		
-        idx = sonsTableFind(son);
+        idx = neighborInSonsTableFind(neighbor);
         if (idx == routingTableSize) {
             //not found and table is full
             //if (passLinkEtxThreshold(linkEtx))
                 //TODO: add replacement here, replace the worst
             //}
-            dbg("BRUNO_RE", "%s FAIL, table routingTableDescendants is full\n", __FUNCTION__);
+            dbg("BRUNO_RE", "%s FAIL, table sonsTable is full\n", __FUNCTION__);
             return FAIL;
         }
-        else if (idx == routingTableDescendantsActive) {
+        else if (idx == sonsTableActive) {
             //not found and there is space
             
-			routingTableDescendants[idx].neighbor = from;
-			routingTableDescendants[idx].info.etx = etx;
-			routingTableDescendants[idx].info.haveHeard = 1;
-			routingTableDescendants[idx].info.congested = FALSE;
-			routingTableDescendantsActive++;
-			dbg("BRUNO_RE", "%s OK, routingTableDescendants new entry\n", __FUNCTION__);
+			sonsTable[idx].neighbor = neighbor;
+			sonsTable[idx].sons[0] = son;
+			sonsTable[idx].activeSons = 0;
+			sonsTable[idx].activeSons += 1;
+			sonsTableActive++;
+			dbg("BRUNO_RE", "%s OK, sonsTable[%d].neighbor=%hu son[0]=%d new entry\n", 
+																			__FUNCTION__,
+																			idx,
+																			sonsTable[idx].neighbor,
+																			sonsTable[idx].sons[0]);
             
         } else {
             //found, just update
-			routingTableDescendants[idx].neighbor = from;
-			routingTableDescendants[idx].info.etx = etx;
-			routingTableDescendants[idx].info.haveHeard = 1;
-			dbg("BRUNO_RE", "%s OK, routingTableDescendants updated entry\n", __FUNCTION__);
+            
+            i = sonListFind(son, idx);
+            
+            if(i == MAX_NUM_SONS){
+            	dbg("BRUNO_RE", "%s FAIL, list of the sons in sonsTable[%d].neighbor=%hu is full\n", 
+            																						__FUNCTION__, 
+            																						idx, 
+            																						sonsTable[idx].neighbor);
+            	return FAIL;
+            }else if(i == sonsTable[idx].activeSons){
+            	sonsTable[idx].sons[i] = son;
+            	sonsTable[idx].activeSons += 1;
+            	dbg("BRUNO_RE", "%s OK, sonsTable[%d].sons[%d]=%hu new entry\n", 
+            																__FUNCTION__,
+            																idx, 
+            																i,
+            																sonsTable[idx].sons[i]);
+
+            	return SUCCESS;
+            }else{
+            	dbg("BRUNO_RE", "%s OK, sonsTable[%d].sons[%d]=%hu already exists.\n",
+            																		__FUNCTION__, 
+            																		idx, 
+            																		i,
+            																		sonsTable[idx].sons[i]);
+            	return SUCCESS;
+            }
         }
         return SUCCESS;
     }
     
+    /* if this gets expensive, introduce indirection through an array of pointers */
+    error_t sonsTableEvict(am_addr_t neighbor) {
+        uint8_t idx,i;
+        idx = neighborInSonsTableFind(neighbor);
+        if (idx == sonsTableActive) {
+        	dbg("BRUNO_RE", "%s Fail, to remove of the sonstable[] the neighbor=%hu.\n",__FUNCTION__, neighbor);
+            return FAIL;
+        }
+            
+        sonsTableActive--;
+        for (i = idx; i < sonsTableActive; i++) {
+            sonsTable[i] = sonsTable[i+1];    
+        } 
+        dbg("BRUNO_RE", "%s OK, sonstable[%d].neighbor=%hu and sons[] are removed.\n",__FUNCTION__, idx, neighbor);
+        return SUCCESS; 
+    }
+    
+    
+    void print_sons_table() {
+        uint8_t i, j;
+        
+       	if (sonsTableActive <= 0){
+       		dbg("BRUNO_RE", "%s: NODO %hu ainda n tem descendentes\n",__FUNCTION__, TOS_NODE_ID);
+       		return;
+       	}
+        
+        dbg("BRUNO_RE", "%s: Descendentes para NODO %hu \n",__FUNCTION__, TOS_NODE_ID);
+        for(i = 0; i < sonsTableActive; i++){
+    		dbg("BRUNO_RE", "%s: sonsTable[%d].neighbor=%hu:\n",__FUNCTION__, i, sonsTable[i].neighbor);
+    		
+        	for(j = 0; j < sonsTable[i].activeSons; j++){
+        		dbg("BRUNO_RE", "%s: \t  sons[%d]=%d \n", 
+														__FUNCTION__,
+														j,
+														sonsTable[i].sons[j]);
+        		
+        	}
+    		
+        	
+        }
+    }
+    
+    void routingTableDescendantsInit() {
+        routingTableActive = 0;
+    }
     
      /* Returns the index of descentent in the table or
      * routingTableActive if not found */
