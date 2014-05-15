@@ -1297,7 +1297,7 @@ typedef struct sim_log_channel {
 } sim_log_channel_t;
 
 enum __nesc_unnamed4272 {
-  SIM_LOG_OUTPUT_COUNT = 318U
+  SIM_LOG_OUTPUT_COUNT = 317U
 };
 
 sim_log_output_t outputs[SIM_LOG_OUTPUT_COUNT];
@@ -7528,11 +7528,11 @@ static inline uint8_t /*CtpP.Router*/CtpRoutingEngineP$0$sonListFind(am_addr_t s
 static uint8_t /*CtpP.Router*/CtpRoutingEngineP$0$neighborInSonsTableFind(am_addr_t neighbor);
 #line 953
 static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableUpdateEntry(am_addr_t neighbor, am_addr_t son);
-#line 1027
+#line 1021
 static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableEvict(am_addr_t neighbor);
-#line 1044
+#line 1038
 static inline void /*CtpP.Router*/CtpRoutingEngineP$0$print_sons_table(void );
-#line 1068
+#line 1062
 static inline void /*CtpP.Router*/CtpRoutingEngineP$0$routingTableDescendantsInit(void );
 # 52 "/home/user/top/t2_cur/tinyos-2.x/tos/system/RandomMlcgC.nc"
 uint32_t RandomMlcgC$seed[1000];
@@ -8416,25 +8416,25 @@ static inline uint8_t /*CtpP.Forwarder*/CtpForwardingEngineP$0$Packet$payloadLen
   return /*CtpP.Forwarder*/CtpForwardingEngineP$0$SubPacket$payloadLength(msg) - sizeof(ctp_data_header_t );
 }
 
-# 1044 "/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingEngineP.nc"
+# 1038 "/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingEngineP.nc"
 static inline void /*CtpP.Router*/CtpRoutingEngineP$0$print_sons_table(void )
-#line 1044
+#line 1038
 {
   uint8_t i;
-#line 1045
+#line 1039
   uint8_t j;
 
   if (/*CtpP.Router*/CtpRoutingEngineP$0$sonsTableActive[sim_node()] <= 0) {
-      sim_log_debug(307U, "BRUNO_RE", "%s: NODO %hu ainda n tem descendentes\n", __FUNCTION__, TOS_NODE_ID);
+      sim_log_debug(306U, "BRUNO_RE", "%s: NODO %hu ainda n tem descendentes\n", __FUNCTION__, TOS_NODE_ID);
       return;
     }
 
-  sim_log_debug(308U, "BRUNO_RE", "%s: Descendentes para NODO %hu \n", __FUNCTION__, TOS_NODE_ID);
+  sim_log_debug(307U, "BRUNO_RE", "%s: Descendentes para NODO %hu \n", __FUNCTION__, TOS_NODE_ID);
   for (i = 0; i < /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableActive[sim_node()]; i++) {
-      sim_log_debug(309U, "BRUNO_RE", "%s: sonsTable[%d].neighbor=%hu:\n", __FUNCTION__, i, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][i].neighbor);
+      sim_log_debug(308U, "BRUNO_RE", "%s: sonsTable[%d].neighbor=%hu:\n", __FUNCTION__, i, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][i].neighbor);
 
       for (j = 0; j < /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][i].activeSons; j++) {
-          sim_log_debug(310U, "BRUNO_RE", "%s: \t  sons[%d]=%d \n", __FUNCTION__, j, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][i].sons[j]);
+          sim_log_debug(309U, "BRUNO_RE", "%s: \t  sons[%d]=%d \n", __FUNCTION__, j, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][i].sons[j]);
         }
     }
 }
@@ -8525,17 +8525,11 @@ static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableUpdateEntry(am
 #line 954
   uint8_t i;
 
-  if (neighbor == son) {
+
+  if (neighbor == son || /*CtpP.Router*/CtpRoutingEngineP$0$LinkEstimator$neighborTableFind(son)) {
 
 
-      sim_log_debug(298U, "BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d ==. \n", __FUNCTION__, son, TOS_NODE_ID);
-      return SUCCESS;
-    }
-
-  if (/*CtpP.Router*/CtpRoutingEngineP$0$LinkEstimator$neighborTableFind(son)) {
-
-
-      sim_log_debug(299U, "BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d. \n", __FUNCTION__, son, TOS_NODE_ID);
+      sim_log_debug(298U, "BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d. \n", __FUNCTION__, son, TOS_NODE_ID);
       return SUCCESS;
     }
 
@@ -8545,11 +8539,11 @@ static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableUpdateEntry(am
 
 
 
-      sim_log_debug(300U, "BRUNO_RE", "%s FAIL, table sonsTable is full\n", __FUNCTION__);
+      sim_log_debug(299U, "BRUNO_RE", "%s FAIL, table sonsTable is full\n", __FUNCTION__);
       return FAIL;
     }
   else {
-#line 979
+#line 973
     if (idx == /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableActive[sim_node()]) {
 
 
@@ -8558,7 +8552,7 @@ static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableUpdateEntry(am
         /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].activeSons = 0;
         /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].activeSons += 1;
         /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableActive[sim_node()]++;
-        sim_log_debug(301U, "BRUNO_RE", "%s OK, sonsTable[%d].neighbor=%hu son[0]=%d new entry\n", __FUNCTION__, idx, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].neighbor, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].sons[0]);
+        sim_log_debug(300U, "BRUNO_RE", "%s OK, sonsTable[%d].neighbor=%hu son[0]=%d new entry\n", __FUNCTION__, idx, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].neighbor, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].sons[0]);
       }
     else 
 
@@ -8570,18 +8564,18 @@ static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableUpdateEntry(am
         i = /*CtpP.Router*/CtpRoutingEngineP$0$sonListFind(son, idx);
 
         if (i == MAX_NUM_SONS) {
-            sim_log_debug(302U, "BRUNO_RE", "%s FAIL, list of the sons in sonsTable[%d].neighbor=%hu is full\n", __FUNCTION__, idx, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].neighbor);
+            sim_log_debug(301U, "BRUNO_RE", "%s FAIL, list of the sons in sonsTable[%d].neighbor=%hu is full\n", __FUNCTION__, idx, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].neighbor);
 
 
 
             return FAIL;
           }
         else {
-#line 1004
+#line 998
           if (i == /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].activeSons) {
               /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].sons[i] = son;
               /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].activeSons += 1;
-              sim_log_debug(303U, "BRUNO_RE", "%s OK, sonsTable[%d].sons[%d]=%hu new entry\n", __FUNCTION__, idx, i, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].sons[i]);
+              sim_log_debug(302U, "BRUNO_RE", "%s OK, sonsTable[%d].sons[%d]=%hu new entry\n", __FUNCTION__, idx, i, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].sons[i]);
 
 
 
@@ -8590,9 +8584,9 @@ static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableUpdateEntry(am
               return SUCCESS;
             }
           else 
-#line 1014
+#line 1008
             {
-              sim_log_debug(304U, "BRUNO_RE", "%s OK, sonsTable[%d].sons[%d]=%hu already exists.\n", __FUNCTION__, idx, i, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].sons[i]);
+              sim_log_debug(303U, "BRUNO_RE", "%s OK, sonsTable[%d].sons[%d]=%hu already exists.\n", __FUNCTION__, idx, i, /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][idx].sons[i]);
 
 
 
@@ -8602,7 +8596,7 @@ static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableUpdateEntry(am
           }
       }
     }
-#line 1023
+#line 1017
   return SUCCESS;
 }
 
@@ -9706,18 +9700,18 @@ static inline void LinkEstimatorP$updateNeighborTableEst(am_addr_t n)
     }
 }
 
-# 1027 "/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingEngineP.nc"
+# 1021 "/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingEngineP.nc"
 static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableEvict(am_addr_t neighbor)
-#line 1027
+#line 1021
 {
   uint8_t idx;
-#line 1028
+#line 1022
   uint8_t i;
 
-#line 1029
+#line 1023
   idx = /*CtpP.Router*/CtpRoutingEngineP$0$neighborInSonsTableFind(neighbor);
   if (idx == /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableActive[sim_node()]) {
-      sim_log_debug(305U, "BRUNO_RE", "%s Fail, to remove of the sonstable[] the neighbor=%hu.\n", __FUNCTION__, neighbor);
+      sim_log_debug(304U, "BRUNO_RE", "%s Fail, to remove of the sonstable[] the neighbor=%hu.\n", __FUNCTION__, neighbor);
       return FAIL;
     }
 
@@ -9725,7 +9719,7 @@ static inline error_t /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableEvict(am_addr_
   for (i = idx; i < /*CtpP.Router*/CtpRoutingEngineP$0$sonsTableActive[sim_node()]; i++) {
       /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][i] = /*CtpP.Router*/CtpRoutingEngineP$0$sonsTable[sim_node()][i + 1];
     }
-  sim_log_debug(306U, "BRUNO_RE", "%s OK, sonstable[%d].neighbor=%hu and sons[] are removed.\n", __FUNCTION__, idx, neighbor);
+  sim_log_debug(305U, "BRUNO_RE", "%s OK, sonstable[%d].neighbor=%hu and sons[] are removed.\n", __FUNCTION__, idx, neighbor);
   return SUCCESS;
 }
 
@@ -13988,16 +13982,16 @@ static inline error_t /*CtpP.Forwarder*/CtpForwardingEngineP$0$Init$init(void )
 #line 213
   for (i = 0; i < /*CtpP.Forwarder*/CtpForwardingEngineP$0$CLIENT_COUNT; i++) {
       /*CtpP.Forwarder*/CtpForwardingEngineP$0$clientPtrs[sim_node()][i] = /*CtpP.Forwarder*/CtpForwardingEngineP$0$clientEntries[sim_node()] + i;
-      sim_log_debug(160U, "Forwarder", "clientPtrs[%hhu] = %p\n", i, /*CtpP.Forwarder*/CtpForwardingEngineP$0$clientPtrs[sim_node()][i]);
+      sim_log_debug(160U, "Forwarder", "%s: clientPtrs[%hhu] = %p   %d\n", __FUNCTION__, i, /*CtpP.Forwarder*/CtpForwardingEngineP$0$clientPtrs[sim_node()][i], /*CtpP.Forwarder*/CtpForwardingEngineP$0$clientPtrs[sim_node()][i]);
     }
   /*CtpP.Forwarder*/CtpForwardingEngineP$0$loopbackMsgPtr[sim_node()] = &/*CtpP.Forwarder*/CtpForwardingEngineP$0$loopbackMsg[sim_node()];
   /*CtpP.Forwarder*/CtpForwardingEngineP$0$seqno[sim_node()] = 0;
   return SUCCESS;
 }
 
-# 1068 "/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingEngineP.nc"
+# 1062 "/home/user/top/t2_cur/tinyos-2.x/tos/lib/net/ctp/CtpRoutingEngineP.nc"
 static inline void /*CtpP.Router*/CtpRoutingEngineP$0$routingTableDescendantsInit(void )
-#line 1068
+#line 1062
 {
   /*CtpP.Router*/CtpRoutingEngineP$0$routingTableActive[sim_node()] = 0;
 }

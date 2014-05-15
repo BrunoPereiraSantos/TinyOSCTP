@@ -954,7 +954,7 @@ implementation {
         uint8_t idx, i;
 		
 		
-		if (neighbor == soncall || LinkEstimator.neighborTableFind(son)) {
+		if (neighbor == soncall || call LinkEstimator.neighborTableFind(son)) {
 			//verifica se eh vizinho direto
 		 	
 		 	dbg("BRUNO_RE", "%s:  NODE %d eh vizinho direto do NODE %d. \n", __FUNCTION__, son, TOS_NODE_ID);

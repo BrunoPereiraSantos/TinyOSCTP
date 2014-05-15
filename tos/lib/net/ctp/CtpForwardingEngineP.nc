@@ -212,7 +212,7 @@ implementation {
     int i;
     for (i = 0; i < CLIENT_COUNT; i++) {
       clientPtrs[i] = clientEntries + i;
-      dbg("Forwarder", "clientPtrs[%hhu] = %p\n", i, clientPtrs[i]);
+      dbg("Forwarder", "%s: clientPtrs[%hhu] = %p\n",__FUNCTION__, i, clientPtrs[i]);
     }
     loopbackMsgPtr = &loopbackMsg;
     seqno = 0;
@@ -439,7 +439,7 @@ implementation {
 	/* The basic forwarding/sending case. */
 	call CtpPacket.setEtx(qe->msg, gradient);
 	call CtpPacket.clearOption(qe->msg, CTP_OPT_ECN | CTP_OPT_PULL);
-	if (call PacketAcknowledgements.requestAck(qe->msg) == SUCCESS) {
+	if (call PacketAcknowledgements.requestAck(qe->msg) == SUCCESS ) {
 	  setState(ACK_PENDING);
 	}
 	if (hasState(QUEUE_CONGESTED)) {
@@ -663,7 +663,7 @@ implementation {
    * send history cache (in case we recently forwarded this packet).
    * The cache is important as nodes immediately forward packets
    * but wait a period before retransmitting after an ack failure.
-   * If this node is a root, signal receive.
+   * If this node is a root, signal receive.d failed f
    */ 
   event message_t* 
   SubReceive.receive(message_t* msg, void* payload, uint8_t len) {

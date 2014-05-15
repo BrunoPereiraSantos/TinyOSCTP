@@ -20,6 +20,8 @@ t.addChannel("RoutingTimer", sys.stdout)
 t.addChannel("LITest", sys.stdout)
 t.addChannel("BRUNO_RE", sys.stdout)
 t.addChannel("EasyCollection", sys.stdout)
+t.addChannel("Forwarder", sys.stdout)
+
 
 t.addChannel("TreeRoutingCtl", outFile)
 t.addChannel("TreeRouting", outFile)
@@ -28,6 +30,7 @@ t.addChannel("RoutingTimer", outFile)
 t.addChannel("LITest", outFile)
 t.addChannel("BRUNO_RE", outFile)
 t.addChannel("EasyCollection", outFile)
+t.addChannel("Forwarder", outFile)
 
 
 noise = open("../../tos/lib/tossim/noise/meyer-heavy.txt", "r")
