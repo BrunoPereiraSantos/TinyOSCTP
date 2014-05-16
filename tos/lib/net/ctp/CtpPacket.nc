@@ -68,4 +68,9 @@ interface CtpPacket {
 
   command bool          matchInstance(message_t* m1, message_t* m2);
   command bool          matchPacket(message_t* m1, message_t* m2);
+  
+  /*BRUNO*/
+  command am_addr_t     getDest(message_t* msg);
+  command void          setDest(message_t* msg, am_addr_t addr);
+  /*FIM BRUNO*/
 }

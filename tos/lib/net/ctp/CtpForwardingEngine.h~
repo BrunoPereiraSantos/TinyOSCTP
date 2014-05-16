@@ -79,6 +79,18 @@ enum {
   NO_ROUTE_RETRY            = 10000
 };
 
+/*BRUNO*/
+
+enum {
+	/* Utilizado no caso de uma mensagem não possuir
+	 * dest == INVALID_ADDR utiliza o ctp e faz o roteamento
+	 * direto para o sink utilizando o ctp. Caso contrário
+	 * consulta a sonsTable para saber qual o próx hop para a mensagem.
+	 */
+	INVALID_ADDR  = TOS_BCAST_ADDR
+};
+/*FIM BRUNO*/
+
 /* 
  * The number of times the ForwardingEngine will try to 
  * transmit a packet before giving up if the link layer

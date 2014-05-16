@@ -1,7 +1,7 @@
 DEBUG (1): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (1): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d448   17290312
+DEBUG (1): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819448
 DEBUG (4): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (4): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d460   17290336
+DEBUG (4): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819460
 DEBUG (1): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (1): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (1): CtpRoutingEngineP$0$RootControl$setRoot I'm a root now!
@@ -9,31 +9,31 @@ DEBUG (4): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (4): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (1): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
 DEBUG (5): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (5): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d468   17290344
+DEBUG (5): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819468
 DEBUG (5): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (5): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (8): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (8): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d480   17290368
+DEBUG (8): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819480
 DEBUG (8): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (8): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (3): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (3): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d458   17290328
+DEBUG (3): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819458
 DEBUG (3): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (3): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (9): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (9): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d488   17290376
+DEBUG (9): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819488
 DEBUG (9): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (9): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (6): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (6): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d470   17290352
+DEBUG (6): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819470
 DEBUG (6): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (6): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (2): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (2): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d450   17290320
+DEBUG (2): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819450
 DEBUG (2): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (2): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (7): TreeRouting initialized. (used payload:4 max payload:26!
-DEBUG (7): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x107d478   17290360
+DEBUG (7): CtpForwardingEngineP$0$Init$init: clientPtrs[0] = 0x819478
 DEBUG (7): CtpRoutingEngineP$0$RadioControl$startDone running: 0 radioOn: 1
 DEBUG (7): CtpRoutingEngineP$0$StdControl$start running: 1 radioOn: 1
 DEBUG (4): Beacon timer fired at 0:0:0.065429802
@@ -44,9 +44,9 @@ DEBUG (9): Beacon timer fired at 0:0:0.068359830
 DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
 DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 65535 etx: 0]
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 65535 etx: 0]
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
 DEBUG (1): Beacon timer fired at 0:0:0.076171985
 DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
 DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 7
@@ -54,239 +54,300 @@ DEBUG (6): Beacon timer fired at 0:0:0.079102077
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
 DEBUG (2): 0:4 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
 DEBUG (2): from a root, inserting if not in table
 DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry Fail, link quality (65535) below threshold
-DEBUG (3): Beacon timer fired at 0:0:0.149414473
-DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (2): Beacon timer fired at 0:0:0.152344360
-DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (7): Beacon timer fired at 0:0:0.154297590
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
+DEBUG (7): Beacon timer fired at 0:0:0.117188215
 DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
-DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
+DEBUG (8): 0:9 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
 DEBUG (5): 0:4 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (3): Beacon timer fired at 0:0:0.147461348
+DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (2): Beacon timer fired at 0:0:0.151367798
+DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 7
 DEBUG (2): 0:4 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): 1:1 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
-DEBUG (8): 0:9 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (6): 0:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
 DEBUG (5): 0:4 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (4): Beacon timer fired at 0:0:0.217773552
+DEBUG (5): 1:7 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
+DEBUG (6): 0:7 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (3): 0:6 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (4): Beacon timer fired at 0:0:0.219726677
 DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (5): 0:4 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 65535 etx: 0]
+DEBUG (8): Beacon timer fired at 0:0:0.224609740
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (2): Beacon timer fired at 0:0:0.226563110
+DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
 DEBUG (2): 0:4 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): 1:1 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): 2:3 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 65535 etx: 0]
-DEBUG (8): Beacon timer fired at 0:0:0.260742552
-DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (6): Beacon timer fired at 0:0:0.262695827
+DEBUG (4): 0:2 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (3): 0:6 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (3): 1:2 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (1): 0:2 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (6): Beacon timer fired at 0:0:0.264648952
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (1): Beacon timer fired at 0:0:0.267578235
-DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
-DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (7): 0:6 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (5): 0:4 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (7): 0:6 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (7): 1:8 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7): 0:8 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
 DEBUG (3): 0:6 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (3): 1:2 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
+DEBUG (5): Beacon timer fired at 0:0:0.274414377
+DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (8): 0:9 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): 1:7 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
+DEBUG (7): 0:8 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7): 1:6 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
+DEBUG (4): 0:2 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
+DEBUG (3): 0:6 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3): 1:2 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
+DEBUG (9): Beacon timer fired at 0:0:0.290039517
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (8): 0:9 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): 1:7 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
+DEBUG (1): Beacon timer fired at 0:0:0.313476672
+DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
+DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 7
 DEBUG (2): 0:4 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (2): 1:1 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): 2:3 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
 DEBUG (2): from a root, inserting if not in table
 DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry Fail, link quality (65535) below threshold
-DEBUG (9): Beacon timer fired at 0:0:0.331055142
-DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (8): 0:9 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (8): 1:7 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
-DEBUG (2): Beacon timer fired at 0:0:0.345703735
+DEBUG (2): Beacon timer fired at 0:0:0.350586548
 DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (7): Beacon timer fired at 0:0:0.350586652
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (4): 0:2 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (4): 0:2 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (4): 1:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (4):   2: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
 DEBUG (3): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
-DEBUG (1): 0:2 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
-DEBUG (8): 0:9 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (8): 1:7 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (6): 0:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (6): 1:7 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (5): 0:4 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 3:8 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (1): Beacon timer fired at 0:0:0.419921985
-DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
-DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (3): Beacon timer fired at 0:0:0.424805098
-DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (4): Beacon timer fired at 0:0:0.426757927
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (8): Beacon timer fired at 0:0:0.429687865
+DEBUG (3): 1:2 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (3):   2: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (1): 0:2 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (1):   2: 250 -> 250DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 65535 etx: 0]
+DEBUG (8): Beacon timer fired at 0:0:0.366211302
 DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (7): Beacon timer fired at 0:0:0.366211652
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (8): 0:9 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8): 1:7 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (6): 0:7 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (6): 1:3 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (5): 0:4 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): 1:7 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (9): 0:8 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
+DEBUG (5): 0:4 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
+DEBUG (1): Beacon timer fired at 0:0:0.420898547
+DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
+DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
 DEBUG (2): 0:4 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (2): 1:1 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (2): 2:3 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (2):   1: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
 DEBUG (2): from a root, inserting if not in table
 DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (6): 0:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (6): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3): Beacon timer fired at 0:0:0.447266035
+DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (6): Beacon timer fired at 0:0:0.448242702
+DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (6): 0:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (6): 1:3 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
-DEBUG (9): 0:8 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (7): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (7): 1:8 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (5): 0:4 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (2): 0:4 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 2:3 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
+DEBUG (5): 0:4 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): 3:8 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 65535 etx: 0]
+DEBUG (7): 0:8 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7): 1:6 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
+DEBUG (3): 0:6 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (3):   6: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
+DEBUG (8): Beacon timer fired at 0:0:0.455078490
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (4): Beacon timer fired at 0:0:0.456054802
+DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (5): 0:4 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 3:8 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (5):   4: 166 -> 166DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 65535 etx: 0]
+DEBUG (2): 0:4 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 2:3 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (2):   4: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 65535 etx: 0]
+DEBUG (9): Beacon timer fired at 0:0:0.461914517
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (9): 0:8 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (9):   8: 250 -> 250DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
+DEBUG (7): 0:8 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7): 1:6 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (7): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (7):   8: 166 -> 166DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
+DEBUG (5): 0:4 inQ=166, rcv=0, fail=0, Q=15
+DEBUG (5): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (5): 3:8 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (2): Beacon timer fired at 0:0:0.479492798
+DEBUG (8): 0:9 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8):   9: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
+DEBUG (2): Beacon timer fired at 0:0:0.530274048
 DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
 DEBUG (2):    best is 10, setting to 1
 DEBUG (2): Changed parent. from 65535 to 1
 DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
-DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 13
 DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (4): 0:2 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (4):   2: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (3): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3): 1:2 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry Fail, link quality (65535) below threshold
-DEBUG (1): 0:2 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (1):   2: 250 -> 250DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (7): Beacon timer fired at 0:0:0.494141340
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (8): 0:9 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (8): 1:7 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (8):   7: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (6): 0:3 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (6): 1:7 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (6):   7: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (5): 0:4 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5): 3:8 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5):   7: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (9): Beacon timer fired at 0:0:0.518555142
-DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 7
-DEBUG (8): 0:9 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8):   9: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
-DEBUG (2): Beacon timer fired at 0:0:0.565430298
-DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
-DEBUG (2):    already parent.
-DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
-DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 10
 DEBUG (4): 0:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (4): 1:5 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3): 1:2 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3):   2: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
 DEBUG (1): 0:2 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): Beacon timer fired at 0:0:0.585937815
+DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (9): Beacon timer fired at 0:0:0.543945767
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (5): Beacon timer fired at 0:0:0.544922190
 DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 10
 DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
-DEBUG (7): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (7): 1:8 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (7): 0:8 inQ=166, rcv=0, fail=0, Q=15
+DEBUG (7): 1:6 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (7): 2:5 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
 DEBUG (4): 0:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (4): 1:5 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
-DEBUG (3): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 2:5 inQ=0, rcv=1, fail=0, Q=65535
 DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 65535 etx: 0]
-DEBUG (6): Beacon timer fired at 0:0:0.617188015
+DEBUG (6): Beacon timer fired at 0:0:0.567383327
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (1): Beacon timer fired at 0:0:0.618164172
+DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 7
+DEBUG (7): 0:8 inQ=166, rcv=0, fail=0, Q=15
+DEBUG (7): 1:6 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (7): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (7):   6: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
+DEBUG (1): Beacon timer fired at 0:0:0.619140735
 DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
 DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (7): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (7): 1:8 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (7): 2:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (7):   6: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
-DEBUG (3): 0:6 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (3):   6: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 65535 etx: 0]
-DEBUG (2): 0:4 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (2): 2:3 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (2): 2:3 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
 DEBUG (2): from a root, inserting if not in table
 DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): Beacon timer fired at 0:0:0.705078240
+DEBUG (2): Beacon timer fired at 0:0:0.651367798
+DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
+DEBUG (2):    already parent.
+DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
+DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (1): 0:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): Beacon timer fired at 0:0:0.673828240
 DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
 DEBUG (4):    best is 20, setting to 2
@@ -294,40 +355,37 @@ DEBUG (4): Changed parent. from 65535 to 2
 DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
 DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 10
 DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (8): Beacon timer fired at 0:0:0.709961302
+DEBUG (5): 0:4 inQ=166, rcv=0, fail=0, Q=15
+DEBUG (5): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 3:8 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 2:3 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (8): Beacon timer fired at 0:0:0.677734740
 DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (5): 0:4 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): 3:8 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (5):   4: 187 -> 187DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (2): 0:4 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (2): 2:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (2):   4: 187 -> 187DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (9): 0:8 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (9):   8: 250 -> 250DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (7): 2:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (7):   8: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (7): Beacon timer fired at 0:0:0.677735090
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (9): 0:8 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
+DEBUG (7): 0:8 inQ=166, rcv=0, fail=0, Q=15
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
+DEBUG (5): 0:4 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (5): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (5): 3:8 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (5):   8: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 65535 etx: 0]
-DEBUG (2): Beacon timer fired at 0:0:0.737305298
-DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
-DEBUG (2):    already parent.
-DEBUG (2): routingTable[1]: neighbor: [id: 4 parent: 2  etx: NO ROUTE]
-DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
-DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (3): Beacon timer fired at 0:0:0.739258223
+DEBUG (3): Beacon timer fired at 0:0:0.685547285
 DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
 DEBUG (3):    best is 20, setting to 2
@@ -335,114 +393,125 @@ DEBUG (3): Changed parent. from 65535 to 2
 DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
 DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 13
 DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (6): 0:3 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (6): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8):   7: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (6): 0:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (6): 1:3 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (6):   7: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (5): 0:4 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (5): 1:7 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 2:3 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5):   7: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
+DEBUG (6): 0:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): 1:3 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (6):   3: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
 DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 0:4 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (5): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5):   3: 166 -> 166DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (5):   3: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
 DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (4): 0:2 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (4): 1:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (1): 0:2 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): Beacon timer fired at 0:0:0.785156965
+DEBUG (2): 0:4 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 2:3 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (2):   3: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (7): Beacon timer fired at 0:0:0.745117902
 DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
+DEBUG (8): 2:5 inQ=0, rcv=2, fail=0, Q=65535
 DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (6): 0:3 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): 0:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=0, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 0:4 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (5): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 65535 etx: 0]
-DEBUG (3): Beacon timer fired at 0:0:0.815430098
-DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (3):    already parent.
-DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (6): 0:3 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=0, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (2): 2:3 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (2):   3: 125 -> 125DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (4): Beacon timer fired at 0:0:0.823242302
+DEBUG (4): Beacon timer fired at 0:0:0.753906365
 DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
 DEBUG (4):    already parent.
 DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
 DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=1, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 0:4 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (5): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
 DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=0, fail=0, Q=13
+DEBUG (2): 0:4 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (2): 2:3 inQ=125, rcv=0, fail=0, Q=20
+DEBUG (2): 2:3 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
 DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:0.829102017
+DEBUG (3): Beacon timer fired at 0:0:0.780273848
+DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (3):    already parent.
+DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (6): 0:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=166, rcv=2, fail=0, Q=15
+DEBUG (5): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (9): Beacon timer fired at 0:0:0.791016080
 DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 65535 etx: 0
 DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
-DEBUG (5): Beacon timer fired at 0:0:0.856445627
-DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
-DEBUG (5):    best is 33, setting to 4
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5): Changed parent. from 65535 to 4
-DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 4 etx: 33
-DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
 DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry Fail, link quality (65535) below threshold
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry Fail, link quality (65535) below threshold
-DEBUG (4): 0:2 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (4): 1:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry Fail, link quality (65535) below threshold
-DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=0, rcv=1, fail=0, Q=65535
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry Fail, link quality (65535) below threshold
-DEBUG (6): Beacon timer fired at 0:0:0.887695827
+DEBUG (8): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 65535 etx: 0]
+DEBUG (5): Beacon timer fired at 0:0:0.820312815
+DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 15 retx: 20]
+DEBUG (5):    best is 35, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (5):    best is 30, setting to 3
+DEBUG (5): Changed parent. from 65535 to 3
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
+DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (8):   5: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (7): 0:8 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (7):   5: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (4): 0:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (4): 1:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (4):   5: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 2:5 inQ=0, rcv=2, fail=0, Q=65535
+DEBUG (3):   5: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (6): Beacon timer fired at 0:0:0.833008327
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
 DEBUG (6):    best is 30, setting to 3
@@ -450,332 +519,17 @@ DEBUG (6): Changed parent. from 65535 to 3
 DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
 DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
 DEBUG (6): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (5): Beacon timer fired at 0:0:0.930664377
-DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
-DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
-DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 4 etx: 33
-DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
-DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (8):   5: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (7): 0:6 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (7):   5: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (4): 0:2 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (4): 1:5 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (4):   5: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=0, rcv=2, fail=0, Q=65535
-DEBUG (3):   5: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (8): Beacon timer fired at 0:0:0.943359740
-DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (8):    best is 43, setting to 5
-DEBUG (8): Changed parent. from 65535 to 5
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 43
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (9): 0:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (7): 0:6 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=1, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (6): Beacon timer fired at 0:0:0.991211452
-DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
-DEBUG (6):    already parent.
-DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
-DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (7): 0:6 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 0:8 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
 DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): Beacon timer fired at 0:0:1.012696027
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
-DEBUG (7):    best is 40, setting to 6
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (7): Changed parent. from 65535 to 6
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 6 etx: 40
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (7): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (6): 0:3 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=1, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (4): Beacon timer fired at 0:0:1.035156365
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=1, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (2): 2:3 inQ=125, rcv=0, fail=0, Q=20
-DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): Beacon timer fired at 0:0:1.042969160
-DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (3):    already parent.
-DEBUG (3): routingTable[1]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
-DEBUG (3): routingTable[2]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (3):    best is 43, setting to 5
-DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (6): 0:3 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=1, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (2): 2:3 inQ=125, rcv=0, fail=0, Q=20
-DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (8): Beacon timer fired at 0:0:1.054687865
-DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (8):    already parent.
-DEBUG (8): routingTable[1]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (8):    best is 50, setting to 7
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 43
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (9): 0:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:1.081055142
-DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (9):    best is 53, setting to 8
-DEBUG (9): Changed parent. from 65535 to 8
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 53
-DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 53]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
-DEBUG (7): Beacon timer fired at 0:0:1.112305402
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
-DEBUG (7):    already parent.
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (7):    best is 43, setting to 5
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 6 etx: 40
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8):   7: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): 0:3 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6):   7: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5):   7: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (1): Beacon timer fired at 0:0:1.149414172
-DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
-DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (2): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (2): 2:3 inQ=125, rcv=1, fail=0, Q=20
-DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
-DEBUG (2): from a root, inserting if not in table
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:1.178711392
-DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (9):    already parent.
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 53
-DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (5): Beacon timer fired at 0:0:1.180664377
-DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
-DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
-DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
-DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 4 etx: 33
-DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
-DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): 0:2 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (4): 1:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8):   9: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 53]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): Beacon timer fired at 0:0:1.221680202
-DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
-DEBUG (6):    already parent.
-DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 6  etx: NO ROUTE]
-DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
-DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (7): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7):   6: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (3):   6: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (8): Beacon timer fired at 0:0:1.266601927
-DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (8):    already parent.
-DEBUG (8): routingTable[1]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (8):    best is 50, setting to 7
-DEBUG (8): routingTable[2]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 43
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (9): 0:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (9):   8: 250 -> 250DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7):   8: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5):   8: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): Beacon timer fired at 0:0:1.278321027
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
-DEBUG (7):    already parent.
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (7):    best is 43, setting to 5
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 6 etx: 40
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): 0:3 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:1.341797330
-DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (9):    already parent.
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 53
-DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 53]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): Beacon timer fired at 0:0:1.350586548
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (2): Beacon timer fired at 0:0:0.853516235
 DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
 DEBUG (2):    already parent.
@@ -783,336 +537,341 @@ DEBUG (2): routingTable[1]: neighbor: [id: 4 parent: 2  etx: NO ROUTE]
 DEBUG (2): routingTable[2]: neighbor: [id: 3 parent: 2  etx: NO ROUTE]
 DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
 DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (4): 0:2 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (4): 1:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (4):   2: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (4): 0:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (4):   2: 250 -> 241DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3):   2: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
 DEBUG (1): 0:2 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (1):   2: 250 -> 250DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): Beacon timer fired at 0:0:1.458984785
-DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (3):    already parent.
-DEBUG (3): routingTable[1]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
-DEBUG (3): routingTable[2]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (3):    best is 43, setting to 5
-DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (4): Beacon timer fired at 0:0:1.459961052
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (6): 0:3 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6):   3: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): Beacon timer fired at 0:0:1.530273752
-DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
-DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
-DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
-DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 4 etx: 33
-DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
-DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): 0:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (4): 1:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=1, fail=1, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (8): Beacon timer fired at 0:0:1.696289427
+DEBUG (8): Beacon timer fired at 0:0:0.909180052
 DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (8):    already parent.
-DEBUG (8): routingTable[1]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (8):    best is 50, setting to 7
-DEBUG (8): routingTable[2]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 43
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (8):    best is 40, setting to 5
+DEBUG (8): Changed parent. from 65535 to 5
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
 DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (9): 0:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (9): 0:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (7): 0:8 inQ=166, rcv=1, fail=0, Q=15
+DEBUG (7): 1:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (5): 0:4 inQ=166, rcv=2, fail=0, Q=15
+DEBUG (5): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): Beacon timer fired at 0:0:1.724609890
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (6): Beacon timer fired at 0:0:0.927734890
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
 DEBUG (6):    already parent.
-DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 6  etx: NO ROUTE]
 DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
 DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (4): Beacon timer fired at 0:0:0.928711052
+DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (4):    already parent.
+DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (4):    best is 40, setting to 5
+DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (5): Beacon timer fired at 0:0:0.931640940
+DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 15 retx: 20]
+DEBUG (5):    best is 35, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (5):    already parent.
+DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
+DEBUG (7): 0:8 inQ=166, rcv=2, fail=0, Q=15
+DEBUG (7): 1:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
 DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): Beacon timer fired at 0:0:1.786133527
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
-DEBUG (7):    already parent.
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (7):    best is 43, setting to 5
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 6 etx: 40
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3):   6: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
+DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
 DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): 0:3 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 0:8 inQ=166, rcv=2, fail=0, Q=15
+DEBUG (7): 1:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): 0:2 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=166, rcv=2, fail=0, Q=15
+DEBUG (5): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
+DEBUG (5):   4: 166 -> 174DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
 DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:1.943359830
+DEBUG (2): 0:4 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2):   4: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (9): Beacon timer fired at 0:0:0.964844205
 DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (9):    already parent.
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 53
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
+DEBUG (9):    best is 50, setting to 8
+DEBUG (9): Changed parent. from 65535 to 8
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 50
 DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (7): Beacon timer fired at 0:0:0.972656965
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 5
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 15 retx: 40]
+DEBUG (7): Changed parent. from 65535 to 5
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (7): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8):   9: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 50]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (8): Beacon timer fired at 0:0:0.982422240
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (8):    already parent.
+DEBUG (8): routingTable[1]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (6): 0:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (5): 0:4 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (5): 1:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, new entry
+DEBUG (9): 0:8 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (9):   8: 250 -> 250DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=166, rcv=2, fail=0, Q=15
+DEBUG (7): 1:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7):   8: 166 -> 174DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): Beacon timer fired at 0:0:1.019531660
+DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (3):    already parent.
+DEBUG (3): routingTable[1]: neighbor: [id: 5 parent: 3  etx: NO ROUTE]
+DEBUG (3): routingTable[2]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
+DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (6): 0:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (5): 1:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (9): Beacon timer fired at 0:0:1.038086392
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
+DEBUG (9):    already parent.
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 50
+DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 50]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): Beacon timer fired at 0:0:1.072266340
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    already parent.
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 6
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 14 retx: 40]
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (6): 0:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6):   7: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): Beacon timer fired at 0:0:1.114258127
+DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 14 retx: 20]
+DEBUG (5):    best is 34, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (5):    already parent.
+DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
+DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 5  etx: NO ROUTE]
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 1:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): 0:2 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): Beacon timer fired at 0:0:1.124023952
+DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (6):    already parent.
+DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (6):    best is 50, setting to 7
+DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (7): 0:8 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7):   6: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (1): Beacon timer fired at 0:0:1.150390735
+DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
+DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
+DEBUG (2): from a root, inserting if not in table
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (8): Beacon timer fired at 0:0:1.162109740
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (8):    already parent.
+DEBUG (8): routingTable[1]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): routingTable[2]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (8):    best is 50, setting to 7
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (9): 0:8 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (5): 1:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5):   8: 250 -> 241DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): Beacon timer fired at 0:0:1.238281965
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    already parent.
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 6
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 14 retx: 40]
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
 DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (8): 1:7 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 53]
+DEBUG (8):   7: 250 -> 243DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
 DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (8): EasyCollectionC$Timer$fired, NODE 8 FIRED
-DEBUG (8): CtpForwardingEngineP$0$Send$send: sending packet from client 0: 10076c8, len 2
-DEBUG (8): CtpForwardingEngineP$0$Send$send: queue entry for 0 is 0 deep
-DEBUG (8): EasyCollectionC$sendMessage NODE 8 ENVIOU UMA SMG.
-DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (8): Sending queue entry 0x107d480
-DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x10076c8.
-DEBUG (9): EasyCollectionC$Timer$fired, NODE 9 FIRED
-DEBUG (9): CtpForwardingEngineP$0$Send$send: sending packet from client 0: 10076f1, len 2
-DEBUG (9): CtpForwardingEngineP$0$Send$send: queue entry for 0 is 0 deep
-DEBUG (9): EasyCollectionC$sendMessage NODE 9 ENVIOU UMA SMG.
-DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (9): Sending queue entry 0x107d488
-DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x10076f1.
-DEBUG (6): EasyCollectionC$Timer$fired, NODE 6 FIRED
-DEBUG (6): CtpForwardingEngineP$0$Send$send: sending packet from client 0: 1007676, len 2
-DEBUG (6): CtpForwardingEngineP$0$Send$send: queue entry for 0 is 0 deep
-DEBUG (6): EasyCollectionC$sendMessage NODE 6 ENVIOU UMA SMG.
-DEBUG (6): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (6): Sending queue entry 0x107d470
-DEBUG (6): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x1007676.
-DEBUG (8): CtpRoutingEngineP$0$Intercept$forward: NODO 8 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 9 com nextHop 8.
-DEBUG (8): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 seq=0 thl=1 type=238 etx=53.
-DEBUG (8): CtpRoutingEngineP$0$sonsTableUpdateEntry:  NODE 9 eh vizinho direto do NODE 8. 
-DEBUG (8): CtpRoutingEngineP$0$print_sons_table: NODO 8 ainda n tem descendentes
-DEBUG (8): CtpForwardingEngineP$0$forward forwarding packet 0xfb8ba8 with queue size 2
-DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 2.
-DEBUG (9): CtpForwardingEngineP$0$SubSend$sendDone to 8 and 0
-DEBUG (9): Rexmit timer will fire in 7 ms
-DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: NODO 3 INTERCEPTOU UMA MSG DO NO 6 encaminhada por 6 com nextHop 3.
-DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=6 seq=0 thl=1 type=238 etx=30.
-DEBUG (3): CtpRoutingEngineP$0$sonsTableUpdateEntry:  NODE 6 eh vizinho direto do NODE 3. 
-DEBUG (3): CtpRoutingEngineP$0$print_sons_table: NODO 3 ainda n tem descendentes
-DEBUG (3): CtpForwardingEngineP$0$forward forwarding packet 0xfb8adb with queue size 1
-DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (3): Sending queue entry 0x1080c40
-DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8adb.
-DEBUG (6): CtpForwardingEngineP$0$SubSend$sendDone to 3 and 0
-DEBUG (6): Rexmit timer will fire in 11 ms
-DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: NODO 5 INTERCEPTOU UMA MSG DO NO 8 encaminhada por 8 com nextHop 5.
-DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 seq=0 thl=1 type=238 etx=43.
-DEBUG (5): CtpRoutingEngineP$0$sonsTableUpdateEntry:  NODE 8 eh vizinho direto do NODE 5. 
-DEBUG (5): CtpRoutingEngineP$0$print_sons_table: NODO 5 ainda n tem descendentes
-DEBUG (5): CtpForwardingEngineP$0$forward forwarding packet 0xfb8b2d with queue size 1
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (5): Sending queue entry 0x1080d00
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8b2d.
-DEBUG (8): CtpForwardingEngineP$0$SubSend$sendDone to 5 and 0
-DEBUG (8): Rexmit timer will fire in 11 ms
-DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: NODO 2 INTERCEPTOU UMA MSG DO NO 6 encaminhada por 3 com nextHop 2.
-DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=6 seq=0 thl=2 type=238 etx=20.
-DEBUG (2): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].neighbor=3 son[0]=6 new entry
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 2 
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=3:
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=6 
-DEBUG (2): CtpForwardingEngineP$0$forward forwarding packet 0xfb8ab2 with queue size 1
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (2): Sending queue entry 0x1080be0
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8ab2.
-DEBUG (3): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
-DEBUG (3): Rexmit timer will fire in 11 ms
-DEBUG (6): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (5): CtpForwardingEngineP$0$SubSend$sendDone to 4 and 0
-DEBUG (5): CtpForwardingEngineP$0$SubSend$sendDone: not acked, retransmit
-DEBUG (5): Rexmit timer will fire in 10 ms
-DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
-DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
-DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
-DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (2): CtpForwardingEngineP$0$SubSend$sendDone to 1 and 0
-DEBUG (2): Rexmit timer will fire in 8 ms
-DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (8): Sending queue entry 0x1080e20
-DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8ba8.
-DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: NODO 5 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 8 com nextHop 5.
-DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 seq=0 thl=2 type=238 etx=43.
-DEBUG (5): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].neighbor=8 son[0]=9 new entry
-DEBUG (5): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 5 
-DEBUG (5): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=8:
-DEBUG (5): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=9 
-DEBUG (5): CtpForwardingEngineP$0$forward forwarding packet 0x1098fbc with queue size 2
-DEBUG (8): CtpForwardingEngineP$0$SubSend$sendDone to 5 and 0
-DEBUG (8): Rexmit timer will fire in 7 ms
-DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 2.
-DEBUG (5): Sending queue entry 0x1080d00
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8b2d.
-DEBUG (4): CtpRoutingEngineP$0$Intercept$forward: NODO 4 INTERCEPTOU UMA MSG DO NO 8 encaminhada por 5 com nextHop 4.
-DEBUG (4): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 seq=0 thl=2 type=238 etx=33.
-DEBUG (4): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].neighbor=5 son[0]=8 new entry
-DEBUG (4): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 4 
-DEBUG (4): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=5:
-DEBUG (4): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=8 
-DEBUG (4): CtpForwardingEngineP$0$forward forwarding packet 0xfb8b04 with queue size 1
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (4): Sending queue entry 0x1080ca0
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8b04.
-DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (5): CtpForwardingEngineP$0$SubSend$sendDone to 4 and 0
-DEBUG (5): Rexmit timer will fire in 8 ms
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone: not acked, retransmit
-DEBUG (4): Rexmit timer will fire in 8 ms
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (5): Sending queue entry 0x1080d08
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x1098fbc.
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (4): Sending queue entry 0x1080ca0
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8b04.
-DEBUG (4): CtpRoutingEngineP$0$Intercept$forward: NODO 4 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 5 com nextHop 4.
-DEBUG (4): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 seq=0 thl=3 type=238 etx=33.
-DEBUG (4): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].sons[1]=9 new entry
-DEBUG (4): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 4 
-DEBUG (4): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=5:
-DEBUG (4): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=8 
-DEBUG (4): CtpRoutingEngineP$0$print_sons_table: 	  sons[1]=9 
-DEBUG (4): CtpForwardingEngineP$0$forward forwarding packet 0x1098dd0 with queue size 2
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 2.
-DEBUG (5): CtpForwardingEngineP$0$SubSend$sendDone to 4 and 0
-DEBUG (5): Rexmit timer will fire in 7 ms
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone: not acked, retransmit
-DEBUG (4): Rexmit timer will fire in 7 ms
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 2.
-DEBUG (4): Sending queue entry 0x1080ca0
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8b04.
-DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: NODO 2 INTERCEPTOU UMA MSG DO NO 8 encaminhada por 4 com nextHop 2.
-DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 seq=0 thl=3 type=238 etx=20.
-DEBUG (2): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[1].neighbor=4 son[0]=8 new entry
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 2 
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=3:
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=6 
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[1].neighbor=4:
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=8 
-DEBUG (2): CtpForwardingEngineP$0$forward forwarding packet 0x10989f8 with queue size 1
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (2): Sending queue entry 0x1080be8
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x10989f8.
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone: not acked, retransmit
-DEBUG (4): Rexmit timer will fire in 7 ms
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (2): CtpForwardingEngineP$0$SubSend$sendDone to 1 and 0
-DEBUG (2): Rexmit timer will fire in 11 ms
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 2.
-DEBUG (4): Sending queue entry 0x1080ca0
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0xfb8b04.
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
-DEBUG (4): Rexmit timer will fire in 10 ms
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (4): Sending queue entry 0x1080ca8
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x1098dd0.
-DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: NODO 2 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 4 com nextHop 2.
-DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 seq=0 thl=4 type=238 etx=20.
-DEBUG (2): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[1].sons[1]=9 new entry
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 2 
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=3:
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=6 
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[1].neighbor=4:
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=8 
-DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[1]=9 
-DEBUG (2): CtpForwardingEngineP$0$forward forwarding packet 0x1098a21 with queue size 1
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
-DEBUG (2): Sending queue entry 0x1080bf0
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x1098a21.
-DEBUG (4): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
-DEBUG (4): Rexmit timer will fire in 13 ms
-DEBUG (2): CtpForwardingEngineP$0$SubSend$sendDone to 1 and 0
-DEBUG (2): Rexmit timer will fire in 10 ms
-DEBUG (4): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
-DEBUG (1): Beacon timer fired at 0:0:2.224609485
-DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
-DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (2): 0:4 inQ=187, rcv=2, fail=0, Q=13
+DEBUG (6): 0:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (5): 1:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (5):   7: 250 -> 243DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (9): Beacon timer fired at 0:0:1.327148892
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
+DEBUG (9):    already parent.
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 50
+DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 50]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): Beacon timer fired at 0:0:1.360351973
+DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (3):    already parent.
+DEBUG (3): routingTable[1]: neighbor: [id: 5 parent: 3  etx: NO ROUTE]
+DEBUG (3): routingTable[2]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
+DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (6): 0:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6):   3: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (5):   3: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (2): 1:1 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (2): 2:3 inQ=125, rcv=1, fail=0, Q=20
-DEBUG (2):   1: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
-DEBUG (2): from a root, inserting if not in table
+DEBUG (2): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2):   3: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
 DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): Beacon timer fired at 0:0:2.302734985
+DEBUG (2): Beacon timer fired at 0:0:1.382813110
 DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
 DEBUG (2):    already parent.
@@ -1120,200 +879,348 @@ DEBUG (2): routingTable[1]: neighbor: [id: 4 parent: 2  etx: NO ROUTE]
 DEBUG (2): routingTable[2]: neighbor: [id: 3 parent: 2  etx: NO ROUTE]
 DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
 DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (4): 0:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (4): 0:2 inQ=241, rcv=0, fail=0, Q=10
 DEBUG (4): 1:5 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=250, rcv=1, fail=1, Q=10
+DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (3): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (3):   2: 250 -> 241DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
 DEBUG (1): 0:2 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): Beacon timer fired at 0:0:2.323242302
+DEBUG (4): Beacon timer fired at 0:0:1.541992302
 DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 11 retx: 10]
+DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
 DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 21
+DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (4):    best is 40, setting to 5
+DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
 DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5):   4: 187 -> 187DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 21]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (2): 2:3 inQ=125, rcv=1, fail=0, Q=20
-DEBUG (2):   4: 187 -> 187DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 21]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): Beacon timer fired at 0:0:2.446289777
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
-DEBUG (7):    already parent.
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (7):    best is 43, setting to 5
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 43]
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 6 etx: 40
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (3): Beacon timer fired at 0:0:2.448242598
-DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (3):    already parent.
-DEBUG (3): routingTable[1]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
-DEBUG (3): routingTable[2]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (3):    best is 43, setting to 5
-DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8):   7: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5):   7: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): 0:3 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (2): 2:3 inQ=125, rcv=1, fail=0, Q=20
-DEBUG (2):   3: 125 -> 129DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): Beacon timer fired at 0:0:2.557617702
+DEBUG (6): Beacon timer fired at 0:0:1.541992702
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
 DEBUG (6):    already parent.
-DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 6  etx: NO ROUTE]
+DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (6):    best is 50, setting to 7
 DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
 DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (7): 0:6 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 0:8 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
 DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (3): 2:5 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
 DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): Beacon timer fired at 0:0:2.650390940
+DEBUG (5): 0:4 inQ=174, rcv=0, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): Beacon timer fired at 0:0:1.583984690
 DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 21]
+DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 14 retx: 20]
+DEBUG (5):    best is 34, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
 DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
 DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
-DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 4 etx: 34
+DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 5  etx: NO ROUTE]
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
 DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
 DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=0, fail=0, Q=10
 DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8):   5: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 34]
+DEBUG (8):   5: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
 DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 0:8 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7):   5: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 34]
+DEBUG (7):   5: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
 DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): 0:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (4): 0:2 inQ=241, rcv=1, fail=0, Q=10
 DEBUG (4): 1:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (4):   5: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 34]
+DEBUG (4):   5: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
 DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=1, fail=1, Q=10
-DEBUG (3): 1:2 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (3): 2:5 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (3):   5: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 34]
+DEBUG (3):   5: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
 DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (8): Beacon timer fired at 0:0:2.776367552
-DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (8):    already parent.
-DEBUG (8): routingTable[1]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (8):    best is 50, setting to 7
-DEBUG (8): routingTable[2]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 44
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (9): 0:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 44]
-DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 44]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 44]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:2.791016080
+DEBUG (9): Beacon timer fired at 0:0:1.674805142
 DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 44]
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
 DEBUG (9):    already parent.
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 54
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 50
 DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
 DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=0, fail=0, Q=10
 DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8):   9: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 54]
+DEBUG (8):   9: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 50]
 DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (1): Beacon timer fired at 0:0:3.859375110
-DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
-DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (4): Beacon timer fired at 0:0:3.945312615
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 11 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 21
-DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (5): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 21]
+DEBUG (8): Beacon timer fired at 0:0:1.742187865
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (8):    already parent.
+DEBUG (8): routingTable[1]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): routingTable[2]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (8):    best is 50, setting to 7
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (7): 0:8 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
 DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=0, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (2): 2:3 inQ=129, rcv=0, fail=0, Q=19
-DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 21]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): Beacon timer fired at 0:0:4.072266340
+DEBUG (7): Beacon timer fired at 0:0:1.746094465
 DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
 DEBUG (7):    already parent.
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (7):    best is 44, setting to 5
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 44]
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 6 etx: 40
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 6
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 14 retx: 40]
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
 DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
 DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=0, fail=0, Q=10
 DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
 DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): 0:3 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6):   7: 250 -> 243DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
+DEBUG (6): 0:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
 DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
+DEBUG (5): 0:4 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
 DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): Beacon timer fired at 0:0:4.266602173
+DEBUG (8): EasyCollectionC$Timer$fired, NODE 8 FIRED
+DEBUG (8): CtpForwardingEngineP$0$Send$send: sending packet from client 0: 7a36c8, len 2
+DEBUG (8): CtpForwardingEngineP$0$Send$send: queue entry for 0 is 0 deep
+DEBUG (8): EasyCollectionC$sendMessage NODE 8 ENVIOU UMA SMG.
+DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (8): Sending queue entry 0x819480
+DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x7a36c8.
+DEBUG (9): EasyCollectionC$Timer$fired, NODE 9 FIRED
+DEBUG (9): CtpForwardingEngineP$0$Send$send: sending packet from client 0: 7a36f1, len 2
+DEBUG (9): CtpForwardingEngineP$0$Send$send: queue entry for 0 is 0 deep
+DEBUG (9): EasyCollectionC$sendMessage NODE 9 ENVIOU UMA SMG.
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (9): Sending queue entry 0x819488
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x7a36f1.
+DEBUG (6): EasyCollectionC$Timer$fired, NODE 6 FIRED
+DEBUG (6): CtpForwardingEngineP$0$Send$send: sending packet from client 0: 7a3676, len 2
+DEBUG (6): CtpForwardingEngineP$0$Send$send: queue entry for 0 is 0 deep
+DEBUG (6): EasyCollectionC$sendMessage NODE 6 ENVIOU UMA SMG.
+DEBUG (6): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (6): Sending queue entry 0x819470
+DEBUG (6): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x7a3676.
+DEBUG (9): CtpForwardingEngineP$0$SubSend$sendDone to 8 and 0
+DEBUG (9): CtpForwardingEngineP$0$SubSend$sendDone: not acked, retransmit
+DEBUG (9): Rexmit timer will fire in 7 ms
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
+DEBUG (9):    already parent.
+DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: NODO 5 INTERCEPTOU UMA MSG DO NO 8 encaminhada por 8 com nextHop 5.
+DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 D=65535 seq=0 thl=1 type=238 etx=40.
+DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 D=1 seq=0 thl=1 type=238 etx=40.
+DEBUG (5): CtpRoutingEngineP$0$sonsTableUpdateEntry:  NODE 8 eh vizinho direto do NODE 5. 
+DEBUG (5): CtpRoutingEngineP$0$print_sons_table: NODO 5 ainda n tem descendentes
+DEBUG (5): CtpForwardingEngineP$0$forward forwarding packet 0x754b2d with queue size 1
+DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (5): Sending queue entry 0x81cd00
+DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x754b2d.
+DEBUG (8): CtpForwardingEngineP$0$SubSend$sendDone to 5 and 0
+DEBUG (8): Rexmit timer will fire in 7 ms
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: NODO 3 INTERCEPTOU UMA MSG DO NO 6 encaminhada por 6 com nextHop 3.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=6 D=65535 seq=0 thl=1 type=238 etx=30.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=6 D=1 seq=0 thl=1 type=238 etx=30.
+DEBUG (3): CtpRoutingEngineP$0$sonsTableUpdateEntry:  NODE 6 eh vizinho direto do NODE 3. 
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: NODO 3 ainda n tem descendentes
+DEBUG (3): CtpForwardingEngineP$0$forward forwarding packet 0x754adb with queue size 1
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (3): Sending queue entry 0x81cc40
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x754adb.
+DEBUG (6): CtpForwardingEngineP$0$SubSend$sendDone to 3 and 0
+DEBUG (6): Rexmit timer will fire in 9 ms
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (9): Sending queue entry 0x819488
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x7a36f1.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: NODO 2 INTERCEPTOU UMA MSG DO NO 6 encaminhada por 3 com nextHop 2.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=6 D=1 seq=0 thl=2 type=238 etx=20.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=6 D=1 seq=0 thl=2 type=238 etx=20.
+DEBUG (2): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].neighbor=3 son[0]=6 new entry
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 2 
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=3:
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=6 
+DEBUG (2): CtpForwardingEngineP$0$forward forwarding packet 0x754ab2 with queue size 1
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (2): Sending queue entry 0x81cbe0
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x754ab2.
+DEBUG (3): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
+DEBUG (3): Rexmit timer will fire in 7 ms
+DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: NODO 3 INTERCEPTOU UMA MSG DO NO 8 encaminhada por 5 com nextHop 3.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 D=1 seq=0 thl=2 type=238 etx=30.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 D=1 seq=0 thl=2 type=238 etx=30.
+DEBUG (3): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].neighbor=5 son[0]=8 new entry
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 3 
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=5:
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=8 
+DEBUG (3): CtpForwardingEngineP$0$forward forwarding packet 0x834be4 with queue size 1
+DEBUG (9): CtpForwardingEngineP$0$SubSend$sendDone to 8 and 0
+DEBUG (9): CtpForwardingEngineP$0$SubSend$sendDone: not acked, retransmit
+DEBUG (9): Rexmit timer will fire in 13 ms
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
+DEBUG (9):    already parent.
+DEBUG (5): CtpForwardingEngineP$0$SubSend$sendDone to 3 and 0
+DEBUG (5): Rexmit timer will fire in 7 ms
+DEBUG (6): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (3): Sending queue entry 0x81cc48
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x834be4.
+DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (2): CtpForwardingEngineP$0$SubSend$sendDone to 1 and 0
+DEBUG (2): Rexmit timer will fire in 10 ms
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: NODO 2 INTERCEPTOU UMA MSG DO NO 8 encaminhada por 3 com nextHop 2.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 D=1 seq=0 thl=3 type=238 etx=20.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=8 D=1 seq=0 thl=3 type=238 etx=20.
+DEBUG (2): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].sons[1]=8 new entry
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 2 
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=3:
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=6 
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[1]=8 
+DEBUG (2): CtpForwardingEngineP$0$forward forwarding packet 0x8349f8 with queue size 1
+DEBUG (3): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
+DEBUG (3): Rexmit timer will fire in 11 ms
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (9): Sending queue entry 0x819488
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x7a36f1.
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (2): Sending queue entry 0x81cbe8
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x8349f8.
+DEBUG (8): CtpRoutingEngineP$0$Intercept$forward: NODO 8 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 9 com nextHop 8.
+DEBUG (8): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=65535 seq=0 thl=1 type=238 etx=50.
+DEBUG (8): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=1 seq=0 thl=1 type=238 etx=50.
+DEBUG (8): CtpRoutingEngineP$0$sonsTableUpdateEntry:  NODE 9 eh vizinho direto do NODE 8. 
+DEBUG (8): CtpRoutingEngineP$0$print_sons_table: NODO 8 ainda n tem descendentes
+DEBUG (8): CtpForwardingEngineP$0$forward forwarding packet 0x754ba8 with queue size 1
+DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (8): Sending queue entry 0x81ce20
+DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x754ba8.
+DEBUG (9): CtpForwardingEngineP$0$SubSend$sendDone to 8 and 0
+DEBUG (9): Rexmit timer will fire in 13 ms
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (2): CtpForwardingEngineP$0$SubSend$sendDone to 1 and 0
+DEBUG (2): Rexmit timer will fire in 8 ms
+DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: NODO 5 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 8 com nextHop 5.
+DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=1 seq=0 thl=2 type=238 etx=40.
+DEBUG (5): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=1 seq=0 thl=2 type=238 etx=40.
+DEBUG (5): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].neighbor=8 son[0]=9 new entry
+DEBUG (5): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 5 
+DEBUG (5): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=8:
+DEBUG (5): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=9 
+DEBUG (5): CtpForwardingEngineP$0$forward forwarding packet 0x834fbc with queue size 1
+DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (5): Sending queue entry 0x81cd08
+DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x834fbc.
+DEBUG (8): CtpForwardingEngineP$0$SubSend$sendDone to 5 and 0
+DEBUG (8): Rexmit timer will fire in 13 ms
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (9): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: NODO 3 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 5 com nextHop 3.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=1 seq=0 thl=3 type=238 etx=30.
+DEBUG (3): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=1 seq=0 thl=3 type=238 etx=30.
+DEBUG (3): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].sons[1]=9 new entry
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 3 
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=5:
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=8 
+DEBUG (3): CtpRoutingEngineP$0$print_sons_table: 	  sons[1]=9 
+DEBUG (3): CtpForwardingEngineP$0$forward forwarding packet 0x834c0d with queue size 1
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (3): Sending queue entry 0x81cc50
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x834c0d.
+DEBUG (5): CtpForwardingEngineP$0$SubSend$sendDone to 3 and 0
+DEBUG (5): Rexmit timer will fire in 7 ms
+DEBUG (8): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: NODO 2 INTERCEPTOU UMA MSG DO NO 9 encaminhada por 3 com nextHop 2.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=1 seq=0 thl=4 type=238 etx=20.
+DEBUG (2): CtpRoutingEngineP$0$Intercept$forward: CtpPacket: O=9 D=1 seq=0 thl=4 type=238 etx=20.
+DEBUG (2): CtpRoutingEngineP$0$sonsTableUpdateEntry OK, sonsTable[0].sons[2]=9 new entry
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: Descendentes para NODO 2 
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: sonsTable[0].neighbor=3:
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[0]=6 
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[1]=8 
+DEBUG (2): CtpRoutingEngineP$0$print_sons_table: 	  sons[2]=9 
+DEBUG (2): CtpForwardingEngineP$0$forward forwarding packet 0x834a21 with queue size 1
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 1.
+DEBUG (2): Sending queue entry 0x81cbf0
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: subsend succeeded with 0x834a21.
+DEBUG (3): CtpForwardingEngineP$0$SubSend$sendDone to 2 and 0
+DEBUG (3): Rexmit timer will fire in 12 ms
+DEBUG (5): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (2): CtpForwardingEngineP$0$SubSend$sendDone to 1 and 0
+DEBUG (2): Rexmit timer will fire in 12 ms
+DEBUG (3): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (2): CtpForwardingEngineP$0$sendTask$runTask: Trying to send a packet. Queue size is 0.
+DEBUG (1): Beacon timer fired at 0:0:2.225586047
+DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
+DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (2): 0:4 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2):   1: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
+DEBUG (2): from a root, inserting if not in table
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): Beacon timer fired at 0:0:2.294922190
+DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 14 retx: 20]
+DEBUG (5):    best is 34, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (5):    already parent.
+DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
+DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 5  etx: NO ROUTE]
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
+DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=174, rcv=2, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): 0:2 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): Beacon timer fired at 0:0:2.351563110
 DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
 DEBUG (2):    already parent.
@@ -1321,151 +1228,182 @@ DEBUG (2): routingTable[1]: neighbor: [id: 4 parent: 2  etx: NO ROUTE]
 DEBUG (2): routingTable[2]: neighbor: [id: 3 parent: 2  etx: NO ROUTE]
 DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
 DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (4): 0:2 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (4): 1:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (4): 0:2 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=1, fail=1, Q=10
-DEBUG (3): 1:2 inQ=241, rcv=0, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
 DEBUG (1): 0:2 inQ=250, rcv=1, fail=0, Q=10
 DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): Beacon timer fired at 0:0:4.497070723
+DEBUG (7): Beacon timer fired at 0:0:2.406250715
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    already parent.
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 6
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 14 retx: 40]
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): 0:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6):   7: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): Beacon timer fired at 0:0:2.443359785
 DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
 DEBUG (3):    already parent.
-DEBUG (3): routingTable[1]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
-DEBUG (3): routingTable[2]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (3):    best is 44, setting to 5
+DEBUG (3): routingTable[1]: neighbor: [id: 5 parent: 3  etx: NO ROUTE]
+DEBUG (3): routingTable[2]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
 DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
 DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (6): Beacon timer fired at 0:0:4.500977077
+DEBUG (6): 0:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): Beacon timer fired at 0:0:2.465820427
+DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (4):    already parent.
+DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (4):    best is 40, setting to 5
+DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (5): 0:4 inQ=174, rcv=1, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): Beacon timer fired at 0:0:2.669922390
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
 DEBUG (6):    already parent.
-DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 6  etx: NO ROUTE]
+DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (6):    best is 50, setting to 7
 DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
 DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=166, rcv=2, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5):   3: 166 -> 164DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (2): 2:3 inQ=129, rcv=0, fail=0, Q=19
-DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): 0:3 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (6): 1:7 inQ=243, rcv=0, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7):   6: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (7): 0:8 inQ=174, rcv=2, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
 DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=250, rcv=1, fail=1, Q=10
-DEBUG (3): 1:2 inQ=241, rcv=1, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3):   6: 250 -> 241DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3):   6: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
 DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:4.663086392
+DEBUG (8): Beacon timer fired at 0:0:2.683594115
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (8):    already parent.
+DEBUG (8): routingTable[1]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): routingTable[2]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (8):    best is 50, setting to 7
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (9): 0:8 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (9):   8: 250 -> 241DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=174, rcv=2, fail=0, Q=14
+DEBUG (7): 1:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7):   8: 174 -> 181DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=174, rcv=2, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (9): Beacon timer fired at 0:0:2.714844205
 DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 44]
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
 DEBUG (9):    already parent.
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 54
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 50
 DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
 DEBUG (8): 0:9 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 54]
+DEBUG (8): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 50]
 DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): Beacon timer fired at 0:0:4.723633127
-DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 21]
-DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
-DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
-DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 4 etx: 34
-DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 34]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): 0:2 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (4): 1:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 34]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=241, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=241, rcv=1, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 34]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (8): Beacon timer fired at 0:0:4.806640990
-DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (8):    already parent.
-DEBUG (8): routingTable[1]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (8):    best is 50, setting to 7
-DEBUG (8): routingTable[2]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 44
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (9): 0:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (9):   8: 250 -> 250DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 44]
-DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7):   8: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 44]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=164, rcv=0, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5):   8: 250 -> 250DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 44]
+DEBUG (3): Beacon timer fired at 0:0:3.626953535
+DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (3):    already parent.
+DEBUG (3): routingTable[1]: neighbor: [id: 5 parent: 3  etx: NO ROUTE]
+DEBUG (3): routingTable[2]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
+DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (2): 0:4 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): 0:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): Beacon timer fired at 0:0:3.736328240
+DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (4):    already parent.
+DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (4):    best is 40, setting to 5
+DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (5): 0:4 inQ=174, rcv=2, fail=0, Q=14
+DEBUG (5): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=2, fail=0, Q=10
+DEBUG (5):   4: 174 -> 181DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
 DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (1): Beacon timer fired at 0:0:6.378906360
+DEBUG (2): 0:4 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2):   4: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (1): Beacon timer fired at 0:0:3.860351672
 DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
 DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (2): 0:4 inQ=187, rcv=1, fail=0, Q=13
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
 DEBUG (2): 1:1 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (2): 2:3 inQ=129, rcv=1, fail=0, Q=19
+DEBUG (2): 2:3 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
 DEBUG (2): from a root, inserting if not in table
 DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): Beacon timer fired at 0:0:7.020508527
-DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
-DEBUG (7):    already parent.
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (7):    best is 44, setting to 5
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 44]
-DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 6 etx: 40
-DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): 0:3 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6): 1:7 inQ=243, rcv=0, fail=0, Q=10
-DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=164, rcv=0, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 6 etx: 40]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): Beacon timer fired at 0:0:7.266602173
+DEBUG (2): Beacon timer fired at 0:0:3.929688110
 DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
 DEBUG (2):    already parent.
@@ -1473,163 +1411,338 @@ DEBUG (2): routingTable[1]: neighbor: [id: 4 parent: 2  etx: NO ROUTE]
 DEBUG (2): routingTable[2]: neighbor: [id: 3 parent: 2  etx: NO ROUTE]
 DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
 DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (3): 0:6 inQ=241, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=241, rcv=1, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): Beacon timer fired at 0:0:3.931641140
+DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (6):    already parent.
+DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (6):    best is 50, setting to 7
+DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
 DEBUG (1): 0:2 inQ=250, rcv=2, fail=0, Q=10
 DEBUG (1):   2: 250 -> 250DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): 0:2 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3):   2: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): 0:2 inQ=241, rcv=2, fail=0, Q=10
 DEBUG (4): 1:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (4):   2: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (4):   2: 241 -> 241DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
 DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): Beacon timer fired at 0:0:7.313476973
-DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (3):    already parent.
-DEBUG (3): routingTable[1]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
-DEBUG (3): routingTable[2]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (3):    best is 44, setting to 5
-DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (6): 0:3 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (6): 1:7 inQ=243, rcv=1, fail=0, Q=10
-DEBUG (6):   3: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=164, rcv=0, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=1, fail=1, Q=10
-DEBUG (2): 2:3 inQ=129, rcv=1, fail=0, Q=19
-DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): Beacon timer fired at 0:0:7.913086052
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
-DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
-DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (5): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (5): 1:3 inQ=164, rcv=1, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
-DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (2): 0:4 inQ=187, rcv=1, fail=0, Q=13
-DEBUG (2): 1:1 inQ=250, rcv=1, fail=1, Q=10
-DEBUG (2): 2:3 inQ=129, rcv=2, fail=0, Q=19
-DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
-DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
-DEBUG (4):    already parent.
-DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 4  etx: NO ROUTE]
+DEBUG (7): 0:8 inQ=181, rcv=0, fail=0, Q=13
+DEBUG (7): 1:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7):   6: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): Beacon timer fired at 0:0:3.972656565
 DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
+DEBUG (5):    best is 33, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
 DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
 DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
-DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
+DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 5  etx: NO ROUTE]
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=181, rcv=0, fail=0, Q=13
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): 0:2 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): Beacon timer fired at 0:0:4.032227277
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    already parent.
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 6
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 13 retx: 40]
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8):   7: 243 -> 243DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): 0:7 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=181, rcv=0, fail=0, Q=13
+DEBUG (5): 1:7 inQ=243, rcv=2, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=2, fail=0, Q=10
+DEBUG (5):   7: 243 -> 243DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (9): Beacon timer fired at 0:0:4.570312955
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
+DEBUG (9):    already parent.
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 50
+DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 50]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (8): Beacon timer fired at 0:0:4.700195677
 DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
 DEBUG (8):    already parent.
-DEBUG (8): routingTable[1]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
+DEBUG (8): routingTable[1]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): routingTable[2]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
 DEBUG (8):    best is 50, setting to 7
-DEBUG (8): routingTable[2]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (9): 0:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=181, rcv=0, fail=0, Q=13
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=181, rcv=0, fail=0, Q=13
+DEBUG (5): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=2, fail=0, Q=10
+DEBUG (5):   8: 241 -> 241DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (1): Beacon timer fired at 0:0:6.379882922
+DEBUG (1): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 0
+DEBUG (1): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 1  [ parent: 1 etx: 0]
+DEBUG (2): from a root, inserting if not in table
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): Beacon timer fired at 0:0:6.980469465
+DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    already parent.
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 6
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 13 retx: 40]
+DEBUG (7): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (7): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=181, rcv=0, fail=0, Q=13
+DEBUG (5): 1:7 inQ=243, rcv=0, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): 0:7 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 7  [ parent: 5 etx: 40]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): Beacon timer fired at 0:0:7.298828440
+DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
+DEBUG (5):    best is 33, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (5):    already parent.
+DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
+DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 5  etx: NO ROUTE]
+DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
+DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8):   5: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=181, rcv=1, fail=0, Q=13
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (7):   5: 250 -> 250DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): 0:2 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (4):   5: 250 -> 250DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3):   5: 250 -> 250DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): Beacon timer fired at 0:0:7.402343865
+DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (4):    already parent.
+DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (4):    best is 40, setting to 5
+DEBUG (4): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (4): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (5): 0:4 inQ=181, rcv=0, fail=0, Q=13
+DEBUG (5): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 4  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (6): Beacon timer fired at 0:0:7.446289577
+DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (6):    already parent.
+DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (6):    best is 50, setting to 7
+DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
+DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
+DEBUG (7): 0:8 inQ=181, rcv=1, fail=0, Q=13
+DEBUG (7): 1:6 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (9): Beacon timer fired at 0:0:7.505859830
+DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
+DEBUG (9):    already parent.
+DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 50
+DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
+DEBUG (8): 0:9 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (8): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (8):   9: 250 -> 250DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 9  [ parent: 8 etx: 50]
+DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (8): Beacon timer fired at 0:0:7.689453490
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (8):    already parent.
+DEBUG (8): routingTable[1]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): routingTable[2]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (8):    best is 50, setting to 7
+DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 40
+DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (9): 0:8 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (7): 0:8 inQ=181, rcv=1, fail=0, Q=13
+DEBUG (7): 1:6 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (7): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=181, rcv=1, fail=0, Q=13
+DEBUG (5): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 40]
+DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): Beacon timer fired at 0:0:7.864258423
+DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
+DEBUG (2):    already parent.
+DEBUG (2): routingTable[1]: neighbor: [id: 4 parent: 2  etx: NO ROUTE]
+DEBUG (2): routingTable[2]: neighbor: [id: 3 parent: 2  etx: NO ROUTE]
+DEBUG (2): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 1 etx: 10
+DEBUG (2): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (4): 0:2 inQ=241, rcv=0, fail=0, Q=10
+DEBUG (4): 1:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (3): 0:6 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (3): 1:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): 2:5 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (1): 0:2 inQ=250, rcv=0, fail=0, Q=10
+DEBUG (1): CtpRoutingEngineP$0$BeaconReceive$receive from: 2  [ parent: 1 etx: 10]
+DEBUG (1): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (4): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (4): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (4):    already parent.
+DEBUG (4): routingTable[1]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (4):    best is 40, setting to 5
+DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
+DEBUG (5):    best is 33, setting to 4
+DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
+DEBUG (5):    already parent.
+DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
+DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 5  etx: NO ROUTE]
+DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
+DEBUG (8):    already parent.
+DEBUG (8): routingTable[1]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
+DEBUG (8): routingTable[2]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (8):    best is 50, setting to 7
 DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
 DEBUG (3):    already parent.
-DEBUG (3): routingTable[1]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
-DEBUG (3): routingTable[2]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (3):    best is 44, setting to 5
+DEBUG (3): routingTable[1]: neighbor: [id: 5 parent: 3  etx: NO ROUTE]
+DEBUG (3): routingTable[2]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
 DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 44]
+DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 40]
 DEBUG (9):    already parent.
 DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
 DEBUG (6):    already parent.
-DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 6  etx: NO ROUTE]
+DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 5 etx: 10 retx: 40]
+DEBUG (6):    best is 50, setting to 7
 DEBUG (2): CtpRoutingEngineP$0$updateRouteTask$runTask
 DEBUG (2): routingTable[0]: neighbor: [id: 1 parent: 1 etx: 10 retx: 0]
 DEBUG (2):    already parent.
 DEBUG (2): routingTable[1]: neighbor: [id: 4 parent: 2  etx: NO ROUTE]
 DEBUG (2): routingTable[2]: neighbor: [id: 3 parent: 2  etx: NO ROUTE]
 DEBUG (7): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (7): routingTable[0]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7): routingTable[0]: neighbor: [id: 5 parent: 3 etx: 10 retx: 30]
 DEBUG (7):    already parent.
-DEBUG (7): routingTable[1]: neighbor: [id: 5 parent: 4 etx: 10 retx: 34]
-DEBUG (7):    best is 44, setting to 5
-DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 10 retx: 44]
-DEBUG (5): Beacon timer fired at 0:0:8.008789377
-DEBUG (5): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (5): routingTable[0]: neighbor: [id: 4 parent: 2 etx: 13 retx: 20]
-DEBUG (5):    already parent.
-DEBUG (5): routingTable[1]: neighbor: [id: 3 parent: 2 etx: 15 retx: 20]
-DEBUG (5):    best is 35, setting to 3
-DEBUG (5): routingTable[2]: neighbor: [id: 8 parent: 5  etx: NO ROUTE]
-DEBUG (5): routingTable[3]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (5): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 4 etx: 33
-DEBUG (5): LinkEstimatorP$Send$send packet of length 5 became 19
-DEBUG (8): 0:9 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (8): 1:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (8): 2:5 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (8): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (8): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (3): 0:6 inQ=241, rcv=0, fail=0, Q=10
-DEBUG (3): 1:2 inQ=241, rcv=2, fail=0, Q=10
-DEBUG (3): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (3): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (3): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (4): 0:2 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (4): 1:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (4): CtpRoutingEngineP$0$BeaconReceive$receive from: 5  [ parent: 4 etx: 33]
-DEBUG (4): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (6): Beacon timer fired at 0:0:8.673828640
-DEBUG (6): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (6): routingTable[0]: neighbor: [id: 3 parent: 2 etx: 10 retx: 20]
-DEBUG (6):    already parent.
-DEBUG (6): routingTable[1]: neighbor: [id: 7 parent: 6  etx: NO ROUTE]
-DEBUG (6): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 3 etx: 30
-DEBUG (6): LinkEstimatorP$Send$send packet of length 5 became 13
-DEBUG (7): 0:6 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 6  [ parent: 3 etx: 30]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (9): Beacon timer fired at 0:0:8.704102017
-DEBUG (9): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (9): routingTable[0]: neighbor: [id: 8 parent: 5 etx: 10 retx: 44]
-DEBUG (9):    already parent.
-DEBUG (9): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 8 etx: 54
-DEBUG (9): LinkEstimatorP$Send$send packet of length 5 became 10
-DEBUG (8): Beacon timer fired at 0:0:8.734375365
-DEBUG (8): CtpRoutingEngineP$0$updateRouteTask$runTask
-DEBUG (8): routingTable[0]: neighbor: [id: 5 parent: 4 etx: 10 retx: 33]
-DEBUG (8):    already parent.
-DEBUG (8): routingTable[1]: neighbor: [id: 7 parent: 6 etx: 10 retx: 40]
-DEBUG (8):    best is 50, setting to 7
-DEBUG (8): routingTable[2]: neighbor: [id: 9 parent: 8  etx: NO ROUTE]
-DEBUG (8): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 5 etx: 43
-DEBUG (8): LinkEstimatorP$Send$send packet of length 5 became 16
-DEBUG (9): 0:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (9): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (9): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (7): 0:6 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): 1:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (7): 2:5 inQ=250, rcv=1, fail=0, Q=10
-DEBUG (7): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
-DEBUG (7): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
-DEBUG (5): 0:4 inQ=187, rcv=2, fail=0, Q=13
-DEBUG (5): 1:3 inQ=164, rcv=1, fail=0, Q=15
-DEBUG (5): 2:7 inQ=250, rcv=2, fail=0, Q=10
-DEBUG (5): 3:8 inQ=250, rcv=0, fail=0, Q=10
-DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 8  [ parent: 5 etx: 43]
+DEBUG (7): routingTable[1]: neighbor: [id: 6 parent: 3 etx: 10 retx: 30]
+DEBUG (7):    best is 40, setting to 6
+DEBUG (7): routingTable[2]: neighbor: [id: 8 parent: 5 etx: 13 retx: 40]
+DEBUG (3): Beacon timer fired at 0:0:8.155273848
+DEBUG (3): CtpRoutingEngineP$0$updateRouteTask$runTask
+DEBUG (3): routingTable[0]: neighbor: [id: 2 parent: 1 etx: 10 retx: 10]
+DEBUG (3):    already parent.
+DEBUG (3): routingTable[1]: neighbor: [id: 5 parent: 3  etx: NO ROUTE]
+DEBUG (3): routingTable[2]: neighbor: [id: 6 parent: 3  etx: NO ROUTE]
+DEBUG (3): CtpRoutingEngineP$0$sendBeaconTask$runTask parent: 2 etx: 20
+DEBUG (3): LinkEstimatorP$Send$send packet of length 5 became 16
+DEBUG (6): 0:7 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6): 1:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (6):   3: 250 -> 250DEBUG (6): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (6): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (5): 0:4 inQ=181, rcv=1, fail=0, Q=13
+DEBUG (5): 1:7 inQ=243, rcv=1, fail=0, Q=10
+DEBUG (5): 2:3 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (5): 3:8 inQ=241, rcv=1, fail=0, Q=10
+DEBUG (5):   3: 250 -> 241DEBUG (5): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
 DEBUG (5): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry
+DEBUG (2): 0:4 inQ=250, rcv=1, fail=0, Q=10
+DEBUG (2): 1:1 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2): 2:3 inQ=250, rcv=2, fail=0, Q=10
+DEBUG (2):   3: 250 -> 250DEBUG (2): CtpRoutingEngineP$0$BeaconReceive$receive from: 3  [ parent: 2 etx: 20]
+DEBUG (2): CtpRoutingEngineP$0$routingTableUpdateEntry OK, updated entry

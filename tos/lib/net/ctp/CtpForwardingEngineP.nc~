@@ -307,7 +307,7 @@ implementation {
     hdr = getHeader(msg);
     hdr->origin = TOS_NODE_ID;
     /*BRUNO*/
-    hdr->dest = INVALID_ADDR;
+    hdr->dest = TOS_NODE_ID;
     /*FIM BRUNO*/
     hdr->originSeqNo  = seqno++;
     hdr->type = call CollectionId.fetch[client]();

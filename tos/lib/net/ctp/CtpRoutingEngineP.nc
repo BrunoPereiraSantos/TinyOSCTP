@@ -875,15 +875,14 @@ implementation {
     	 																		call AMPacket.source(msg),
     	 																		call AMPacket.destination(msg));
     	 																		
-    	 dbg("BRUNO_RE", "%s: CtpPacket: O=%hu seq=%hhu thl=%d type=%d etx=%d.\n",
+    	 dbg("BRUNO_RE", "%s: CtpPacket: O=%hu D=%hu seq=%hhu thl=%d type=%d etx=%d.\n",
 																		 		 __FUNCTION__, 
 																		 		 call CtpPacket.getOrigin(msg), 
+																		 		 call CtpPacket.getDest(msg),
 																		 		 call CtpPacket.getSequenceNumber(msg), 
 																		 		 call CtpPacket.getThl(msg), 		
 																		 		 call CtpPacket.getType(msg), 
 																		 		 call CtpPacket.getEtx(msg));
-																		 		 
-		
 		//routingTableDescendantsUpdateEntry(call CtpPacket.getOrigin(msg),  call CtpPacket.getEtx(msg));
 		//print_descendants_table();
 		
